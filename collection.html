@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masterpiece Collection | Handcrafted by Kajal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* Override Header for Dark Hero */
+      .header.transparent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        color: #fff;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 5%;
+      }
+      .header.transparent .logo { color: #fff; }
+      .header.transparent .btn-outline { color: #fff; border-color: rgba(255,255,255,0.4); }
+      .header.transparent .btn-outline:hover { background: #fff; color: #000; border-color: #fff; }
+    </style>
+  </head>
+  <body>
+    <header class="header transparent">
+      <div class="logo">HANDCRAFTED<br>BY KAJAL</div>
+      <div class="nav-actions">
+        <a href="./index.html" class="btn btn-outline home-btn" aria-label="Back to Home" style="border-radius: 50px; display: flex; align-items: center; padding: 0.6rem 1.5rem; font-size: 0.9rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.8rem;"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Inner Page Hero -->
+      <section class="collection-hero-section section-padding bg-dark text-light" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./images/abstract_crimson_1773915806634.png') center/cover no-repeat; padding: 12rem 5% 10rem;">
+        <div class="collection-hero-content text-center reveal">
+          <h1 class="hero-title" style="font-family: serif; font-weight: 300; font-style: italic; font-size: clamp(3rem, 10vw, 6rem); margin-bottom: 2rem; letter-spacing: -0.02em; color: #fff;">Complete Collection</h1>
+          <p class="body-text mx-auto" style="max-width: 800px; color: #eee; font-size: 1.3rem; line-height: 1.8; font-weight: 300;">Explore Kajal’s thoughtfully handcrafted creations, perfect for gifting, home décor, and personal art collections. Each piece is unique, designed to bring elegance, personality, and artistic charm to your space.</p>
+        </div>
+      </section>
+
+      <!-- Masonry Gallery -->
+      <section class="collection-gallery-section section-padding">
+        <div class="masonry-grid">
+          <!-- Image 1 -->
+          <div class="masonry-item work-card reveal">
+            <div class="img-wrapper"><img src="./images/abstract_gold_1773915785235.png" alt="Abstract Gold"></div>
+            <div class="work-info"><h4>CELESTIAL NAVIGATION</h4><p>GOLD LEAF / TEXTURED</p></div>
+          </div>
+          <!-- Image 5 (Tall) -->
+          <div class="masonry-item work-card reveal portrait">
+            <div class="img-wrapper"><img src="./images/gallery_venice_1773912631467.png" alt="Venice"></div>
+            <div class="work-info"><h4>VENETIAN DREAMS</h4><p>OIL ON CANVAS / LANDSCAPE</p></div>
+          </div>
+          <!-- Image 2 -->
+          <div class="masonry-item work-card reveal">
+            <div class="img-wrapper"><img src="./images/portrait_woman_1773915729254.png" alt="Portrait"></div>
+            <div class="work-info"><h4>SILENT REVERIE</h4><p>OIL / IMPRESSIONISM</p></div>
+          </div>
+          <!-- Image 3 (Wide) -->
+          <div class="masonry-item work-card reveal wide">
+            <div class="img-wrapper"><img src="./images/landscape_valley_1773915745430.png" alt="Valley"></div>
+            <div class="work-info"><h4>EMERALD HORIZONS</h4><p>FINE ART / MOUNTAINS</p></div>
+          </div>
+          <!-- Image 4 -->
+          <div class="masonry-item work-card reveal">
+            <div class="img-wrapper"><img src="./images/landscape_sunset_1773915765764.png" alt="Sunset"></div>
+            <div class="work-info"><h4>TWILIGHT WHISPERS</h4><p>IMPASTO / GOLDEN HOUR</p></div>
+          </div>
+          <!-- Image 6 -->
+          <div class="masonry-item work-card reveal">
+            <div class="img-wrapper"><img src="./images/abstract_crimson_1773915806634.png" alt="Crimson"></div>
+            <div class="work-info"><h4>CRIMSON ECHOES</h4><p>FLUID STROKES / SILVER</p></div>
+          </div>
+          <!-- Image 7 (Wide) -->
+          <div class="masonry-item work-card reveal wide">
+            <div class="img-wrapper"><img src="./images/recent_work_temple_1773912685442.png" alt="Temple"></div>
+            <div class="work-info"><h4>SACRED ETERNITY</h4><p>ABSTRACT / CLASSICAL</p></div>
+          </div>
+          <!-- Image 8 -->
+          <div class="masonry-item work-card reveal portrait">
+            <div class="img-wrapper"><img src="./images/blog_eiffel_1773912701116.png" alt="Parisian Nights"></div>
+            <div class="work-info"><h4>PARISIAN NIGHTS</h4><p>IMPRESSIONISM / OIL</p></div>
+          </div>
+          <!-- Image 9 -->
+          <div class="masonry-item work-card reveal">
+            <div class="img-wrapper"><img src="./images/portrait_royal_1773915710458.png" alt="Royal Heritage"></div>
+            <div class="work-info"><h4>ROYAL HERITAGE</h4><p>OIL ON CANVAS / MAJESTIC</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light">
+      <div class="footer-top flex-between">
+        <div class="footer-links">
+          <h4 class="mb-4">Quick links</h4>
+          <div class="link-grid">
+            <a href="./index.html#about">About</a>
+            <a href="./index.html#collection">What we do</a>
+            <a href="./index.html#contact">Contact</a>
+            <a href="#">Projects</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./legacy.html">Pricing</a>
+            <a href="./terms.html">Terms & Conditions</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="#">Installations</a>
+          </div>
+        </div>
+        <div class="footer-contact text-right">
+          <p class="mb-2 text-sm text-gray">Starting a new project?</p>
+          <h3 class="contact-number"><a href="https://wa.me/916363307200" target="_blank" style="color: white; text-decoration: none;">+91 6363307200</a></h3>
+        </div>
+      </div>
+      <div class="footer-huge-text reveal">
+        <h2>SAY HELLO!</h2>
+      </div>
+      <div class="footer-bottom flex-between">
+        <div class="logo small">HANDCRAFTED<br>BY KAJAL</div>
+        <div class="social-links">
+          <a href="#">Instagram ↗</a>
+          <a href="#">Snapchat ↗</a>
+          <a href="#">YouTube ↗</a>
+          <a href="#">Facebook ↗</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2024
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

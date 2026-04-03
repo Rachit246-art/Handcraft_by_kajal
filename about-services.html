@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About The Services | Handcrafted by Kajal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* --- Elite Dark Hero Styling --- */
+      .nav-bar-simple {
+        padding: 2.5rem 5% 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      
+      .services-hero {
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('./images/abstract_crimson_1773915806634.png') center/cover no-repeat;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .services-hero-content {
+        z-index: 2;
+        max-width: 900px;
+        padding: 0 5%;
+      }
+
+      .services-hero p.subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        opacity: 0.8;
+      }
+
+      .services-hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(3.5rem, 10vw, 7rem);
+        font-style: italic;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .services-hero p.main-desc {
+        font-size: 1.2rem;
+        color: rgba(255,255,255,0.8);
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-weight: 300;
+      }
+      
+      .service-detail-section {
+        padding: 10rem 5% 6rem;
+        background: #fff;
+        position: relative;
+        margin-top: -60px;
+        border-radius: 40px 40px 0 0;
+        z-index: 10;
+        box-shadow: 0 -20px 60px rgba(0,0,0,0.05);
+      }
+      
+      .service-detail-row {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        margin-bottom: 12rem;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .service-detail-row:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      
+      .service-image {
+        flex: 0.8; /* Reduced by 20% from flex: 1 */
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+      }
+      .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 4/5;
+        filter: grayscale(100%) blur(15px);
+        transform: scale(1.15);
+        transition: filter 1.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+        display: block;
+      }
+      .service-image.active img {
+        filter: grayscale(70%) blur(0px);
+        transform: scale(1);
+      }
+      .service-image:hover img {
+        filter: grayscale(0%) blur(0px);
+        transform: scale(1.04) rotate(1deg);
+        transition: filter 0.6s ease-out, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      .service-content {
+        flex: 1.2; /* Increased relatively */
+        padding: 2rem 0;
+      }
+      .service-number {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #a0a0a0;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        letter-spacing: 0.2em;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5rem;
+      }
+      .service-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.5rem;
+        color: #111;
+        line-height: 1.1;
+      }
+      .service-desc {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #444;
+        margin-bottom: 2.5rem;
+      }
+      
+      .premium-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2.5rem;
+        background: #111;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        z-index: 1;
+      }
+      .premium-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+
+      .home-btn-elite {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 0.8rem 1.5rem;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 50px;
+        transition: all 0.3s ease;
+      }
+      .home-btn-elite:hover {
+        background: #fff;
+        color: #000;
+        border-color: #fff;
+      }
+
+      .anim-reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .anim-reveal.active { opacity: 1; transform: translateY(0); }
+
+      @media (max-width: 900px) {
+        .service-detail-row, .service-detail-row:nth-child(even) {
+          flex-direction: column;
+          gap: 3rem;
+          margin-bottom: 6rem;
+        }
+        .services-hero h1 { font-size: 3.5rem; }
+        .service-title { font-size: 2.5rem; }
+        .services-hero { height: 50vh; }
+      }
+    </style>
+  </head>
+  <body class="bg-light text-dark" style="min-height: 100vh; background-color: #fff; margin: 0; padding: 0;">
+    
+    <div class="nav-bar-simple">
+      <div class="logo" style="color: #fff; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.8rem;">HANDCRAFTED<br>BY KAJAL</div>
+      <a href="./index.html" class="home-btn-elite" aria-label="Back to Home">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Back to Home</span>
+      </a>
+    </div>
+
+    <main>
+      <!-- Hero Section - Terms & Conditions Style -->
+      <section class="services-hero">
+        <div class="services-hero-content">
+          <p class="subtitle anim-reveal">Studio Services</p>
+          <h1 class="anim-reveal">Services</h1>
+          <p class="main-desc anim-reveal">Every artwork starts with your vision and ends as a handcrafted masterpiece. Based in Bangalore, each piece is designed to inspire, beautify spaces, and leave a lasting impression.</p>
+        </div>
+      </section>
+
+      <section class="service-detail-section">
+        
+        <!-- Wall Murals -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/recent_work_temple_1773912685442.png" alt="Wall Murals" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">ARTISTRY ON SCALE</span>
+            <h2 class="service-title">Wall Murals</h2>
+            <p class="service-desc">Bring your walls to life with <strong>custom murals</strong> by Kajal. Vibrant colors, intricate textures, and creative designs transform homes, offices, cafes, or any space into a statement of art. Every mural is <strong>uniquely handcrafted</strong>, making your walls truly unforgettable.</p>
+            <a href="#contact" class="premium-btn">Transform Your Space ↗</a>
+          </div>
+        </div>
+
+        <!-- Fabric Art -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/portrait_woman_1773915729254.png" alt="Fabric Art" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">WEARABLE ART</span>
+            <h2 class="service-title">Fabric Art</h2>
+            <p class="service-desc">Elevate textiles with <strong>handcrafted fabric art</strong> that adds personality and charm. Perfect for clothing, home décor, and personalized designs, each piece combines artistry and functionality to create lasting beauty.</p>
+            <a href="#contact" class="premium-btn">Customize Fabric ↗</a>
+          </div>
+        </div>
+
+        <!-- Devotional Art -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/gallery_ganesha_1773912650708.png" alt="Devotional Art" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">SOULFUL CREATIONS</span>
+            <h2 class="service-title">Devotional Art</h2>
+            <p class="service-desc">Experience the serenity and inspiration of <strong>soulful devotional artworks</strong>. Kajal creates pieces that celebrate faith, tradition, and culture—perfect for homes, temples, or sacred spaces, designed to evoke emotion and devotion.</p>
+            <a href="#contact" class="premium-btn">Inquire Devotional Art ↗</a>
+          </div>
+        </div>
+        
+        <!-- Texture Art -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/abstract_gold_1773915785235.png" alt="Texture Art" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">TACTILE DEPTH</span>
+            <h2 class="service-title">Texture Art</h2>
+            <p class="service-desc">Add depth and dimension with <strong>tactile textured art</strong>. Layered techniques and creative finishes give walls and interiors a premium, artistic touch, making every space feel unique and visually striking.</p>
+            <a href="#contact" class="premium-btn">Feel The Texture ↗</a>
+          </div>
+        </div>
+
+        <!-- Resin Art Works -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/abstract_crimson_1773915806634.png" alt="Resin Art Works" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">MODERN ELEGANCE</span>
+            <h2 class="service-title">Resin Art Works</h2>
+            <p class="service-desc">Discover modern, glossy, and <strong>durable resin art creations</strong>. Perfect for home décor, gifts, or functional art pieces, each handcrafted design is vibrant, contemporary, and truly one-of-a-kind.</p>
+            <a href="#contact" class="premium-btn">View Resin Works ↗</a>
+          </div>
+        </div>
+
+        <!-- Landscapes -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/landscape_valley_1773915745430.png" alt="Landscapes" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">NATURE INSPIRED</span>
+            <h2 class="service-title">Landscapes</h2>
+            <p class="service-desc">Bring nature indoors with <strong>breathtaking landscape artworks</strong>. Kajal captures emotion, serenity, and beauty in every piece, transforming any room into a visual escape that tells a story and connects with the viewer.</p>
+            <a href="#contact" class="premium-btn">Bring Nature Home ↗</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Luxury Split Contact Section -->
+      <section class="contact-section" id="contact" style="background: #ffffff; color: #111;">
+        <div class="contact-split">
+          
+          <div class="contact-image-wrapper anim-reveal">
+            <img src="./images/gallery_venice_1773912631467.png" alt="Abstract Art" style="width:100%; height:100%; object-fit:cover; aspect-ratio:3/4; border-radius:12px; filter: grayscale(50%);" />
+            <div class="contact-image-overlay" style="display: flex; align-items: center; justify-content: center;">
+              <h2 class="overlay-text anim-reveal anim-delay-2" style="font-size: 3.5rem; font-weight: 800; color: #fff; text-align: center; line-height: 1.1;">YOUR VISION<br><span style="font-family: serif; font-style: italic; font-weight: 300; font-size: 0.9em; display: inline-block;">REALIZED</span></h2>
+            </div>
+          </div>
+          
+          <div class="contact-form-side anim-reveal anim-delay-1">
+            <div class="contact-header mb-8" style="text-align: left;">
+              <h2 class="section-title" style="color: #111; font-weight: 800; font-size: 3.5rem; letter-spacing: -0.04em;">Let's Connect.</h2>
+              <p class="body-text" style="margin: 1rem 0 0; font-size: 1.15rem; color: #666; max-width: 450px;">Begin the dialogue to commission a deeply personal, breathtaking piece of fine art.</p>
+            </div>
+            
+            <div class="contact-form-wrapper light-premium-wrapper">
+              <form action="mailto:studio@handcraftedbykajal.com" method="post" enctype="text/plain" class="custom-form light-theme-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="Name" required placeholder="John Doe" class="light-premium-input" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="Email" required placeholder="john@example.com" class="light-premium-input" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inquiry">Nature of Inquiry</label>
+                  <div class="light-select-wrapper">
+                    <select id="inquiry" name="Inquiry_Type" class="light-premium-input select">
+                      <option value="Concept & Composition">Concept & Composition</option>
+                      <option value="Masterful Brushwork">Masterful Brushwork</option>
+                      <option value="Archival Varnish & Framing">Archival Varnish & Framing</option>
+                      <option value="Full Commission">Full Commission</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Vision</label>
+                  <textarea id="message" name="Message" rows="3" required placeholder="Tell me about your vision..." class="light-premium-input textarea"></textarea>
+                </div>
+                <div class="text-left mt-8">
+                  <button type="submit" class="light-submit-btn w-full">
+                    <span>Send Inquiry</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light" style="padding-top: 4rem; background: #0a0a0a; border-top: 1px solid #222; display: flex; flex-direction: column;">
+      <div class="footer-top flex-between" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+        <div class="footer-links">
+          <h4 class="mb-4" style="color: #fff; font-size: 1.2rem; margin-bottom: 1rem;">Quick links</h4>
+          <div class="link-grid" style="display: flex; gap: 1rem;">
+            <a href="./about-services.html" style="color: #888; text-decoration: none;">What we do</a>
+            <a href="./blog.html" style="color: #888; text-decoration: none;">Studio Journal</a>
+            <a href="./index.html#contact" style="color: #888; text-decoration: none;">Contact</a>
+            <a href="./index.html#contact" style="color: #888; text-decoration: none;">Pricing</a>
+            <a href="./terms.html" style="color: #888; text-decoration: none;">Terms & Conditions</a>
+            <a href="./privacy.html" style="color: #888; text-decoration: none;">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-contact text-right">
+          <p class="mb-2 text-sm text-gray" style="color: #888; margin-bottom: 0.5rem;">Starting a new project?</p>
+          <h3 class="contact-number" style="color: #fff; font-size: 2rem; margin: 0;"><a href="https://wa.me/916363307200" target="_blank" style="color: white; text-decoration: none;">+91 6363307200</a></h3>
+        </div>
+      </div>
+      <div class="footer-bottom flex-between" style="display: flex; justify-content: space-between; border-top: 1px solid #333; padding-top: 2rem; width: 100%;">
+        <div class="logo small" style="color: #fff; font-weight: 800; letter-spacing: 0.05em;">HANDCRAFTED<br>BY KAJAL</div>
+        <div class="social-links" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+          <a href="#" style="color: #bbb; text-decoration: none;">Instagram ↗</a>
+          <a href="#" style="color: #bbb; text-decoration: none;">Snapchat ↗</a>
+          <a href="#" style="color: #bbb; text-decoration: none;">YouTube ↗</a>
+          <a href="#" style="color: #bbb; text-decoration: none;">Facebook ↗</a>
+        </div>
+        <div class="copyright" style="color: #666;">
+          Copyright © 2024 All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Animation Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, observerOptions);
+
+        // Observe text & image reveals
+        document.querySelectorAll('.anim-reveal, .anim-target').forEach(el => {
+          observer.observe(el);
+        });
+      });
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

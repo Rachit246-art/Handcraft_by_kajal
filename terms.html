@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Conditions | Handcrafted by Kajal</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent-color: #d48a60;
+      --bg-light: #fdfdfd;
+      --text-main: #1a1a1a;
+      --text-muted: #666;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      overflow-x: hidden;
+    }
+
+    /* --- Hero Section --- */
+    .terms-hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('./images/abstract_crimson_1773915806634.png') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .terms-hero-content {
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 5%;
+    }
+
+    .terms-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-style: italic;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: heroFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .terms-hero p {
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: heroFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    }
+
+    @keyframes heroFadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Main Content --- */
+    .terms-wrapper {
+      max-width: 1000px;
+      margin: -100px auto 0;
+      background: #fff;
+      position: relative;
+      z-index: 5;
+      padding: 6rem 8%;
+      border-radius: 24px 24px 0 0;
+      box-shadow: 0 -20px 60px rgba(0,0,0,0.05);
+    }
+
+    .effective-box {
+      background: #f9f9f9;
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 5rem;
+      display: inline-block;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-left: 3px solid var(--accent-color);
+    }
+
+    .intro-para {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: var(--text-main);
+      margin-bottom: 6rem;
+      font-weight: 300;
+    }
+
+    /* --- Sections --- */
+    .terms-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+
+    .terms-card {
+      position: relative;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .terms-card:last-child {
+      border-bottom: none;
+    }
+
+    .section-num {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--accent-color);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .terms-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: #000;
+      letter-spacing: -0.02em;
+    }
+
+    .terms-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .terms-card li {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-left: 2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .terms-card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.8em;
+      width: 8px;
+      height: 8px;
+      background: var(--accent-color);
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+
+    .terms-card li:hover {
+      transform: translateX(10px);
+      color: #000;
+    }
+
+    .terms-card strong {
+      color: #000;
+      font-weight: 700;
+    }
+
+    /* --- Reveal Animation --- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .terms-wrapper { 
+        padding: 4rem 6%; 
+        margin-top: -60px;
+        border-radius: 16px 16px 0 0;
+      }
+      .terms-card h2 { font-size: 1.8rem; }
+      .intro-para { font-size: 1.2rem; }
+      .terms-hero { height: 50vh; }
+    }
+
+    /* Override Header for Dark Hero */
+    .header.transparent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      color: #fff;
+      z-index: 1000;
+    }
+    .header.transparent .logo { color: #fff; }
+    .header.transparent .btn-outline { color: #fff; border-color: rgba(255,255,255,0.4); }
+    .header.transparent .btn-outline:hover { background: #fff; color: #000; border-color: #fff; }
+  </style>
+</head>
+<body>
+  <header class="header transparent">
+    <div class="logo">HANDCRAFTED<br>BY KAJAL</div>
+    <div class="nav-actions">
+      <a href="./index.html" class="btn btn-outline home-btn" aria-label="Back to Home">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.8rem;"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="terms-hero">
+      <div class="terms-hero-content">
+        <p>Studio Policy</p>
+        <h1>Terms and Conditions</h1>
+      </div>
+    </section>
+
+    <div class="terms-wrapper">
+      <div class="effective-box reveal">
+        <strong>Effective Date:</strong> January 01, 2026
+      </div>
+
+      <p class="intro-para reveal">
+        By using the website <strong>Handcrafted by Kajal</strong> or commissioning artworks, you agree to the following terms and conditions. We believe in absolute transparency and artistic integrity in every engagement.
+      </p>
+
+      <div class="terms-grid">
+        <!-- Section 1 -->
+        <section class="terms-card reveal">
+          <span class="section-num">01</span>
+          <h2>Bookings</h2>
+          <ul>
+            <li>All bookings and commission requests are accepted <strong>only via phone call or WhatsApp</strong> at +91 6363307200.</li>
+            <li>Requests submitted via other channels (email, social media, website forms) may not be considered unless explicitly acknowledged.</li>
+          </ul>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="terms-card reveal">
+          <span class="section-num">02</span>
+          <h2>Payment & Refunds</h2>
+          <ul>
+            <li>All bookings require advance confirmation via agreed payment to secure your spot in the studio calendar.</li>
+            <li><strong>No refunds</strong> will be issued for cancelled orders or changes once the meticulous commission process has begun.</li>
+            <li>Payment for commissioned work confirms your full understanding and acceptance of this policy.</li>
+          </ul>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="terms-card reveal">
+          <span class="section-num">03</span>
+          <h2>Ownership & Copyright</h2>
+          <ul>
+            <li>All artworks, designs, and creations by <strong>Kajal</strong> are the perpetual <strong>intellectual property</strong> of Handcrafted by Kajal.</li>
+            <li>Copying, reproducing, distributing, or using any artwork without explicit written permission is strictly prohibited.</li>
+            <li>Any unauthorized use, replication, or commercial exploitation will be considered a <strong>violation of international copyright law</strong>.</li>
+          </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="terms-card reveal">
+          <span class="section-num">04</span>
+          <h2>Legal Protection</h2>
+          <ul>
+            <li>Handcrafted by Kajal reserves the right to take <strong>strict legal action</strong> against any individual, company, or entity found infringing upon our work.</li>
+            <li>Offenders may be liable for <strong>civil and criminal charges</strong>, including damages, legal costs, and immediate injunctions.</li>
+          </ul>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="terms-card reveal">
+          <span class="section-num">05</span>
+          <h2>Liability</h2>
+          <ul>
+            <li>Handcrafted by Kajal is not responsible for any loss, damage, or claims arising from use of the website or artworks beyond the scope of agreed services.</li>
+            <li>All orders are delivered as per agreed artistic specifications and museum-grade standards.</li>
+          </ul>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="terms-card reveal">
+          <span class="section-num">06</span>
+          <h2>Policy Updates</h2>
+          <ul>
+            <li>These Terms and Conditions may be updated at any time to reflect our evolving studio practices without prior notice.</li>
+            <li>By continuing to use the website or commissioning artworks, you accept any updated terms.</li>
+          </ul>
+        </section>
+
+        <!-- Section 7 -->
+        <section class="terms-card reveal">
+          <span class="section-num">07</span>
+          <h2>Governing Law</h2>
+          <ul>
+            <li>These Terms and Conditions are governed by the laws of <strong>India</strong>.</li>
+            <li>Any disputes arising from these terms will be addressed under the exclusive jurisdiction of the courts in <strong>Bangalore, Karnataka, India</strong>.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer bg-dark text-light">
+    <div class="footer-top flex-between">
+      <div class="footer-links">
+        <h4 class="mb-4">Quick links</h4>
+        <div class="link-grid">
+          <a href="./index.html#about">About</a>
+          <a href="./about-services.html">What we do</a>
+          <a href="./index.html#contact">Contact</a>
+          <a href="#">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./index.html#contact">Pricing</a>
+          <a href="./terms.html">Terms & Conditions</a>
+          <a href="./privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-contact text-right">
+        <p class="mb-2 text-sm text-gray">Starting a new project?</p>
+        <h3 class="contact-number"><a href="https://wa.me/916363307200" target="_blank" style="color: white; text-decoration: none;">+91 6363307200</a></h3>
+      </div>
+    </div>
+    <div class="footer-huge-text">
+      <h2>SAY HELLO!</h2>
+    </div>
+    <div class="footer-bottom flex-between">
+      <div class="logo small">HANDCRAFTED<br>BY KAJAL</div>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Snapchat</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div class="copyright">
+        Copyright © 2024
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
