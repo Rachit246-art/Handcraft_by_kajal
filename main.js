@@ -4,13 +4,14 @@ console.log("Handcrafted by Kajal clone interactive logic initializing...");
 
 // Execute immediately without DOMContentLoaded wrapper so that Vite HMR updates take effect instantly!
 const init = () => {
+  document.body.classList.add('js-loaded');
   // --- Scroll Reveal Animations (Transitions) --- 
   const elementsToReveal = document.querySelectorAll(
     '.hero-title, .hero-buttons, .section-title, .section-subtitle, .about-content p, .contact-header, .contact-form-wrapper, .contact-image-wrapper, .testimonials-header, .testimonials-carousel-wrapper, .reveal'
   );
 
   const cardsToReveal = document.querySelectorAll('.work-card, .blog-card, .service-item, .terms-card');
-  const galleryImages = document.querySelectorAll('.gallery-large, .gallery-split img');
+  const galleryImages = document.querySelectorAll('.gallery-large, .gallery-split img, .gallery-item');
 
   const allRevealElements = [...new Set([...elementsToReveal, ...cardsToReveal, ...galleryImages])];
 
@@ -278,7 +279,7 @@ const init = () => {
     const lightboxNext = document.querySelector('.lightbox-next');
 
     // The gallery images and the complete collection masonry images should open in the lightbox
-    const galleryGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img'));
+    const galleryGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img'));
 
     let currentGalleryIndex = -1;
 
