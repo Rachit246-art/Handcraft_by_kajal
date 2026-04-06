@@ -1602,15 +1602,24 @@ body>main {
 
 @media (max-width: 768px) {
   .testimonial-quote {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
   }
 
   .testimonial-content {
-    padding: 2.5rem 2rem;
+    padding: 1.8rem 1.2rem;
+    width: 95%;
   }
 
   .testimonials-carousel {
-    min-height: 480px;
+    min-height: 550px;
+  }
+
+  .quote-icon {
+    width: 32px !important;
+    height: 32px !important;
+    margin-bottom: 0.8rem !important;
   }
 
   .testi-btn {
