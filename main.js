@@ -418,7 +418,7 @@ const init = () => {
   // --- Global Floating WhatsApp Button ---
   if (!document.getElementById('floating-wa')) {
     const waHTML = `
-      <a href="https://wa.me/918826464841" id="floating-wa" target="_blank" aria-label="WhatsApp" style="
+      <a href="https://wa.me/916363307200" id="floating-wa" target="_blank" aria-label="WhatsApp" style="
         position: fixed;
         bottom: 30px;
         right: 30px;
