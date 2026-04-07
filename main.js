@@ -111,36 +111,48 @@ const init = () => {
   }
 
   // --- Dropdown Menu & Inline Search ---
-  const menuBtn = document.querySelector('.menu-btn');
-  const menuDropdown = document.querySelector('.menu-dropdown');
+  const menuBtns = document.querySelectorAll('.menu-btn');
+  const menuDropdowns = document.querySelectorAll('.menu-dropdown');
 
-  const searchBtn = document.querySelector('.search-btn');
-  const searchWrapper = document.querySelector('.search-wrapper');
-  const searchInputInline = document.querySelector('.search-inline-input');
+  const searchBtns = document.querySelectorAll('.search-btn');
+  const searchWrappers = document.querySelectorAll('.search-wrapper');
+  const searchInputsInline = document.querySelectorAll('.search-inline-input');
 
-  if (menuBtn && menuDropdown) {
-    menuBtn.onclick = (e) => {
-      e.stopPropagation();
-      menuDropdown.classList.toggle('active');
-    };
+  menuBtns.forEach((btn, idx) => {
+    const dropdown = menuDropdowns[idx] || document.querySelector('.menu-dropdown');
+    if (!btn || !dropdown) return;
     
-    // Auto-close menu if clicking outside
-    document.addEventListener('click', (e) => {
-      if (!menuBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
-        menuDropdown.classList.remove('active');
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('active');
+    };
+  });
+
+  document.addEventListener('click', (e) => {
+    menuDropdowns.forEach(dropdown => {
+      if (dropdown.classList.contains('active')) {
+        let isInsideMenu = false;
+        menuBtns.forEach(btn => { if (btn.contains(e.target)) isInsideMenu = true; });
+        if (!isInsideMenu && !dropdown.contains(e.target)) {
+          dropdown.classList.remove('active');
+        }
       }
     });
-  }
+  });
 
-  if (searchBtn && searchWrapper && searchInputInline) {
-    searchBtn.onclick = (e) => {
+  searchBtns.forEach((btn, idx) => {
+    const wrapper = searchWrappers[idx] || document.querySelector('.search-wrapper');
+    const input = searchInputsInline[idx] || document.querySelector('.search-inline-input');
+    if (!btn || !wrapper || !input) return;
+
+    btn.onclick = (e) => {
       e.preventDefault();
-      searchWrapper.classList.toggle('active');
-      if (searchWrapper.classList.contains('active')) {
-         searchInputInline.focus();
+      wrapper.classList.toggle('active');
+      if (wrapper.classList.contains('active')) {
+        input.focus();
       }
     };
-  }
+  });
 
 // --- Liquid Distortion Hover Effect ---
   const applyLiquidEffect = () => {

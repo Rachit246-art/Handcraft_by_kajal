@@ -104,13 +104,13 @@
         height: 100%;
         object-fit: cover;
         aspect-ratio: 4/5;
-        filter: grayscale(100%) blur(15px);
-        transform: scale(1.15);
+        filter: grayscale(0%) blur(0px);
+        transform: scale(1);
         transition: filter 1.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
         display: block;
       }
       .service-image.active img {
-        filter: grayscale(70%) blur(0px);
+        filter: grayscale(0%) blur(0px);
         transform: scale(1);
       }
       .service-image:hover img {
@@ -210,13 +210,45 @@
   </head>
   <body class="bg-light text-dark" style="min-height: 100vh; background-color: #fff; margin: 0; padding: 0;">
     
-    <div class="nav-bar-simple">
-      <div class="logo" style="color: #fff; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.8rem;">HANDCRAFTED<br>BY KAJAL</div>
-      <a href="./index.html" class="home-btn-elite" aria-label="Back to Home">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <span>Back to Home</span>
-      </a>
-    </div>
+    <header class="header">
+      <a href="./index.html" class="logo">HANDCRAFTED<br>BY KAJAL</a>
+      <div class="nav-actions" style="display: flex; gap: 0.5rem; align-items: center;">
+
+        <!-- Expanding Search -->
+        <div class="search-wrapper">
+          <input type="text" class="search-inline-input" placeholder="Search..." />
+          <button class="icon-btn search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="menu-wrapper" style="position: relative;">
+          <button class="icon-btn menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="menu-dropdown">
+            <a href="./index.html">Home page</a>
+            <a href="./legacy.html">About me</a>
+            <a href="./about-services.html">Services</a>
+            <a href="./collection.html">Products</a>
+            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./index.html#contact">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+    </header>
 
     <main>
       <!-- Hero Section - Terms & Conditions Style -->
@@ -233,7 +265,7 @@
         <!-- Wall Murals -->
         <div class="service-detail-row">
           <div class="service-image anim-target">
-            <img src="./images/Wall Murals.jpg" alt="Wall Murals" />
+            <img src="./images/Wall Murals.jpg" alt="Wall Murals" loading="lazy" />
           </div>
           <div class="service-content anim-reveal anim-delay-1">
             <span class="service-number">ARTISTRY ON SCALE</span>
@@ -246,7 +278,7 @@
         <!-- Fabric Art -->
         <div class="service-detail-row">
           <div class="service-image anim-target">
-            <img src="./images/Fabric Art.jpg" alt="Fabric Art" />
+            <img src="./images/Fabric Art.jpg" alt="Fabric Art" loading="lazy" />
           </div>
           <div class="service-content anim-reveal anim-delay-1">
             <span class="service-number">WEARABLE ART</span>
@@ -259,7 +291,7 @@
         <!-- Devotional Art -->
         <div class="service-detail-row">
           <div class="service-image anim-target">
-            <img src="./images/Devotional art.jpg" alt="Devotional Art" />
+            <img src="./images/Devotional art.jpg" alt="Devotional Art" loading="lazy" />
           </div>
           <div class="service-content anim-reveal anim-delay-1">
             <span class="service-number">SOULFUL CREATIONS</span>
@@ -272,7 +304,7 @@
         <!-- Texture Art -->
         <div class="service-detail-row">
           <div class="service-image anim-target">
-            <img src="./images/texture art.jpg" alt="Texture Art" />
+            <img src="./images/texture art.jpg" alt="Texture Art" loading="lazy" />
           </div>
           <div class="service-content anim-reveal anim-delay-1">
             <span class="service-number">TACTILE DEPTH</span>
@@ -285,7 +317,7 @@
         <!-- Resin Art Works -->
         <div class="service-detail-row">
           <div class="service-image anim-target">
-            <img src="./images/Resin Art Works.jpg" alt="Resin Art Works" />
+            <img src="./images/Resin Art Works.jpg" alt="Resin Art Works" loading="lazy" />
           </div>
           <div class="service-content anim-reveal anim-delay-1">
             <span class="service-number">MODERN ELEGANCE</span>
@@ -298,13 +330,65 @@
         <!-- Landscapes -->
         <div class="service-detail-row">
           <div class="service-image anim-target">
-            <img src="./images/landscapes.jpg" alt="Landscapes" />
+            <img src="./images/landscapes.jpg" alt="Landscapes" loading="lazy" />
           </div>
           <div class="service-content anim-reveal anim-delay-1">
             <span class="service-number">NATURE INSPIRED</span>
             <h2 class="service-title">Landscapes</h2>
             <p class="service-desc">Bring nature indoors with <strong>breathtaking landscape artworks</strong>. Kajal captures emotion, serenity, and beauty in every piece, transforming any room into a visual escape that tells a story and connects with the viewer.</p>
             <a href="#contact" class="premium-btn">Bring Nature Home ↗</a>
+          </div>
+        </div>
+
+        <!-- Portraits -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/portraits/20241216_014900831_iOS.jpg" alt="Portraits" loading="lazy" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">TIMELESS LEGACY</span>
+            <h2 class="service-title">Portraits</h2>
+            <p class="service-desc">Kajal captures the true soul and character of every subject through <strong>custom portraits</strong>. From archival pencil sketches to rich, multi-layered oil paintings, each portrait is a deeply personal masterpiece designed to be cherished for generations.</p>
+            <a href="#contact" class="premium-btn">Commission a Portrait ↗</a>
+          </div>
+        </div>
+
+        <!-- Phone Cases & Accessories -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/Phone Cases/20250918_102636949_iOS.jpg" alt="Phone Cases" loading="lazy" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">EVERYDAY ART</span>
+            <h2 class="service-title">Handcrafted Accessories</h2>
+            <p class="service-desc">Turn your daily essentials into artistic statements. Our <strong>hand-painted phone cases</strong> and accessories combine premium protection with unique, soulful designs that reflect your individual style.</p>
+            <a href="#contact" class="premium-btn">Style Your Tech ↗</a>
+          </div>
+        </div>
+
+        <!-- Resin Ring Platters -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/Reisin platters/20251208_083446201_iOS.jpg" alt="Ring Platters" loading="lazy" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">LUXURY CELEBRATIONS</span>
+            <h2 class="service-title">Resin Ring Platters</h2>
+            <p class="service-desc">Make your special moments even more memorable with <strong>bespoke resin ring platters</strong>. These handcrafted designs blend glossy elegance with vibrant colors, serving as both functional ceremony pieces and lifelong keepsakes.</p>
+            <a href="#contact" class="premium-btn">Inquire for Events ↗</a>
+          </div>
+        </div>
+
+        <!-- Nameplates -->
+        <div class="service-detail-row">
+          <div class="service-image anim-target">
+            <img src="./images/Name plates/20230221_103200186_iOS.jpg" alt="Nameplates" loading="lazy" />
+          </div>
+          <div class="service-content anim-reveal anim-delay-1">
+            <span class="service-number">PERSONALIZED SPACES</span>
+            <h2 class="service-title">Artistic Nameplates</h2>
+            <p class="service-desc">Welcome guests with a touch of elegance. Our <strong>custom-designed nameplates</strong> are handcrafted to match your home’s character, blending modern calligraphy with artistic textures and durable finishes.</p>
+            <a href="#contact" class="premium-btn">Design Your Nameplate ↗</a>
           </div>
         </div>
 
@@ -315,10 +399,7 @@
         <div class="contact-split">
           
           <div class="contact-image-wrapper anim-reveal">
-            <img src="./images/gallery_venice_1773912631467.png" alt="Abstract Art" style="width:100%; height:100%; object-fit:cover; aspect-ratio:3/4; border-radius:12px; filter: grayscale(50%);" />
-            <div class="contact-image-overlay" style="display: flex; align-items: center; justify-content: center;">
-              <h2 class="overlay-text anim-reveal anim-delay-2" style="font-size: 3.5rem; font-weight: 800; color: #fff; text-align: center; line-height: 1.1;">YOUR VISION<br><span style="font-family: serif; font-style: italic; font-weight: 300; font-size: 0.9em; display: inline-block;">REALIZED</span></h2>
-            </div>
+            <img src="./images/contact_us.jpg" alt="Contact Kajal" style="width:100%; height:100%; object-fit:cover; aspect-ratio:3/4; border-radius:12px;" loading="lazy" />
           </div>
           
           <div class="contact-form-side anim-reveal anim-delay-1">
@@ -343,10 +424,18 @@
                   <label for="inquiry">Nature of Inquiry</label>
                   <div class="light-select-wrapper">
                     <select id="inquiry" name="Inquiry_Type" class="light-premium-input select">
-                      <option value="Concept & Composition">Concept & Composition</option>
-                      <option value="Masterful Brushwork">Masterful Brushwork</option>
-                      <option value="Archival Varnish & Framing">Archival Varnish & Framing</option>
-                      <option value="Full Commission">Full Commission</option>
+                      <option value="Wall Murals">Wall Murals</option>
+                      <option value="Custom Portraits">Custom Portraits</option>
+                      <option value="Fabric Art">Fabric Art</option>
+                      <option value="Devotional Art">Devotional Art</option>
+                      <option value="Texture Art">Texture Art</option>
+                      <option value="Resin Art Works">Resin Art Works</option>
+                      <option value="Landscapes">Landscapes</option>
+                      <option value="Resin Ring Platters">Resin Ring Platters</option>
+                      <option value="Handcrafted Phone Cases">Handcrafted Phone Cases</option>
+                      <option value="Artistic Nameplates">Artistic Nameplates</option>
+                      <option value="Mini Paintings">Mini Paintings</option>
+                      <option value="Special Commission">Special Commission</option>
                     </select>
                   </div>
                 </div>
@@ -369,35 +458,39 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light" style="padding-top: 4rem; background: #0a0a0a; border-top: 1px solid #222; display: flex; flex-direction: column;">
-      <div class="footer-top flex-between" style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+    <footer class="footer bg-dark text-light">
+      <div class="footer-top flex-between">
         <div class="footer-links">
-          <h4 class="mb-4" style="color: #fff; font-size: 1.2rem; margin-bottom: 1rem;">Quick links</h4>
-          <div class="link-grid" style="display: flex; gap: 1rem;">
-            <a href="./index.html" style="color: #888; text-decoration: none;">Home page</a>
-            <a href="./legacy.html" style="color: #888; text-decoration: none;">About me</a>
-            <a href="./about-services.html" style="color: #888; text-decoration: none;">Services</a>
-            <a href="./collection.html" style="color: #888; text-decoration: none;">Products</a>
-            <a href="./index.html#gallery" style="color: #888; text-decoration: none;">Gallery / Other Works</a>
-            <a href="./privacy.html" style="color: #888; text-decoration: none;">Privacy Policy</a>
-            <a href="./terms.html" style="color: #888; text-decoration: none;">Terms and Conditions</a>
+          <h4 class="mb-4">Quick links</h4>
+          <div class="link-grid">
+            <a href="./index.html">Home page</a>
+            <a href="./legacy.html">About me</a>
+            <a href="./about-services.html">Services</a>
+            <a href="./collection.html">Products</a>
+            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms and Conditions</a>
           </div>
         </div>
         <div class="footer-contact text-right">
-          <p class="mb-2 text-sm text-gray" style="color: #888; margin-bottom: 0.5rem;">Starting a new project?</p>
-          <h3 class="contact-number" style="color: #fff; font-size: 2rem; margin: 0;"><a href="https://wa.me/916363307200" target="_blank" style="color: white; text-decoration: none;">+91 6363307200</a></h3>
+          <p class="mb-2 text-sm text-gray">Starting a new project?</p>
+          <h3 class="contact-number"><a href="https://wa.me/916363307200" target="_blank"
+              style="color: white; text-decoration: none;">+91 6363307200</a></h3>
         </div>
       </div>
-      <div class="footer-bottom flex-between" style="display: flex; justify-content: space-between; border-top: 1px solid #333; padding-top: 2rem; width: 100%;">
-        <div class="logo small" style="color: #fff; font-weight: 800; letter-spacing: 0.05em;">HANDCRAFTED<br>BY KAJAL</div>
-        <div class="social-links" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
-          <a href="#" style="color: #bbb; text-decoration: none;">Instagram ↗</a>
-          <a href="#" style="color: #bbb; text-decoration: none;">Snapchat ↗</a>
-          <a href="#" style="color: #bbb; text-decoration: none;">YouTube ↗</a>
-          <a href="#" style="color: #bbb; text-decoration: none;">Facebook ↗</a>
+      <div class="footer-huge-text reveal">
+        <h2>SAY HELLO!</h2>
+      </div>
+      <div class="footer-bottom flex-between">
+        <a href="./index.html" class="logo small">HANDCRAFTED<br>BY KAJAL</a>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Snapchat</a>
+          <a href="#">YouTube</a>
+          <a href="#">Facebook</a>
         </div>
-        <div class="copyright" style="color: #666;">
-          Copyright © 2024 All Rights Reserved.
+        <div class="copyright">
+          Copyright © 2024
         </div>
       </div>
     </footer>

@@ -10,9 +10,44 @@
   </head>
   <body class="bg-color text-color">
     
-    <header class="header bg-dark text-light" style="padding: 1.5rem 5%; background: var(--dark-bg); z-index: 100;">
-      <div class="logo" style="color: white;">HANDCRAFTED<br>BY KAJAL</div>
-      <a href="./index.html" class="btn btn-outline" style="color: white; border-color: white;">← Back Home</a>
+    <header class="header">
+      <a href="./index.html" class="logo">HANDCRAFTED<br>BY KAJAL</a>
+      <div class="nav-actions" style="display: flex; gap: 0.5rem; align-items: center;">
+
+        <!-- Expanding Search -->
+        <div class="search-wrapper">
+          <input type="text" class="search-inline-input" placeholder="Search..." />
+          <button class="icon-btn search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="menu-wrapper" style="position: relative;">
+          <button class="icon-btn menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="menu-dropdown">
+            <a href="./index.html">Home page</a>
+            <a href="./legacy.html">About me</a>
+            <a href="./about-services.html">Services</a>
+            <a href="./collection.html">Products</a>
+            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./index.html#contact">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
     </header>
 
     <main>
@@ -93,6 +128,8 @@
           <div class="gallery-item reveal"><img src="./images/Wall Murals.jpg" alt="Wall Murals" loading="lazy" /></div>
           <div class="gallery-item reveal"><img src="./images/texture art.jpg" alt="Texture Art" loading="lazy" /></div>
           <div class="gallery-item reveal"><img src="./images/Mini Paintings/20250102_103416950_iOS.jpg" alt="Mini Painting" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="./images/Gallery/20240108_022036000_iOS.jpg" alt="Art Work" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="./images/Gallery/20241215_101215951_iOS.jpg" alt="Art Work" loading="lazy" /></div>
         </div>
       </section>
     </main>
@@ -121,7 +158,7 @@
         <h2 style="color: white;">SAY HELLO!</h2>
       </div>
       <div class="footer-bottom flex-between">
-        <div class="logo small" style="color: white;">HANDCRAFTED<br>BY KAJAL</div>
+        <a href="./index.html" class="logo small" style="color: white;">HANDCRAFTED<br>BY KAJAL</a>
         <div class="social-links">
           <a href="#" style="color: #bbb;">Instagram ↗</a>
           <a href="#" style="color: #bbb;">Snapchat ↗</a>
