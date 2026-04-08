@@ -457,61 +457,6 @@ const init = () => {
     }
   });
 
-  // --- Advanced Form Submission & Notifications ---
-  const handleForm = (formId) => {
-    const form = document.getElementById(formId);
-    if (!form) return;
-    
-    form.onsubmit = async (e) => {
-      if (!form.action.includes('web3forms')) return;
-      
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const span = btn.querySelector('span');
-      const originalText = span.textContent;
-      
-      span.textContent = 'Processing...';
-      btn.style.opacity = '0.7';
-      btn.disabled = true;
-      
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form)
-        });
-        const result = await response.json();
-        
-        if (result.success) {
-          showNotification('Sent! Both recipients will be notified.', 'success');
-          form.reset();
-        } else {
-          showNotification('Error sending message. Please try again.', 'error');
-        }
-      } catch (err) {
-        showNotification('Connection error. Please check your internet.', 'error');
-      } finally {
-        span.textContent = originalText;
-        btn.style.opacity = '1';
-        btn.disabled = false;
-      }
-    };
-  };
-
-  const showNotification = (msg, type) => {
-    let toast = document.querySelector('.toast-notif');
-    if (!toast) {
-      toast = document.createElement('div');
-      toast.className = 'toast-notif';
-      document.body.appendChild(toast);
-    }
-    toast.textContent = msg;
-    toast.className = `toast-notif toast-${type} active`;
-    setTimeout(() => toast.classList.remove('active'), 5000);
-  };
-  
-  handleForm('contact-us-form');
-  handleForm('contact-services-form');
-
 };
 
 // Handle Vite HMR edge cases where script is reloaded but page is not re-parsed
