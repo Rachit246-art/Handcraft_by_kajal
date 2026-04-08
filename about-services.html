@@ -409,7 +409,13 @@
             </div>
             
             <div class="contact-form-wrapper light-premium-wrapper">
-              <form action="mailto:Sp.kajal96@gmail.com" method="post" enctype="text/plain" class="custom-form light-theme-form">
+              <form id="contact-services-form" action="https://api.web3forms.com/submit" method="POST" class="custom-form light-theme-form">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Service Inquiry (Handcrafted by Kajal)">
+                <input type="hidden" name="from_name" value="Handcrafted by Kajal">
+                <!-- Secondary recipient notification -->
+                <input type="hidden" name="cc_recipients" value="regortzindia@gmail.com">
+
                 <div class="form-row">
                   <div class="form-group">
                     <label for="name">Your Name</label>
