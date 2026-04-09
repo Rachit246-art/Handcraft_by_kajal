@@ -752,7 +752,7 @@ h5 {
 }
 
 .light-select-wrapper::after {
-  content: "▼";
+  content: "â–¼";
   font-size: 0.6rem;
   color: #888;
   position: absolute;
@@ -1646,7 +1646,7 @@ body>main {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(18, 18, 18, 0.3) 0%, rgba(18, 18, 18, 1) 100%), url('./images/abstract_crimson_1773915806634.png') center/cover no-repeat fixed;
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.3) 0%, rgba(18, 18, 18, 1) 100%), url('./images/texture art.webp') center/cover no-repeat fixed;
   border-bottom: 1px solid #333;
 }
 
