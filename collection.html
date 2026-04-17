@@ -60,7 +60,7 @@
             <a href="./legacy.html">About me</a>
             <a href="./about-services.html">Services</a>
             <a href="./collection.html">Products</a>
-            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./gallery.html">Art/Gallery</a>
             <a href="./index.html#contact">Contact Us</a>
           </div>
         </div>
@@ -73,194 +73,231 @@
       <section class="collection-hero-section section-padding bg-dark text-light" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./images/Resin Art Works.webp') center/cover no-repeat; padding: 12rem 5% 10rem;">
         <div class="collection-hero-content text-center reveal">
           <h1 class="hero-title" style="font-family: serif; font-weight: 300; font-style: italic; font-size: clamp(3rem, 10vw, 6rem); margin-bottom: 2rem; letter-spacing: -0.02em; color: #fff;">Complete Collection</h1>
-          <p class="body-text mx-auto" style="max-width: 800px; color: #eee; font-size: 1.3rem; line-height: 1.8; font-weight: 300;">Explore Kajal's thoughtfully handcrafted creations, perfect for gifting, home décor, and personal art collections. Each piece is unique, designed to bring elegance, personality, and artistic charm to your space.</p>
+          <p id="collection-desc" class="body-text mx-auto" style="max-width: 800px; color: #eee; font-size: 1.3rem; line-height: 1.8; font-weight: 300; transition: opacity 0.3s ease;">Explore Kajal's thoughtfully handcrafted creations, perfect for gifting, home décor, and personal art collections. Each piece is unique, designed to bring elegance, personality, and artistic charm to your space.</p>
         </div>
       </section>
 
+      <script>
+        const collectionDescriptions = {
+          all: "Explore Kajal's thoughtfully handcrafted creations, perfect for gifting, home décor, and personal art collections. Each piece is unique, designed to bring elegance, personality, and artistic charm to your space.",
+          portraits: "Custom portraits that beautifully capture personalities, emotions, and cherished memories. Every artwork is carefully handcrafted to reflect the essence of the subject.",
+          phonecases: "Turn everyday accessories into works of art with hand-designed phone cases. Each case is unique, stylish, and crafted to stand out.",
+          platters: "Functional and artistic organizers for jewelry and small treasures. Handcrafted resin designs add elegance and sophistication to your space.",
+          mini: "Compact yet expressive artworks perfect for home décor accents or as thoughtful, meaningful gifts. Every mini painting is a piece of personal artistry.",
+          coasters: "Elegant handcrafted coasters that combine practicality with aesthetic luxury. Each coaster is a unique creation, adding charm to any table or space.",
+          relief: "Textured and dimensional relief artworks that create visual impact and premium appeal. Ideal for walls, interiors, or as statement decorative pieces.",
+          nameplates: "Personalized artistic nameplates designed to leave a lasting impression. Perfect for homes, offices, or gifting purposes.",
+          magnets: "Miniature handcrafted artworks made as charming décor pieces and thoughtful souvenirs. Each magnet is a unique, collectible piece of art."
+        };
+
+        function updateCollectionDesc(category) {
+          const descEl = document.getElementById('collection-desc');
+          if (!descEl) return;
+          descEl.style.opacity = '0';
+          setTimeout(() => {
+            descEl.textContent = collectionDescriptions[category];
+            descEl.style.opacity = '1';
+          }, 300);
+        }
+      </script>
+
       <!-- Masonry Gallery -->
-      <section class="collection-gallery-section section-padding">
+      <section class="collection-gallery-section section-padding" style="padding-top: 4rem;">
+        <div class="filter-container mb-12" style="display: flex; flex-direction: column; align-items: center; gap: 2rem; margin-bottom: 4rem;">
+          <div class="filter-tabs" style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <button class="filter-btn active" data-filter="all" onclick="updateCollectionDesc('all')">All Creations</button>
+            <button class="filter-btn" data-filter="portraits" onclick="updateCollectionDesc('portraits')">Portraits</button>
+            <button class="filter-btn" data-filter="phonecases" onclick="updateCollectionDesc('phonecases')">Phone Cases</button>
+            <button class="filter-btn" data-filter="platters" onclick="updateCollectionDesc('platters')">Ring Platters</button>
+            <button class="filter-btn" data-filter="mini" onclick="updateCollectionDesc('mini')">Mini Paintings</button>
+            <button class="filter-btn" data-filter="coasters" onclick="updateCollectionDesc('coasters')">Coasters</button>
+            <button class="filter-btn" data-filter="relief" onclick="updateCollectionDesc('relief')">Relief Art</button>
+            <button class="filter-btn" data-filter="nameplates" onclick="updateCollectionDesc('nameplates')">Nameplates</button>
+            <button class="filter-btn" data-filter="magnets" onclick="updateCollectionDesc('magnets')">Fridge Magnets</button>
+          </div>
+        </div>
+
         <div class="masonry-grid">
           <!-- Portraits -->
-          <!-- Portraits -->
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/Screenshot 2026-02-09 125436.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>PENCIL / CHARCOAL</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/WhatsApp Image 2026-02-09 at 11.22.15 AM (1).webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>SKETCH / REALISTIC</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/WhatsApp Image 2026-02-09 at 11.22.15 AM (3).webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>DETAILED ART</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/20240604_042045958_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>PERSONALIZED</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/20240604_042104892_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>EMOTIONAL ART</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/20240604_042122124_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>FINE ART</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/others/20240604_042204835_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>BESPOKE</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/portraits/20240604_042245694_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>ARTISTIC</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/others/20240604_042448947_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>SKETCH</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/others/20241121_152209922_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>REALISM</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/others/20241121_152228709_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>MODERN</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/others/20241216_014900831_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>SKETCH</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
             <div class="img-wrapper"><img src="./images/others/20241216_033734898_iOS.webp" alt="Portraits" loading="lazy"></div>
             <div class="work-info"><h4>CUSTOM PORTRAITS</h4><p>MEMORIES</p></div>
           </div>
 
           <!-- Phone Cases -->
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all phonecases">
             <div class="img-wrapper"><img src="./images/others/20250918_102636949_iOS.webp" alt="Phone Case" loading="lazy"></div>
             <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all phonecases">
             <div class="img-wrapper"><img src="./images/Phone Cases/20250922_111701514_iOS.webp" alt="Phone Case" loading="lazy"></div>
             <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>PREMIUM DESIGN</p></div>
           </div>
 
           <!-- Resin Platters -->
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all platters">
             <div class="img-wrapper"><img src="./images/Reisin platters/20251208_083446201_iOS.webp" alt="Resin Platter" loading="lazy"></div>
             <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY / GOLD</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all platters">
             <div class="img-wrapper"><img src="./images/Reisin platters/20251208_083505866_iOS.webp" alt="Resin Platter" loading="lazy"></div>
             <div class="work-info"><h4>RESIN RING PLATTER</h4><p>HANDCRAFTED</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all platters">
             <div class="img-wrapper"><img src="./images/Reisin platters/20251208_084257712_iOS.webp" alt="Resin Platter" loading="lazy"></div>
             <div class="work-info"><h4>RESIN RING PLATTER</h4><p>FLORAL DESIGN</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all platters">
             <div class="img-wrapper"><img src="./images/Reisin platters/20251226_095916770_iOS.webp" alt="Resin Platter" loading="lazy"></div>
             <div class="work-info"><h4>RESIN RING PLATTER</h4><p>CUSTOM</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all platters">
             <div class="img-wrapper"><img src="./images/Reisin platters/20251226_100013014_iOS.webp" alt="Resin Platter" loading="lazy"></div>
             <div class="work-info"><h4>RESIN RING PLATTER</h4><p>ELEGANT</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all platters">
             <div class="img-wrapper"><img src="./images/Reisin platters/20251226_100632188_iOS.webp" alt="Resin Platter" loading="lazy"></div>
             <div class="work-info"><h4>RESIN RING PLATTER</h4><p>PREMIUM</p></div>
           </div>
 
           <!-- Mini Paintings -->
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20250102_103416950_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>ACRYLIC / NATURE</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20240603_085846002_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>LANDSCAPE</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/others/20240612_122451386_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>ARTISTIC</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/others/20240819_062133835_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>VIBRANT</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20250102_103444296_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>FLORAL</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20250102_103559541_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>TEXTURED</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20250102_103645377_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>ABSTRACT</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20250102_103708545_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>DÉCOR</p></div>
           </div>
-          <div class="masonry-item work-card reveal portrait">
+          <div class="masonry-item work-card reveal portrait" data-category="all mini">
             <div class="img-wrapper"><img src="./images/Mini Paintings/20250102_103755853_iOS.webp" alt="Mini Painting" loading="lazy"></div>
             <div class="work-info"><h4>MINI PAINTING</h4><p>COLLECTIBLE</p></div>
           </div>
 
           <!-- Coasters -->
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all coasters">
             <div class="img-wrapper"><img src="./images/Resisin coasters/20251118_064336234_iOS.webp" alt="Resin Coaster" loading="lazy"></div>
             <div class="work-info"><h4>RESIN COASTERS</h4><p>FUNCTIONAL ART</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all coasters">
             <div class="img-wrapper"><img src="./images/Resisin coasters/20251119_125404764_iOS.webp" alt="Resin Coaster" loading="lazy"></div>
             <div class="work-info"><h4>RESIN COASTERS</h4><p>CUSTOM DESIGN</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all coasters">
             <div class="img-wrapper"><img src="./images/others/20251123_042835057_iOS.webp" alt="Resin Coaster" loading="lazy"></div>
             <div class="work-info"><h4>RESIN COASTERS</h4><p>ELEGANT</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all coasters">
             <div class="img-wrapper"><img src="./images/Resisin coasters/20251123_063231916_iOS.webp" alt="Resin Coaster" loading="lazy"></div>
             <div class="work-info"><h4>RESIN COASTERS</h4><p>PREMIUM</p></div>
           </div>
 
           <!-- Relief Art -->
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all relief">
             <div class="img-wrapper"><img src="./images/Relief art works/20251113_084338911_iOS.webp" alt="Relief Art" loading="lazy"></div>
             <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all relief">
             <div class="img-wrapper"><img src="./images/Relief art works/20251113_084744040_iOS.webp" alt="Relief Art" loading="lazy"></div>
             <div class="work-info"><h4>RELIEF ART WORK</h4><p>MODERN ART</p></div>
           </div>
 
           <!-- Nameplates -->
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all nameplates">
             <div class="img-wrapper"><img src="./images/others/20230221_103200186_iOS.webp" alt="Nameplate" loading="lazy"></div>
             <div class="work-info"><h4>PERSONALIZED NAMEPLATE</h4><p>ARTISTIC</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all nameplates">
             <div class="img-wrapper"><img src="./images/Name plates/20230503_105024245_iOS.webp" alt="Nameplate" loading="lazy"></div>
             <div class="work-info"><h4>PERSONALIZED NAMEPLATE</h4><p>CUSTOM</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all nameplates">
             <div class="img-wrapper"><img src="./images/others/20251123_040919021_iOS.webp" alt="Nameplate" loading="lazy"></div>
             <div class="work-info"><h4>PERSONALIZED NAMEPLATE</h4><p>HANDMADE</p></div>
           </div>
 
           <!-- Fridge Magnets -->
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all magnets">
             <div class="img-wrapper"><img src="./images/Fridge Magnets/20251118_160757000_iOS.webp" alt="Fridge Magnet" loading="lazy"></div>
             <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all magnets">
             <div class="img-wrapper"><img src="./images/others/20251123_042828379_iOS.webp" alt="Fridge Magnet" loading="lazy"></div>
             <div class="work-info"><h4>FRIDGE MAGNET</h4><p>SOUVENIR</p></div>
           </div>
-          <div class="masonry-item work-card reveal">
+          <div class="masonry-item work-card reveal" data-category="all magnets">
             <div class="img-wrapper"><img src="./images/others/20251123_042830682_iOS.webp" alt="Fridge Magnet" loading="lazy"></div>
             <div class="work-info"><h4>FRIDGE MAGNET</h4><p>CHARMING</p></div>
           </div>
@@ -278,7 +315,7 @@
             <a href="./legacy.html">About me</a>
             <a href="./about-services.html">Services</a>
             <a href="./collection.html">Products</a>
-            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./index.html#gallery">Art/Gallery</a>
             <a href="./privacy.html">Privacy Policy</a>
             <a href="./terms.html">Terms and Conditions</a>
           </div>

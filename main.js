@@ -7,7 +7,7 @@ const init = () => {
   document.body.classList.add('js-loaded');
   // --- Scroll Reveal Animations (Transitions) --- 
   const elementsToReveal = document.querySelectorAll(
-    '.hero-title, .hero-buttons, .section-title, .section-subtitle, .about-content p, .contact-header, .contact-form-wrapper, .contact-image-wrapper, .testimonials-header, .testimonials-carousel-wrapper, .reveal'
+    '.hero-title, .hero-buttons, .section-title, .section-subtitle, .about-content p, .testimonials-header, .testimonials-carousel-wrapper, .reveal'
   );
 
   const cardsToReveal = document.querySelectorAll('.work-card, .blog-card, .service-item, .terms-card');
@@ -80,35 +80,40 @@ const init = () => {
   updateParallax();
 
 
-  // --- Mouse-move 3D Magnetic Tilt Effect for Hero Badge ---
-  const badgeArea = document.querySelector('.hero-badge-container');
-  if (badgeArea) {
-      badgeArea.addEventListener('mousemove', (e) => {
-          const rect = badgeArea.getBoundingClientRect();
+  // --- Mouse-move 3D Magnetic Tilt Effect for Contact Image & Hero Badge ---
+  const applyTilt = (selector, targetSelector) => {
+      const area = document.querySelector(selector);
+      if (!area) return;
+      
+      area.addEventListener('mousemove', (e) => {
+          const rect = area.getBoundingClientRect();
           const x = e.clientX - rect.left; 
           const y = e.clientY - rect.top; 
           
           const centerX = rect.width / 2;
           const centerY = rect.height / 2;
           
-          const rotateX = ((y - centerY) / centerY) * -20; 
-          const rotateY = ((x - centerX) / centerX) * 20;
+          const rotateX = ((y - centerY) / centerY) * -10; // Subtle Tilt
+          const rotateY = ((x - centerX) / centerX) * 10;
           
-          const badgeTarget = badgeArea.querySelector('.rotating-badge');
-          if (badgeTarget) {
-              badgeTarget.style.transition = 'transform 0.1s ease-out';
-              badgeTarget.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+          const target = area.querySelector(targetSelector);
+          if (target) {
+              target.style.transition = 'transform 0.1s ease-out';
+              target.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
           }
       });
 
-      badgeArea.addEventListener('mouseleave', () => {
-          const badgeTarget = badgeArea.querySelector('.rotating-badge');
-          if (badgeTarget) {
-              badgeTarget.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
-              badgeTarget.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+      area.addEventListener('mouseleave', () => {
+          const target = area.querySelector(targetSelector);
+          if (target) {
+              target.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
+              target.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
           }
       });
-  }
+  };
+
+  applyTilt('.hero-badge-container', '.rotating-badge');
+  applyTilt('.contact-image-wrapper', 'img');
 
   // --- Dropdown Menu & Inline Search ---
   const menuBtns = document.querySelectorAll('.menu-btn');
@@ -156,7 +161,7 @@ const init = () => {
 
 // --- Liquid Distortion Hover Effect ---
   const applyLiquidEffect = () => {
-    const cards = document.querySelectorAll('.contact-image-wrapper, .blog-card');
+    const cards = document.querySelectorAll('.blog-card');
     
     const oldContainer = document.getElementById('liquid-svg-container');
     if (oldContainer) oldContainer.remove();
@@ -291,7 +296,7 @@ const init = () => {
     const lightboxNext = document.querySelector('.lightbox-next');
 
     // The gallery images and the complete collection masonry images should open in the lightbox
-    const galleryGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img'));
+    const galleryGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img'));
 
     let currentGalleryIndex = -1;
 
@@ -457,6 +462,70 @@ const init = () => {
     }
   });
 
+  // --- Services Slider (Multi-item Scroll Logic) ---
+  const serviceCarousel = document.querySelector('.services-carousel');
+  const serviceSlides = document.querySelectorAll('.service-slide');
+  const servicePrevBtn = document.querySelector('.testi-btn.prev-service');
+  const serviceNextBtn = document.querySelector('.testi-btn.next-service');
+  const serviceDots = document.querySelectorAll('.service-dots .dot');
+
+  if (serviceSlides.length > 0 && serviceCarousel) {
+    let currentService = 0;
+    let serviceAutoInterval;
+
+    const showService = (index) => {
+      const totalSlides = serviceSlides.length;
+      let visibleSlides = 3;
+      if (window.innerWidth <= 768) visibleSlides = 1;
+      else if (window.innerWidth <= 1100) visibleSlides = 2;
+
+      const maxIndex = totalSlides - visibleSlides;
+
+      if (index > maxIndex) currentService = 0;
+      else if (index < 0) currentService = maxIndex;
+      else currentService = index;
+
+      // Calculate offset based on slide width and gap
+      const slideWidth = serviceSlides[0].offsetWidth;
+      const gap = 24; // Matches the gap in CSS
+      
+      const offset = -(currentService * (slideWidth + gap));
+      serviceCarousel.style.transform = `translateX(${offset}px)`;
+
+      // Update dots
+      serviceDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentService);
+        // Only show dots that correspond to a valid start index
+        if (i > maxIndex) dot.style.display = 'none';
+        else dot.style.display = 'block';
+      });
+    };
+
+    const nextService = () => showService(currentService + 1);
+    const prevService = () => showService(currentService - 1);
+
+    const startServiceAuto = () => { 
+      stopServiceAuto();
+      serviceAutoInterval = setInterval(nextService, 5000); 
+    };
+    const stopServiceAuto = () => { clearInterval(serviceAutoInterval); };
+
+    if(serviceNextBtn) serviceNextBtn.onclick = () => { nextService(); stopServiceAuto(); startServiceAuto(); };
+    if(servicePrevBtn) servicePrevBtn.onclick = () => { prevService(); stopServiceAuto(); startServiceAuto(); };
+
+    serviceDots.forEach((dot, index) => {
+      dot.onclick = () => { showService(index); stopServiceAuto(); startServiceAuto(); };
+    });
+
+    serviceCarousel.onmouseenter = stopServiceAuto;
+    serviceCarousel.onmouseleave = startServiceAuto;
+
+    // Handle responsiveness on resize
+    window.addEventListener('resize', () => showService(currentService));
+
+    startServiceAuto();
+    showService(0); // Initial state
+  }
 };
 
 // Handle Vite HMR edge cases where script is reloaded but page is not re-parsed

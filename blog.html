@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .blog-page-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem 1.5rem;
+      }
+      .blog-category-section {
+        margin-bottom: 6rem;
+        padding-top: 2rem;
+      }
+      .blog-category-title {
+        font-family: serif;
+        font-size: 2.5rem;
+        font-style: italic;
+        color: #fff;
+        margin-bottom: 3.5rem;
+        font-weight: 300;
+        letter-spacing: -0.01em;
       }
       .blog-tag {
         border-radius: 50px;
@@ -24,6 +40,7 @@
         gap: 0.4rem;
         cursor: pointer;
         transition: background-color 0.2s;
+        text-decoration: none;
       }
       .blog-tag:hover {
         background-color: #222;
@@ -97,7 +114,7 @@
             <a href="./legacy.html">About me</a>
             <a href="./about-services.html">Services</a>
             <a href="./collection.html">Products</a>
-            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./index.html#gallery">Art/Gallery</a>
             <a href="./index.html#contact">Contact Us</a>
           </div>
         </div>
@@ -119,182 +136,237 @@
       </section>
 
       <section class="section-padding" style="padding-top: 6rem; background: #121212;">
-        <div class="mb-8 flex" style="gap: 1rem; display: flex; margin-bottom: 4rem;">
-        <button class="blog-tag"><span class="blog-tag-dot"></span> Exhibitions</button>
-        <button class="blog-tag"><span class="blog-tag-dot" style="background-color: #4cd964;"></span> Techniques</button>
-        <button class="blog-tag"><span class="blog-tag-dot" style="background-color: #007aff;"></span> Inspiration</button>
-      </div>
-
-      <div class="blog-page-grid">
-        <!-- Row 1 -->
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/landscapes.webp" alt="Venice Painting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">The Romance of Venice: Capturing Twilight in Oils</h4>
-          <p class="dark-card-meta">By Kajal • Mar 2024</p>
-        </article>
-        
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/Devotional art.webp" alt="Ganesha Painting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Divine Inspirations: The Symbolism of Ganesha in Art</h4>
-          <p class="dark-card-meta">By Kajal • Feb 2024</p>
-        </article>
-
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/Resin Art Works.webp" alt="Resin Art Works" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Resin Masterpieces: Depth and Gloss in Modern Art</h4>
-          <p class="dark-card-meta">By Kajal • Jan 2024</p>
-        </article>
-
-
-        <!-- Row 2 -->
-
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/about us (1).webp" alt="Artist" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Behind the Easel: My Journey as a Freelance Painter</h4>
-          <p class="dark-card-meta">By Kajal • Nov 2023</p>
-        </article>
-
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/landscapes.webp" alt="Water Painting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Water Color vs Oils: Recreating Real Water Reflections</h4>
-          <p class="dark-card-meta">By Kajal • Nov 2023</p>
-        </article>
-
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/Devotional art.webp" alt="Metallic Paints" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Metallic Paints: Enhancing Jewelry and Details on Canvas</h4>
-          <p class="dark-card-meta">By Kajal • Oct 2023</p>
-        </article>
-
-        <!-- Row 3 -->
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/texture art.webp" alt="Architecture Painting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Architectural Details: Painting Intricate Marble Carvings</h4>
-          <p class="dark-card-meta">By Kajal • Oct 2023</p>
-        </article>
-        
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/Wall Murals.webp" alt="Cityscape" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Cityscapes at Twilight: Setting the Perfect Evening Mood</h4>
-          <p class="dark-card-meta">By Kajal • Sep 2023</p>
-        </article>
-
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/Fabric Art.webp" alt="Dog Fur" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Texturing Fur: Premium Techniques for Animal Portraits</h4>
-          <p class="dark-card-meta">By Kajal • Sep 2023</p>
-        </article>
-
-        <article class="blog-card">
-          <div class="img-wrapper" style="aspect-ratio: 408/360; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-            <img src="./images/about us (1).webp" alt="Studio Setup" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" />
-          </div>
-          <h4 class="dark-card-title">Setting Up Your Studio: Why Lighting is Everything for Painters</h4>
-          <p class="dark-card-meta">By Kajal • Aug 2023</p>
-        </article>
-
-      </div>
-
-      <!-- New Section: All Folder Images -->
-      <section class="section-padding" style="background: #0a0a0a; border-top: 1px solid #222;">
-        <div class="section-header mb-8">
-          <h2 class="section-title" style="color: #fff; font-size: 3rem;">Studio Archives</h2>
-          <p class="body-text" style="color: #888;">Explore the diverse categories of handcrafted creations from our studio folders.</p>
+        <div class="mb-8 flex" style="gap: 1.5rem; display: flex; margin-bottom: 6rem; flex-wrap: wrap;">
+          <a href="#achievements" class="blog-tag"><span class="blog-tag-dot"></span> Achievements</a>
+          <a href="#exhibitions" class="blog-tag"><span class="blog-tag-dot" style="background-color: #4cd964;"></span> Exhibitions</a>
+          <a href="#workshops" class="blog-tag"><span class="blog-tag-dot" style="background-color: #007aff;"></span> Workshops</a>
         </div>
-        
-        <div class="blog-page-grid">
-          <!-- Portraits Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/portraits/Screenshot 2026-02-09 125436.webp" alt="Portraits" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
-            </div>
-            <h4 class="dark-card-title">Portraits</h4>
-            <p class="dark-card-meta">Folder: portraits</p>
-          </article>
 
-          <!-- Phone Cases Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/others/20250918_102636949_iOS.webp" alt="Phone Cases" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+        <div id="achievements" class="blog-category-section">
+          <h2 class="blog-category-title">Our Achievements</h2>
+          <p style="color: #888; margin-bottom: 4rem; font-size: 1.1rem; text-align: center;">Recognized for soulful artistry across leading platforms.</p>
+          <div class="achievements-grid">
+            <!-- Card 1: Your story -->
+            <div onclick="openVideoModal('dQw4w9WgXcQ')" class="achievement-card" style="cursor: pointer;">
+              <div class="achievement-frame">
+                <img src="./images/top icon 1.webp" alt="Your story" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Featured Story</p>
+                <h3>Your story</h3>
+                <span class="achievement-link">Watch Story ↗</span>
+              </div>
             </div>
-            <h4 class="dark-card-title">Phone Cases</h4>
-            <p class="dark-card-meta">Folder: Phone Cases</p>
-          </article>
 
-          <!-- Resin Platters Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/Reisin platters/20251208_083446201_iOS.webp" alt="Resin Platters" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+            <!-- Card 2: Enadu Teleugu -->
+            <div onclick="openVideoModal('dQw4w9WgXcQ')" class="achievement-card" style="cursor: pointer;">
+              <div class="achievement-frame">
+                <img src="./images/top icon 2.webp" alt="Enadu Teleugu" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Media Spotlight</p>
+                <h3>Enadu Teleugu</h3>
+                <span class="achievement-link">Watch Now ↗</span>
+              </div>
             </div>
-            <h4 class="dark-card-title">Resin Platters</h4>
-            <p class="dark-card-meta">Folder: Reisin platters</p>
-          </article>
 
-          <!-- Mini Paintings Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/Mini Paintings/20250102_103416950_iOS.webp" alt="Mini Paintings" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
-            </div>
-            <h4 class="dark-card-title">Mini Paintings</h4>
-            <p class="dark-card-meta">Folder: Mini Paintings</p>
-          </article>
-
-          <!-- Resin Coasters Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/Resisin coasters/20251118_064336234_iOS.webp" alt="Resin Coasters" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
-            </div>
-            <h4 class="dark-card-title">Resin Coasters</h4>
-            <p class="dark-card-meta">Folder: Resisin coasters</p>
-          </article>
-
-          <!-- Relief Art Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/Relief art works/20251113_084338911_iOS.webp" alt="Relief Art" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
-            </div>
-            <h4 class="dark-card-title">Relief Art</h4>
-            <p class="dark-card-meta">Folder: Relief art works</p>
-          </article>
-
-          <!-- Nameplates Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/others/20230221_103200186_iOS.webp" alt="Nameplates" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
-            </div>
-            <h4 class="dark-card-title">Nameplates</h4>
-            <p class="dark-card-meta">Folder: Name plates</p>
-          </article>
-
-          <!-- Fridge Magnets Folder -->
-          <article class="blog-card reveal">
-            <div class="img-wrapper" style="aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;">
-              <img src="./images/Fridge Magnets/20251118_160757000_iOS.webp" alt="Fridge Magnets" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
-            </div>
-            <h4 class="dark-card-title">Fridge Magnets</h4>
-            <p class="dark-card-meta">Folder: Fridge Magnets</p>
-          </article>
+            <!-- Card 3: News 1 - Kannada -->
+            <a href="https://www.google.com" target="_blank" class="achievement-card" style="text-decoration: none; display: block;">
+              <div class="achievement-frame">
+                <img src="./images/top icon 3.webp" alt="News 1 - Kannada" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Press Feature</p>
+                <h3>News 1 - Kannada</h3>
+                <span class="achievement-link">Read News ↗</span>
+              </div>
+            </a>
+          </div>
         </div>
+
+        <div id="exhibitions" class="blog-category-section">
+          <h2 class="blog-category-title">Major Exhibitions</h2>
+          <p style="color: #888; margin-bottom: 4rem; font-size: 1.1rem; text-align: center;">Showcasing handcrafted collections at prestigious art venues across the country.</p>
+          <div class="achievements-grid four-cols">
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Wall Murals.webp" alt="Exhibition 1" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Chitrakala Parishath, 2023</p>
+                <h3>The Soul of India</h3>
+                <p class="exhibition-desc">A grand showcase of handcrafted masterpieces celebrating tradition in a modern context.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Resin Art Works.webp" alt="Exhibition 2" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Art Houz Bangalore, 2023</p>
+                <h3>Gloss & Glamour</h3>
+                <p class="exhibition-desc">An exclusive gallery event featuring high-end resin art and luxe collectibles.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/landscapes.webp" alt="Exhibition 3" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Regional Art Conclave, 2022</p>
+                <h3>Serene Horizons</h3>
+                <p class="exhibition-desc">Interactive display of breathtaking landscapes capturing nature's true essence.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/texture art.webp" alt="Exhibition 4" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Studio Showcase, 2022</p>
+                <h3>Tactile Journeys</h3>
+                <p class="exhibition-desc">Behind the scenes at Studio Showcase, exploring the process of relief artworks and murals.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Devotional art.webp" alt="Exhibition 5" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Heritage Art Festival, 2021</p>
+                <h3>Divine Expressions</h3>
+                <p class="exhibition-desc">A heritage-focused exhibition highlighting soulful devotional art across various mediums.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Fabric Art.webp" alt="Exhibition 6" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Modern Living Expo, 2021</p>
+                <h3>Woven Stories</h3>
+                <p class="exhibition-desc">Showcasing how artistic fabric designs can transform contemporary living spaces.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/portraits/20240604_042045958_iOS.webp" alt="Exhibition 7" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Art Conclave, 2020</p>
+                <h3>Nature's Pulse</h3>
+                <p class="exhibition-desc">An evocative presentation exploring organic textures and the rhythm of the natural world.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/portraits/20241216_033734898_iOS (1).webp" alt="Exhibition 8" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Sculptors Meet, 2019</p>
+                <h3>Eternal Clay</h3>
+                <p class="exhibition-desc">A retrospective focus on the permanence of form and classical inspiration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="workshops" class="blog-category-section">
+          <h2 class="blog-category-title">Art Workshops</h2>
+          <p style="color: #888; margin-bottom: 4rem; font-size: 1.1rem; text-align: center;">Spreading the joy of handcrafting through guided masterclasses and sessions.</p>
+          <div class="achievements-grid four-cols">
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/others/20240108_022036000_iOS.webp" alt="Workshop 1" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Studio Session, 2023</p>
+                <h3>Texture Art Workshop</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Reisin platters/20251208_083446201_iOS.webp" alt="Workshop 2" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Community Center, 2023</p>
+                <h3>Resin Art Basics</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Wall Murals.webp" alt="Workshop 3" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Art School, 2022</p>
+                <h3>Mural Masterclass</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Fabric Art.webp" alt="Workshop 4" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Weekend Workshop, 2022</p>
+                <h3>Fabric Painting</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/Mini Paintings/20250102_103416950_iOS.webp" alt="Workshop 5" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Cultural Meet, 2021</p>
+                <h3>Miniature Strokes</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/others/20241215_101215951_iOS.webp" alt="Workshop 6" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Outdoor Session, 2021</p>
+                <h3>Modern Landscapes</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/portraits/20240604_042104892_iOS.webp" alt="Workshop 7" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Studio Class, 2020</p>
+                <h3>Portrait Sketching</h3>
+              </div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="achievement-frame gallery-item">
+                <img src="./images/others/20241121_121710712_iOS.webp" alt="Workshop 8" loading="lazy" />
+              </div>
+              <div class="achievement-info">
+                <p>Art Festival, 2020</p>
+                <h3>Mixed Media Fun</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
-      <!-- New Section: Other Creations Folder -->
+
+      <!-- Section: Other Creations Gallery -->
       <section class="section-padding" style="background: #111; border-top: 1px solid #333;">
         <div class="section-header mb-8">
           <h2 class="section-title" style="color: #fff; font-size: 3rem;">Other Creations</h2>
@@ -455,34 +527,6 @@
           </article>
         </div>
       </section>
-      <!-- New Section: Full Studio Gallery Folder -->
-      <section class="section-padding" style="background: #121212; border-top: 1px solid #222;">
-        <div class="section-header mb-8">
-          <h2 class="section-title" style="color: #fff; font-size: 3rem;">Full Studio Gallery</h2>
-          <p class="body-text" style="color: #888;">A curated selection of artistic highlights and studio masterpieces.</p>
-        </div>
-        
-        <div class="gallery-grid">
-          <div class="gallery-item"><img src="./images/others/20241215_101215951_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/others/20220617_005101000_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240909_111438492_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20220724_110432822_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20251223_095552228_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/others/20240108_022036000_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/others/20220724_113057027_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/portraits/20240604_042245694_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20250308_070625554_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240519_104254466_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/others/20251223_110255064_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240519_104304431_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20220617_005100000_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240819_062132170_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/others/20230503_105152993_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240604_042318458_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240519_104459919_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-          <div class="gallery-item"><img src="./images/Gallery/20240612_122551149_iOS.webp" alt="Gallery Work" loading="lazy" /></div>
-        </div>
-      </section>
     </main>
 
     <!-- Footer -->
@@ -495,7 +539,7 @@
             <a href="./legacy.html">About me</a>
             <a href="./about-services.html">Services</a>
             <a href="./collection.html">Products</a>
-            <a href="./index.html#gallery">Gallery / Other Works</a>
+            <a href="./index.html#gallery">Art/Gallery</a>
             <a href="./privacy.html">Privacy Policy</a>
             <a href="./terms.html">Terms and Conditions</a>
           </div>
@@ -520,6 +564,35 @@
       </div>
     </footer>
     <script src="./main.js"></script>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+        <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+        <div class="video-modal-content">
+            <div class="video-responsive-container">
+                <iframe id="videoPlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function openVideoModal(videoId) {
+          const modal = document.getElementById('videoModal');
+          const player = document.getElementById('videoPlayer');
+          player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+      }
+
+      function closeVideoModal() {
+          const modal = document.getElementById('videoModal');
+          const player = document.getElementById('videoPlayer');
+          player.src = '';
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+      }
+    </script>
   </body>
 </html>
 

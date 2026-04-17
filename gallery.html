@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exquisite Art Gallery | Handcrafted by Kajal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* Luxury Page Hero Styles */
+      .gallery-hero {
+        position: relative;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('./images/texture art.webp') center/cover no-repeat fixed;
+        padding-top: 5rem;
+      }
+      .gallery-hero-inner {
+        max-width: 900px;
+        padding: 0 5%;
+      }
+      .header.transparent-gallery {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        color: #fff;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 5%;
+      }
+      .header.transparent-gallery .logo { color: #fff; }
+      .header.transparent-gallery .icon-btn { color: #fff; border-color: rgba(255,255,255,0.4); }
+      .header.transparent-gallery .search-inline-input { color: #fff; }
+      .header.transparent-gallery .search-wrapper.active { background: rgba(255,255,255,0.1); border-color: #fff; }
+    </style>
+  </head>
+  <body>
+    <header class="header transparent-gallery">
+      <a href="./index.html" class="logo">HANDCRAFTED<br>BY KAJAL</a>
+      <div class="nav-actions" style="display: flex; gap: 0.5rem; align-items: center;">
+        <div class="search-wrapper">
+          <input type="text" class="search-inline-input" placeholder="Search..." />
+          <button class="icon-btn search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </div>
+        <div class="menu-wrapper" style="position: relative;">
+          <button class="icon-btn menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="menu-dropdown">
+            <a href="./index.html">Home page</a>
+            <a href="./legacy.html">About me</a>
+            <a href="./about-services.html">Services</a>
+            <a href="./collection.html">Products</a>
+            <a href="./gallery.html">Art/Gallery</a>
+            <a href="./index.html#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery-hero">
+        <div class="gallery-hero-inner reveal">
+            <h1 class="hero-title" style="font-family: serif; font-weight: 300; font-style: italic; font-size: clamp(3rem, 10vw, 6rem); margin-bottom: 2rem; letter-spacing: -0.02em; color: #fff;">Modern Art Archive</h1>
+            <p class="body-text mx-auto" style="max-width: 800px; color: #eee; font-size: 1.3rem; line-height: 1.8; font-weight: 300;">Explore the complete digital archive of Kajal's handcrafted masterpieces. Each work represents a journey of textures, colors, and emotions, meticulously curated to inspire your space.</p>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="gallery-grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));">
+            <div class="gallery-item"><img src="./images/Gallery/20220617_005100000_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20220617_005101000_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20220724_110432822_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20220724_113057027_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20230503_105152993_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240108_022036000_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240519_104254466_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240519_104304431_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240519_104459919_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240604_042245694_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240604_042318458_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240612_122551149_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240819_062132170_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20240909_111438492_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20241121_121654412_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20241215_101215951_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20241216_034046027_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20250101_012154300_iOS 1.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20250101_013241500_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20250308_070625554_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20250308_103759723_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20250918_063839791_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20251123_042733610_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20251223_095552228_iOS.webp" alt="Art Work" loading="lazy" /></div>
+            <div class="gallery-item"><img src="./images/Gallery/20251223_110255064_iOS (1).webp" alt="Art Work" loading="lazy" /></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark text-light">
+      <div class="footer-top flex-between mb-8">
+        <div class="footer-logo">
+          <a href="./index.html" class="logo" style="color:#fff;">HANDCRAFTED<br>BY KAJAL</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <div class="link-grid">
+            <a href="./index.html">Home</a>
+            <a href="./legacy.html">About</a>
+            <a href="./collection.html">Products</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-huge-text">
+        <h2>Handcrafted</h2>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Handcrafted by Kajal. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/the_handcrafted_by_kajal/" target="_blank">Instagram ↗</a>
+          <a href="#">Facebook ↗</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
