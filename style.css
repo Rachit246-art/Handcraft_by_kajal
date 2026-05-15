@@ -828,7 +828,8 @@ h5 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
   }
   .service-slide .testimonial-image {
-    height: 180px !important; /* Smaller, fixed height image on mobile */
+    aspect-ratio: 4/3 !important;
+    height: auto !important;
     display: block !important;
     visibility: visible !important;
   }
@@ -895,8 +896,10 @@ h5 {
 .service-slide .testimonial-image {
   position: relative;
   width: 100%;
-  height: 280px; /* Fixed height for the image part */
+  aspect-ratio: 3/2;
+  height: auto;
   overflow: hidden;
+  background: #f5f5f5;
   z-index: 1;
 }
 
@@ -904,15 +907,18 @@ h5 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center; /* Show image from top, no white gap */
+  transform: scale(1);
   transition: transform 0.8s ease;
 }
 
 .service-slide:hover .testimonial-image img {
-  transform: scale(1.08);
+  transform: scale(1.04);
 }
 
 .service-slide .testimonial-overlay {
-  display: none; /* Removed dark overlay */
+  display: none !important; /* Ensure overlay is hidden */
+  background: none !important; /* Remove any dark gradient */
 }
 
 .service-slide .testimonial-content {
@@ -1167,6 +1173,32 @@ h5 {
 
 @media (max-width: 600px) {
   .exhibition-clean-grid { grid-template-columns: 1fr; }
+}
+
+/* --- 3-2 Centered Grid for 5 items --- */
+.exhibition-clean-grid.grid-5-centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.exhibition-clean-grid.grid-5-centered .exhibit-card {
+  flex: 0 0 calc(33.3333% - 1.666rem);
+  max-width: calc(33.3333% - 1.666rem);
+}
+
+@media (max-width: 1100px) {
+  .exhibition-clean-grid.grid-5-centered .exhibit-card {
+    flex: 0 0 calc(50% - 1.25rem);
+    max-width: calc(50% - 1.25rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .exhibition-clean-grid.grid-5-centered .exhibit-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .service-dots {
@@ -2050,9 +2082,16 @@ body>main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(20%) brightness(0.65);
+  /* Removed dark filter to restore image brightness */
   transform: scale(1.1);
   transition: transform 8s ease-out;
+}
+
+/* Ensure service section images are always visible from load */
+.services-slider-section .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
 }
 
 .testimonial-slide.active .testimonial-image img {
