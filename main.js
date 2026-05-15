@@ -298,6 +298,8 @@ const init = () => {
     // The gallery images and the complete collection masonry images should open in the lightbox
     const galleryGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img'));
 
+    // Grouping logic for Lightbox
+    let activeGroup = [];
     let currentGalleryIndex = -1;
 
     const closeLightbox = () => {
@@ -310,7 +312,7 @@ const init = () => {
     };
 
     const showGalleryImage = (index) => {
-      if (index >= galleryGroup.length || index < 0) {
+      if (index >= activeGroup.length || index < 0) {
         closeLightbox();
         return;
       }
@@ -319,29 +321,53 @@ const init = () => {
       
       lightboxImg.style.opacity = '0.3';
       setTimeout(() => {
-        lightboxImg.src = galleryGroup[currentGalleryIndex].src;
+        lightboxImg.src = activeGroup[currentGalleryIndex].src;
         lightboxImg.style.opacity = '1';
       }, 150);
     };
 
-    galleryGroup.forEach((img, index) => {
-      img.classList.add('lightbox-cursor');
-      img.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        currentGalleryIndex = index;
+    // Global listener for lightbox-enabled images
+    document.addEventListener('click', (e) => {
+      const img = e.target.closest('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .testimonial-image img, [data-gallery]');
+      
+      if (!img) return;
+      
+      e.preventDefault();
+      e.stopPropagation();
+
+      const galleryId = img.getAttribute('data-gallery');
+      if (galleryId) {
+        // Only images in this specific gallery
+        activeGroup = Array.from(document.querySelectorAll(`[data-gallery="${galleryId}"]`));
+      } else {
+        // Default global group
+        activeGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .testimonial-image img'));
+      }
+
+      currentGalleryIndex = activeGroup.indexOf(img);
+      
+      if (activeGroup.length <= 1) {
+        if (lightboxPrev) lightboxPrev.style.display = 'none';
+        if (lightboxNext) lightboxNext.style.display = 'none';
+      } else {
         if (lightboxPrev) lightboxPrev.style.display = 'flex';
         if (lightboxNext) lightboxNext.style.display = 'flex';
+      }
 
-        lightboxImg.src = img.src;
-        lightboxImg.style.opacity = '1';
-        
-        lightbox.style.display = 'flex';
-        setTimeout(() => { lightbox.classList.add('active'); }, 10);
-        document.body.style.overflow = 'hidden'; 
-      });
+      lightboxImg.src = img.src;
+      lightboxImg.style.opacity = '1';
+      
+      lightbox.style.display = 'flex';
+      setTimeout(() => { lightbox.classList.add('active'); }, 10);
+      document.body.style.overflow = 'hidden'; 
     });
+
+    // Apply lightbox cursor to all valid images
+    const applyLightboxCursor = () => {
+      const allGalleries = document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .testimonial-image img, [data-gallery]');
+      allGalleries.forEach(img => img.classList.add('lightbox-cursor'));
+    };
+    applyLightboxCursor();
 
     if (lightboxPrev) lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); showGalleryImage(currentGalleryIndex - 1); });
     if (lightboxNext) lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); showGalleryImage(currentGalleryIndex + 1); });
@@ -356,7 +382,7 @@ const init = () => {
     }
 
     document.addEventListener('keydown', (e) => {
-      if (!lightbox.classList.contains('active')) return;
+      if (!lightbox || !lightbox.classList.contains('active')) return;
       if (e.key === 'Escape') closeLightbox();
       
       if (currentGalleryIndex !== -1) {
@@ -475,29 +501,35 @@ const init = () => {
 
     const showService = (index) => {
       const totalSlides = serviceSlides.length;
-      let visibleSlides = 3;
-      if (window.innerWidth <= 768) visibleSlides = 1;
-      else if (window.innerWidth <= 1100) visibleSlides = 2;
+      if (totalSlides === 0) return;
 
-      const maxIndex = totalSlides - visibleSlides;
+      // If screen is wider than 1100px, we are in grid mode
+      if (window.innerWidth > 1100) {
+        serviceCarousel.style.transform = 'none';
+        return; 
+      }
 
-      if (index > maxIndex) currentService = 0;
-      else if (index < 0) currentService = maxIndex;
+      // Cycle index
+      if (index >= totalSlides) currentService = 0;
+      else if (index < 0) currentService = totalSlides - 1;
       else currentService = index;
 
-      // Calculate offset based on slide width and gap
+      const wrapper = document.querySelector('.services-carousel-wrapper');
+      const wrapperWidth = wrapper.offsetWidth;
       const slideWidth = serviceSlides[0].offsetWidth;
-      const gap = 24; // Matches the gap in CSS
       
-      const offset = -(currentService * (slideWidth + gap));
+      // Get the actual computed gap from CSS
+      const computedStyle = window.getComputedStyle(serviceCarousel);
+      const gap = parseFloat(computedStyle.gap) || 24;
+      
+      // Precise centering calculation
+      const offset = (wrapperWidth / 2) - (slideWidth / 2) - (currentService * (slideWidth + gap));
       serviceCarousel.style.transform = `translateX(${offset}px)`;
 
       // Update dots
       serviceDots.forEach((dot, i) => {
         dot.classList.toggle('active', i === currentService);
-        // Only show dots that correspond to a valid start index
-        if (i > maxIndex) dot.style.display = 'none';
-        else dot.style.display = 'block';
+        dot.style.display = 'block';
       });
     };
 
@@ -506,25 +538,65 @@ const init = () => {
 
     const startServiceAuto = () => { 
       stopServiceAuto();
-      serviceAutoInterval = setInterval(nextService, 5000); 
+      if (window.innerWidth <= 1100) {
+        serviceAutoInterval = setInterval(nextService, 4000); 
+      }
     };
-    const stopServiceAuto = () => { clearInterval(serviceAutoInterval); };
+    const stopServiceAuto = () => { if (serviceAutoInterval) clearInterval(serviceAutoInterval); };
 
-    if(serviceNextBtn) serviceNextBtn.onclick = () => { nextService(); stopServiceAuto(); startServiceAuto(); };
-    if(servicePrevBtn) servicePrevBtn.onclick = () => { prevService(); stopServiceAuto(); startServiceAuto(); };
+    if(serviceNextBtn) {
+      serviceNextBtn.onclick = (e) => {
+        e.preventDefault();
+        nextService(); 
+        stopServiceAuto(); 
+        startServiceAuto(); 
+      };
+    }
+    
+    if(servicePrevBtn) {
+      servicePrevBtn.onclick = (e) => {
+        e.preventDefault();
+        prevService(); 
+        stopServiceAuto(); 
+        startServiceAuto(); 
+      };
+    }
 
     serviceDots.forEach((dot, index) => {
-      dot.onclick = () => { showService(index); stopServiceAuto(); startServiceAuto(); };
+      dot.onclick = () => { 
+        showService(index); 
+        stopServiceAuto(); 
+        startServiceAuto(); 
+      };
     });
 
     serviceCarousel.onmouseenter = stopServiceAuto;
     serviceCarousel.onmouseleave = startServiceAuto;
 
-    // Handle responsiveness on resize
-    window.addEventListener('resize', () => showService(currentService));
+    // Handle touch events for mobile swiping
+    let touchStartX = 0;
+    serviceCarousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopServiceAuto();
+    }, {passive: true});
+
+    serviceCarousel.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 50) nextService();
+      if (touchEndX - touchStartX > 50) prevService();
+      startServiceAuto();
+    }, {passive: true});
+
+    window.addEventListener('resize', () => {
+        showService(currentService);
+        // Restart auto-slide only if it's supposed to be running
+        if (window.innerWidth <= 1100) startServiceAuto();
+        else stopServiceAuto();
+    });
 
     startServiceAuto();
-    showService(0); // Initial state
+    // Use a small delay to ensure rendering is complete before first center
+    setTimeout(() => showService(0), 150);
   }
 };
 

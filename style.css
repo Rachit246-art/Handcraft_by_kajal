@@ -767,7 +767,7 @@ h5 {
 
 @media (max-width: 768px) {
   .services-carousel-wrapper {
-    padding: 10px 0 10px 7.5%;
+    padding: 10px 0; /* Removed left padding to allow centering */
   }
 }
 
@@ -824,7 +824,7 @@ h5 {
     width: 85vw !important;
     min-height: 480px !important;
     height: auto !important;
-    margin-right: 15px !important;
+    /* margin-right: 15px removed to prevent centering offset issues */
     box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
   }
   .service-slide .testimonial-image {
@@ -847,6 +847,34 @@ h5 {
     margin-bottom: 1.5rem !important;
   }
 }
+
+/* Desktop Grid for Services (4 in a row) */
+@media (min-width: 1101px) {
+  .services-carousel-wrapper {
+    padding: 0 5%;
+    overflow: visible; /* Show all cards */
+  }
+  .services-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 30px;
+    padding: 40px 0;
+    transform: none !important; /* Force reset for any JS carousel logic */
+    transition: none !important;
+  }
+  .service-slide {
+    flex: none;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+  }
+  /* Hide carousel controls only for services on desktop */
+  .services-carousel-wrapper .testimonial-controls {
+    display: none !important;
+  }
+}
+
 
 /* Responsive Header */
 @media (max-width: 768px) {
@@ -2499,6 +2527,86 @@ body>main {
 
 .blog-category-section .exhibition-desc {
   color: #aaa;
+}
+
+/* Refined Exhibition Grid (Used on Home & Blog) */
+.exhibition-clean-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.exhibit-card {
+  flex: 0 0 calc(25% - 1.875rem);
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.exhibit-mini-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.exhibit-mini-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.exhibit-card:hover .exhibit-mini-img img {
+  transform: scale(1.05);
+}
+
+.exhibit-info-clean {
+  text-align: left;
+}
+
+.exhibit-info-clean h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: inherit;
+}
+
+.exhibit-info-clean p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.bg-dark .exhibit-info-clean p {
+  color: #aaa;
+}
+
+@media (max-width: 1200px) {
+  .exhibition-clean-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .exhibit-card {
+    flex: 0 0 calc(50% - 1.25rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .exhibit-card {
+    flex: 0 0 100%;
+  }
 }
 
 .blog-category-section .achievement-link {
