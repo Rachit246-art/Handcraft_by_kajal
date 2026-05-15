@@ -3,7 +3,7 @@ import re
 
 # Define the base path
 base_path = r'c:\Users\MSI\Downloads\Handcraft-main\Handcraft-main'
-workshops_path = os.path.join(base_path, 'images', 'workshops')
+workshops_path = os.path.join(base_path, 'images', 'Workshops')
 
 # Map workshop titles to folder names
 workshop_data = [
@@ -57,10 +57,10 @@ def generate_workshop_grid(items_list):
             cover_src = "./images/others/placeholder.webp"
             hidden_imgs = ""
         else:
-            cover_src = f"./images/workshops/{item['folder']}/{images[0]}"
+            cover_src = f"./images/Workshops/{item['folder']}/{images[0]}"
             hidden_imgs = ""
             for img in images:
-                hidden_imgs += f'\n            <img src="./images/workshops/{item["folder"]}/{img}" data-gallery="{gallery_id}" style="display:none;" />'
+                hidden_imgs += f'\n            <img src="./images/Workshops/{item["folder"]}/{img}" data-gallery="{gallery_id}" style="display:none;" />'
         
         delay_class = f" anim-delay-{i}" if i > 0 else ""
         html += f"""
