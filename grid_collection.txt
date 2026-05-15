@@ -547,15 +547,15 @@
             <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
           </div>
           <div class="masonry-item work-card reveal " data-category="mural">
-            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0069.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0069.webp" alt="WALL MURAL ART" loading="lazy" class="rotate-left"></div>
             <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
           </div>
           <div class="masonry-item work-card reveal " data-category="mural">
-            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0004.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0004.webp" alt="WALL MURAL ART" loading="lazy" class="rotate-left"></div>
             <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
           </div>
           <div class="masonry-item work-card reveal " data-category="mural">
-            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0005.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0005.webp" alt="WALL MURAL ART" loading="lazy" class="rotate-left"></div>
             <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
           </div>
           <div class="masonry-item work-card reveal " data-category="mural">

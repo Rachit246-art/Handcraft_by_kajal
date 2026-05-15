@@ -3149,3 +3149,17 @@ body>main {
       height: 28px !important;
   }
 }
+
+.rotate-left {
+  transform: rotate(-90deg) !important;
+  transition: none !important;
+  object-fit: cover !important;
+}
+
+/* Specifically prevent hover effects from destabilizing the rotation */
+.work-card:hover .img-wrapper img.rotate-left,
+.gallery-item:hover img.rotate-left,
+.masonry-item:hover img.rotate-left {
+  transform: rotate(-90deg) !important;
+  scale: 1 !important;
+}
