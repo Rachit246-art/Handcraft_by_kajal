@@ -336,13 +336,22 @@ const init = () => {
       e.stopPropagation();
 
       const galleryId = img.getAttribute('data-gallery');
+      let allInGallery = [];
       if (galleryId) {
         // Only images in this specific gallery
-        activeGroup = Array.from(document.querySelectorAll(`[data-gallery="${galleryId}"]`));
+        allInGallery = Array.from(document.querySelectorAll(`[data-gallery="${galleryId}"]`));
       } else {
         // Default global group
-        activeGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img'));
+        allInGallery = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img'));
       }
+
+      // Filter out duplicates based on src to prevent same image appearing twice
+      const seenSrcs = new Set();
+      activeGroup = allInGallery.filter(el => {
+        if (seenSrcs.has(el.src)) return false;
+        seenSrcs.add(el.src);
+        return true;
+      });
 
       currentGalleryIndex = activeGroup.indexOf(img);
       

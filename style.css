@@ -1583,7 +1583,8 @@ h5 {
 .newsletter-form {
   display: flex;
   position: relative;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 .newsletter-form input {
@@ -1624,7 +1625,7 @@ h5 {
   gap: 12px;
   font-size: 0.85rem;
   color: #999;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   line-height: 1.5;
 }
 
@@ -3087,8 +3088,12 @@ body>main {
   }
   
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+  }
+
+  .brand-col, .contact-col {
+    grid-column: span 2;
   }
   
   .service-slide {
