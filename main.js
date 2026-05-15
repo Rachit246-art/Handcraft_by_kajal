@@ -328,7 +328,7 @@ const init = () => {
 
     // Global listener for lightbox-enabled images
     document.addEventListener('click', (e) => {
-      const img = e.target.closest('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .testimonial-image img, [data-gallery]');
+      const img = e.target.closest('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, [data-gallery]');
       
       if (!img) return;
       
@@ -341,7 +341,7 @@ const init = () => {
         activeGroup = Array.from(document.querySelectorAll(`[data-gallery="${galleryId}"]`));
       } else {
         // Default global group
-        activeGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .testimonial-image img'));
+        activeGroup = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img'));
       }
 
       currentGalleryIndex = activeGroup.indexOf(img);
@@ -364,7 +364,7 @@ const init = () => {
 
     // Apply lightbox cursor to all valid images
     const applyLightboxCursor = () => {
-      const allGalleries = document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .testimonial-image img, [data-gallery]');
+      const allGalleries = document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, [data-gallery]');
       allGalleries.forEach(img => img.classList.add('lightbox-cursor'));
     };
     applyLightboxCursor();
