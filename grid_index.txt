@@ -1,0 +1,1148 @@
+        <!-- ACRYLIC PAINTINGS -->        <div class="work-card reveal" data-category="all acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---Arcylic.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Vibrant handcrafted artworks created with rich textures and colors.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_110255064_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241007_141649000_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241004_102402387_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241215_101215951_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241214_093758901_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241107_121816473_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20250822_114344796_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_095547834_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_095539982_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241216_033810275_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241121_120650076_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_091525401_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241007_141650000_iOS_1.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_103800307_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241107_122618531_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241107_122907011_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241007_141649000_iOS_2.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241216_033656143_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_093055930_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_095536278_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+          </div>
+        </div>
+        <!-- FABRIC PAINTINGS -->        <div class="work-card reveal" data-category="all fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Home_page/home---product---fabric-painting.png" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Artistic designs painted on fabric, blending creativity with wearable and decorative art.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/saree.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/imag 1.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/imag 1a.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/20240420_061057705_iOS.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/saree 1.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/20250919_113834134_iOS.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/20251205_081614188_iOS.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/20240420_061009973_iOS.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/FABRIC PAINTING.webp" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+          </div>
+        </div>
+        <!-- MINI PAINTINGS -->        <div class="work-card reveal" data-category="all mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product----minipaintings.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Small yet expressive artworks that capture beauty in compact forms.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20250918_064219257_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20241112_115742545_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20241021_091739034_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/VALENTINE1C1A.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20250926_020850000_iOS3.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20260414_074048871_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/Minipainting2.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/VALENTINE1C5.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20240819_062133835_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20260415_094900428_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/VALENTINE1C3.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/Minipainting1.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20250724_094152180_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/Minipainting3.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20250918_064201443_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/20240909_111432382_iOS.jpg" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <!-- HANDCRAFTED PHONE CASES -->        <div class="work-card reveal" data-category="all phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---phonecases.png" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Custom Hand painted artistic phone cases designed to add personality and creativity to everyday essentials.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1698.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1703.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/20251211_070618209_iOS.jpg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/20251211_070612675_iOS.jpg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/20250509_104051775_iOS.jpg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/20251211_070538219_iOS.jpg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1700.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1699.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1701.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1702.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/20250918_102636949_iOS.jpg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_1697.JPG.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <!-- FRIDGE MAGNETS -->        <div class="work-card reveal" data-category="all magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---fridge-magent.png" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Handcrafted miniature art pieces that bring charm and creativity to spaces.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/DOG 5.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/20251121_064926468_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/20251121_065233010_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/DOG 2.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/DOG 4.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/DOG 1.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/20251121_065230995_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/DOG 3.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/DOG 6.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+          </div>
+        </div>
+        <!-- CUSTOM PORTRAITS -->        <div class="work-card reveal" data-category="all portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---portraits.png" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Personalized portraits crafted to preserve emotions, memories, and individuality.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20251226_103015984_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20250304_052056749_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20251225_124816510_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20250721_110541655_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20250214_122818727_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20240823_091655909_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20250328_055414012_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20240829_084956840_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20250609_064810744_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20250302_070131967_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20251125_130357098_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20241116_085036672_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20251226_103011877_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/20240715_120516856_iOS.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <!-- RESIN RING PLATTERS -->        <div class="work-card reveal" data-category="all platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---ring-platter.png" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Elegant handcrafted platters designed to beautifully present rings and special moments.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251226_100632188_iOS-copy-0.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251208_083414668_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251206_083423215_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251208_082925851_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251208_083510652_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251208_083042020_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251208_084259408_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251226_095928905_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251208_082922235_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="platter">
+          <div class="img-wrapper portrait">
+            <img src="./images/Ring Platter/20251226_095948515_iOS.jpg" alt="RESIN RING PLATTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN RING PLATTERS</h4>
+          </div>
+        </div>
+        <!-- RESIN DECORS -->        <div class="work-card reveal" data-category="all resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Home_page/home---product---resin-decor.png" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Unique resin-crafted décor pieces combining modern aesthetics with artistic detail.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20230607_102113024_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20240819_061615764_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20240819_061837466_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20240819_060232631_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20250102_120724857_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20250104_135156034_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20250104_134715037_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20230607_103235923_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Reisin platters/20250104_134035183_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+          </div>
+        </div>
+        <!-- RESIN COASTERS -->        <div class="work-card reveal" data-category="all resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---resin-artwork.png" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Fluid and glossy resin creations inspired by texture, depth, and imagination.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20240529_103505859_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20230411_133353000_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20240529_103622629_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20230410_114839469_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20230227_113449000_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20240529_103308581_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20230608_074947846_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20230511_055921284_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Artworks/20251119_125521341_iOS.jpg" alt="RESIN COASTERS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN COASTERS</h4>
+          </div>
+        </div>
+        <!-- RELIEF ART WORKS -->        <div class="work-card reveal" data-category="all texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---texture-art.png" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Dimensional artworks that bring depth, movement, and emotion through layered textures.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/20250403_120628991_iOS.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/20250308_134605680_iOS.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/texture-2.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/20250308_134557181_iOS.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/20250403_120804733_iOS.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/20250308_134548902_iOS.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/texture-3.jpg" alt="RELIEF ART WORKS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RELIEF ART WORKS</h4>
+          </div>
+        </div>
+        <!-- WEDDING INVITATIONS -->        <div class="work-card reveal" data-category="all invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product----wedding-invite.png" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Customized artistic invitations designed to make every celebration feel timeless and personal.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240413_162049915_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094004353_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240520_052422732_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094915915_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240413_161840945_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240520_052251352_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094028613_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094922622_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094925004_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240413_162026956_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <!-- WALL MURAL ARTS -->        <div class="work-card reveal" data-category="all mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Home_page/home---product---wall-mural-art.png" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Statement art pieces created to transform spaces with beauty, emotion, and character.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/DSC_0069.webp" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/DSC_0004.webp" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/DSC_0005.webp" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/PXL_20250503_122245225.webp" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/PXL_20250503_122828215.webp" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>

@@ -1,0 +1,584 @@
+          <!-- ACRYLIC PAINTING -->          <div class="masonry-item work-card reveal portrait" data-category="all acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_103800307_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_103800307_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241007_141649000_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241214_093758901_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_095539982_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_095547834_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241121_120650076_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241216_033656143_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_091525401_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20250822_114344796_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_095536278_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241215_101215951_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241107_122618531_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241216_033810275_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_093055930_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241107_122907011_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241004_102402387_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241007_141650000_iOS_1.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241107_121816473_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20241007_141649000_iOS_2.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="acrylic">
+            <div class="img-wrapper"><img src="./images/Acrylic Paintings/20251223_110255064_iOS.jpg" alt="ACRYLIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>ACRYLIC PAINTING</h4><p>VIBRANT</p></div>
+          </div>
+          <!-- FABRIC PAINTING -->          <div class="masonry-item work-card reveal square" data-category="all fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/20251205_081614188_iOS.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/20251205_081614188_iOS.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/20250919_113834134_iOS.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/saree 1.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/imag 1.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/saree.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/20240420_061057705_iOS.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/imag 1a.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/FABRIC PAINTING.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="fabric">
+            <div class="img-wrapper"><img src="./images/Fabric Painting/20240420_061009973_iOS.webp" alt="FABRIC PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>FABRIC PAINTING</h4><p>ARTISTIC DESIGN</p></div>
+          </div>
+          <!-- MINI PAINTING -->          <div class="masonry-item work-card reveal portrait" data-category="all mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20240909_111432382_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20240909_111432382_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/VALENTINE1C1A.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/Minipainting3.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20241021_091739034_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20250918_064201443_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20250724_094152180_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20250918_064219257_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20260415_094900428_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20241112_115742545_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20260414_074048871_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/Minipainting2.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/VALENTINE1C3.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/VALENTINE1C5.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/Minipainting1.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20240819_062133835_iOS.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="mini">
+            <div class="img-wrapper"><img src="./images/Mini Paintings/20250926_020850000_iOS3.jpg" alt="MINI PAINTING" loading="lazy"></div>
+            <div class="work-info"><h4>MINI PAINTING</h4><p>DÃ‰COR</p></div>
+          </div>
+          <!-- HANDCRAFTED PHONE CASE -->          <div class="masonry-item work-card reveal " data-category="all phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1699.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1699.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1698.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/20251211_070612675_iOS.jpg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1702.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1703.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/20250918_102636949_iOS.jpg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/20251211_070618209_iOS.jpg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/20250509_104051775_iOS.jpg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/20251211_070538219_iOS.jpg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1701.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1697.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="phonecases">
+            <div class="img-wrapper"><img src="./images/Phone Cases/IMG_1700.JPG.jpeg" alt="HANDCRAFTED PHONE CASE" loading="lazy"></div>
+            <div class="work-info"><h4>HANDCRAFTED PHONE CASE</h4><p>CUSTOM ART</p></div>
+          </div>
+          <!-- FRIDGE MAGNET -->          <div class="masonry-item work-card reveal " data-category="all magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/20251121_065233010_iOS.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/20251121_065233010_iOS.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/20251121_065230995_iOS.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/DOG 3.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/20251121_064926468_iOS.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/DOG 2.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/DOG 1.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/DOG 4.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/DOG 6.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="magnets">
+            <div class="img-wrapper"><img src="./images/Fridge Magnets/DOG 5.webp" alt="FRIDGE MAGNET" loading="lazy"></div>
+            <div class="work-info"><h4>FRIDGE MAGNET</h4><p>MINI ART</p></div>
+          </div>
+          <!-- CUSTOM PORTRAIT -->          <div class="masonry-item work-card reveal portrait" data-category="all portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250328_055414012_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250328_055414012_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250302_070131967_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20251125_130357098_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250609_064810744_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20240715_120516856_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20241116_085036672_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20240420_061009973_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20240823_091655909_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20251205_081614188_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20240420_061057705_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250919_113834134_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20240829_084956840_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250721_110541655_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20251226_103011877_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250214_122818727_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20250304_052056749_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20251225_124816510_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <div class="masonry-item work-card reveal portrait" data-category="portraits">
+            <div class="img-wrapper"><img src="./images/portraits/20251226_103015984_iOS.jpg" alt="CUSTOM PORTRAIT" loading="lazy"></div>
+            <div class="work-info"><h4>CUSTOM PORTRAIT</h4><p>PERSONALIZED</p></div>
+          </div>
+          <!-- RESIN RING PLATTER -->          <div class="masonry-item work-card reveal " data-category="all platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_082922235_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_082922235_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_083510652_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251226_100632188_iOS-copy-0.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_083042020_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_083414668_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_082925851_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251226_095928905_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251206_083423215_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251208_084259408_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="platter">
+            <div class="img-wrapper"><img src="./images/Ring Platter/20251226_095948515_iOS.jpg" alt="RESIN RING PLATTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN RING PLATTER</h4><p>LUXURY</p></div>
+          </div>
+          <!-- RESIN DECOR -->          <div class="masonry-item work-card reveal square" data-category="all resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20250104_134035183_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20250104_134035183_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20250102_120724857_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20240819_060232631_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20230607_102113024_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20240819_061837466_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20240819_061615764_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20250104_134715037_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20230607_103235923_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <div class="masonry-item work-card reveal square" data-category="resindecor">
+            <div class="img-wrapper"><img src="./images/Reisin platters/20250104_135156034_iOS.jpg" alt="RESIN DECOR" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN DECOR</h4><p>UNIQUE DÃ‰COR</p></div>
+          </div>
+          <!-- RESIN COASTER -->          <div class="masonry-item work-card reveal " data-category="all resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20240529_103308581_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20240529_103308581_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20230227_113449000_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20251119_125521341_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20230608_074947846_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20240529_103505859_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20230410_114839469_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20230511_055921284_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20230411_133353000_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="resinart">
+            <div class="img-wrapper"><img src="./images/Resin Artworks/20240529_103622629_iOS.jpg" alt="RESIN COASTER" loading="lazy"></div>
+            <div class="work-info"><h4>RESIN COASTER</h4><p>PREMIUM</p></div>
+          </div>
+          <!-- RELIEF ART WORK -->          <div class="masonry-item work-card reveal " data-category="all texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/texture-3.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/texture-3.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/20250308_134605680_iOS.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/20250308_134548902_iOS.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/20250403_120628991_iOS.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/texture-2.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/20250308_134557181_iOS.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="texture">
+            <div class="img-wrapper"><img src="./images/Texture Art/20250403_120804733_iOS.jpg" alt="RELIEF ART WORK" loading="lazy"></div>
+            <div class="work-info"><h4>RELIEF ART WORK</h4><p>TEXTURE / DEPTH</p></div>
+          </div>
+          <!-- WEDDING INVITATION -->          <div class="masonry-item work-card reveal " data-category="all invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240413_161840945_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240413_161840945_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240520_052251352_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240414_094925004_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240414_094915915_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240414_094028613_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240414_094004353_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240413_162026956_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240520_052422732_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240414_094922622_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="invitations">
+            <div class="img-wrapper"><img src="./images/Wedding invitations/20240413_162049915_iOS.jpg" alt="WEDDING INVITATION" loading="lazy"></div>
+            <div class="work-info"><h4>WEDDING INVITATION</h4><p>CUSTOM DESIGN</p></div>
+          </div>
+          <!-- WALL MURAL ART -->          <div class="masonry-item work-card reveal " data-category="all mural">
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/PXL_20250503_122245225.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="mural">
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/PXL_20250503_122245225.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="mural">
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/PXL_20250503_122828215.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="mural">
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0004.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="mural">
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0069.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
+          </div>
+          <div class="masonry-item work-card reveal " data-category="mural">
+            <div class="img-wrapper"><img src="./images/Wall Mural Art/DSC_0005.webp" alt="WALL MURAL ART" loading="lazy"></div>
+            <div class="work-info"><h4>WALL MURAL ART</h4><p>STATEMENT ART</p></div>
+          </div>
