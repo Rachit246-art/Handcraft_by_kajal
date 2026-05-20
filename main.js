@@ -283,7 +283,13 @@ const init = () => {
       <div class="lightbox" id="lightbox">
         <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
         <button class="lightbox-prev" aria-label="Previous Image">&#10094;</button>
-        <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged Art" />
+        <div class="lightbox-wrapper">
+          <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged Art" />
+          <div class="lightbox-caption" id="lightbox-caption" style="display: none;">
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+            <p class="lightbox-desc" id="lightbox-desc"></p>
+          </div>
+        </div>
         <button class="lightbox-next" aria-label="Next Image">&#10095;</button>
       </div>
     `;
@@ -302,11 +308,135 @@ const init = () => {
     let activeGroup = [];
     let currentGalleryIndex = -1;
 
+    const updateLightboxCaption = (img) => {
+      const titleEl = document.getElementById('lightbox-title');
+      const descEl = document.getElementById('lightbox-desc');
+      const captionContainer = document.getElementById('lightbox-caption');
+      
+      if (!titleEl || !descEl || !captionContainer) return;
+
+      // Extract caption details
+      let title = '';
+      let description = '';
+
+      // 1. Check if inside a .work-card
+      const workCard = img.closest('.work-card');
+      if (workCard) {
+        const h4 = workCard.querySelector('h4');
+        const p = workCard.querySelector('p');
+        if (h4) title = h4.textContent.trim();
+        if (p) description = p.textContent.trim();
+      }
+
+      // 2. Check if inside/associated with an .exhibit-card
+      if (!title) {
+        const exhibitCard = img.closest('.exhibit-card');
+        if (exhibitCard) {
+          const h3 = exhibitCard.querySelector('h3');
+          const desc = exhibitCard.querySelector('.exhibition-desc');
+          const p = exhibitCard.querySelector('p');
+          if (h3) title = h3.textContent.trim();
+          if (desc) description = desc.textContent.trim();
+          else if (p) description = p.textContent.trim();
+        }
+      }
+
+      // 3. Check if hidden gallery image inside exhibit info
+      if (!title) {
+        const parentInfo = img.closest('.exhibit-info-clean');
+        if (parentInfo) {
+          const exhibitCard = parentInfo.closest('.exhibit-card');
+          if (exhibitCard) {
+            const h3 = exhibitCard.querySelector('h3');
+            const desc = exhibitCard.querySelector('.exhibition-desc');
+            if (h3) title = h3.textContent.trim();
+            if (desc) description = desc.textContent.trim();
+          }
+        }
+      }
+
+      // 4. Overrides via attributes
+      const imgAlt = img.getAttribute('alt');
+      const dataTitle = img.getAttribute('data-title') || img.getAttribute('title');
+      const dataCaption = img.getAttribute('data-caption');
+
+      if (dataTitle) title = dataTitle;
+      if (dataCaption) description = dataCaption;
+
+      // If no title, but alt is descriptive
+      if (!title && imgAlt && imgAlt !== 'Art Work' && imgAlt !== 'Enlarged Art' && imgAlt !== 'Gallery Image') {
+        title = imgAlt;
+      }
+
+      // Dynamic fallback based on image source path if no title/desc found yet
+      if (!title) {
+        const srcLower = img.src.toLowerCase();
+        if (srcLower.includes('acrylic')) {
+          title = 'Acrylic Painting';
+          description = 'Expressive color gradients and textured canvas layers.';
+        } else if (srcLower.includes('fabric')) {
+          title = 'Fabric Painting';
+          description = 'Hand-painted detailing on premium fabric, blending utility with fine art.';
+        } else if (srcLower.includes('mini')) {
+          title = 'Miniature Painting';
+          description = 'Delicate and highly detailed small-scale canvas creation.';
+        } else if (srcLower.includes('phone')) {
+          title = 'Custom Phone Case';
+          description = 'A protective daily essential transformed into a handheld masterpiece.';
+        } else if (srcLower.includes('magnet')) {
+          title = 'Fridge Magnet';
+          description = 'Vibrant miniature art piece to add creativity to magnetic surfaces.';
+        } else if (srcLower.includes('portrait')) {
+          title = 'Custom Portrait';
+          description = 'Capturing individuality, emotions, and life in custom fine art.';
+        } else if (srcLower.includes('platter')) {
+          title = 'Bespoke Ring Platter';
+          description = 'Glossy resin work designed to celebrate major life events.';
+        } else if (srcLower.includes('resin')) {
+          title = 'Resin Artwork';
+          description = 'Fluid glossy layers of high-grade resin, pigments, and metallic highlights.';
+        } else if (srcLower.includes('texture')) {
+          title = 'Texture Relief Art';
+          description = 'Dimensional sculptured details bringing depth and movement.';
+        } else if (srcLower.includes('invitation')) {
+          title = 'Artistic Invitation';
+          description = 'Personalized custom-designed cards for special celebrations.';
+        } else if (srcLower.includes('mural')) {
+          title = 'Wall Mural Art';
+          description = 'A grand statement art piece designed to transform a space.';
+        } else {
+          title = 'Gallery Masterpiece';
+          description = 'A curated fine art creation showcasing premium textures and colors.';
+        }
+      }
+
+      // Fade out caption first, update it, and fade back in
+      captionContainer.style.opacity = '0';
+      setTimeout(() => {
+        if (title || description) {
+          titleEl.textContent = title;
+          descEl.textContent = description;
+          captionContainer.style.display = 'block';
+          // Force a reflow to trigger transition
+          captionContainer.offsetHeight; 
+          captionContainer.style.opacity = '1';
+        } else {
+          titleEl.textContent = '';
+          descEl.textContent = '';
+          captionContainer.style.display = 'none';
+        }
+      }, 150);
+    };
+
     const closeLightbox = () => {
       lightbox.classList.remove('active');
       setTimeout(() => {
         lightbox.style.display = 'none';
         lightboxImg.src = '';
+        const titleEl = document.getElementById('lightbox-title');
+        const descEl = document.getElementById('lightbox-desc');
+        if (titleEl) titleEl.textContent = '';
+        if (descEl) descEl.textContent = '';
         document.body.style.overflow = '';
       }, 400); 
     };
@@ -320,6 +450,7 @@ const init = () => {
       currentGalleryIndex = index;
       
       lightboxImg.style.opacity = '0.3';
+      updateLightboxCaption(activeGroup[currentGalleryIndex]);
       setTimeout(() => {
         lightboxImg.src = activeGroup[currentGalleryIndex].src;
         lightboxImg.style.opacity = '1';
@@ -328,7 +459,7 @@ const init = () => {
 
     // Global listener for lightbox-enabled images
     document.addEventListener('click', (e) => {
-      const img = e.target.closest('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, [data-gallery]');
+      const img = e.target.closest('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .work-card img, [data-gallery]');
       
       if (!img) return;
       
@@ -337,12 +468,33 @@ const init = () => {
 
       const galleryId = img.getAttribute('data-gallery');
       let allInGallery = [];
+      
+      // Check if image belongs to a product category
+      const workCard = img.closest('.work-card');
+      const categoryAttr = workCard ? workCard.getAttribute('data-category') : null;
+      let category = null;
+      if (categoryAttr) {
+        // filter out 'all' to get base category
+        const parts = categoryAttr.split(' ').map(p => p.trim()).filter(p => p !== 'all');
+        if (parts.length > 0) {
+          category = parts[0];
+        }
+      }
+
       if (galleryId) {
         // Only images in this specific gallery
         allInGallery = Array.from(document.querySelectorAll(`[data-gallery="${galleryId}"]`));
+      } else if (category) {
+        // Only show images of the same category, so scrolling stops at the end of the category
+        const categoryCards = Array.from(document.querySelectorAll('.work-card')).filter(card => {
+          const cat = card.getAttribute('data-category');
+          if (!cat) return false;
+          return cat.split(' ').map(p => p.trim()).includes(category);
+        });
+        allInGallery = categoryCards.map(card => card.querySelector('img')).filter(Boolean);
       } else {
         // Default global group
-        allInGallery = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img'));
+        allInGallery = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .work-card img'));
       }
 
       // Filter out duplicates based on src to prevent same image appearing twice
@@ -365,6 +517,7 @@ const init = () => {
 
       lightboxImg.src = img.src;
       lightboxImg.style.opacity = '1';
+      updateLightboxCaption(img);
       
       lightbox.style.display = 'flex';
       setTimeout(() => { lightbox.classList.add('active'); }, 10);
@@ -373,7 +526,7 @@ const init = () => {
 
     // Apply lightbox cursor to all valid images
     const applyLightboxCursor = () => {
-      const allGalleries = document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, [data-gallery]');
+      const allGalleries = document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .work-card img, [data-gallery]');
       allGalleries.forEach(img => img.classList.add('lightbox-cursor'));
     };
     applyLightboxCursor();
