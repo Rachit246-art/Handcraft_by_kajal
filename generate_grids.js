@@ -57,16 +57,16 @@ const categories = {
         featureImage: "./images/Home_page/home---product---ring-platter.png"
     },
     resindecor: { 
-        folder: "Reisin platters", 
-        title: "RESIN DECOR", 
+        folder: "Resin photo frame", 
+        title: "RESIN PHOTO FRAME", 
         subtitle: "UNIQUE DÉCOR", 
         class: "square", 
         desc: "Unique resin-crafted décor pieces combining modern aesthetics with artistic detail.",
         featureImage: "./images/Home_page/home---product---resin-decor.png"
     },
     resinart: { 
-        folder: "Resin Artworks", 
-        title: "RESIN COASTER", 
+        folder: "Resin Decor", 
+        title: "RESIN DECOR", 
         subtitle: "PREMIUM", 
         class: "", 
         desc: "Fluid and glossy resin creations inspired by texture, depth, and imagination.",
@@ -74,7 +74,7 @@ const categories = {
     },
     texture: { 
         folder: "Texture Art", 
-        title: "RELIEF ART WORK", 
+        title: "TEXTURE ART", 
         subtitle: "TEXTURE / DEPTH", 
         class: "", 
         desc: "Dimensional artworks that bring depth, movement, and emotion through layered textures.",
@@ -99,18 +99,18 @@ const categories = {
 };
 
 const images = {
-    "Acrylic Paintings": ["20241004_102402387_iOS.jpg", "20241007_141649000_iOS.jpg", "20241007_141649000_iOS_2.jpg", "20241007_141650000_iOS_1.jpg", "20241107_121816473_iOS.jpg", "20241107_122618531_iOS.jpg", "20241107_122907011_iOS.jpg", "20241121_120650076_iOS.jpg", "20241214_093758901_iOS.jpg", "20241215_101215951_iOS.jpg", "20241216_033656143_iOS.jpg", "20241216_033810275_iOS.jpg", "20250822_114344796_iOS.jpg", "20251223_091525401_iOS.jpg", "20251223_093055930_iOS.jpg", "20251223_095536278_iOS.jpg", "20251223_095539982_iOS.jpg", "20251223_095547834_iOS.jpg", "20251223_103800307_iOS.jpg", "20251223_110255064_iOS.jpg"],
-    "Fabric Painting": ["20240420_061009973_iOS.webp", "20240420_061057705_iOS.webp", "20250919_113834134_iOS.webp", "20251205_081614188_iOS.webp", "FABRIC PAINTING.webp", "imag 1.webp", "imag 1a.webp", "saree 1.webp", "saree.webp"],
-    "Mini Paintings": ["20240819_062133835_iOS.jpg", "20240909_111432382_iOS.jpg", "20241021_091739034_iOS.jpg", "20241112_115742545_iOS.jpg", "20250724_094152180_iOS.jpg", "20250918_064201443_iOS.jpg", "20250918_064219257_iOS.jpg", "20250926_020850000_iOS3.jpg", "20260414_074048871_iOS.jpg", "20260415_094900428_iOS.jpg", "Minipainting1.jpg", "Minipainting2.jpg", "Minipainting3.jpg", "VALENTINE1C1A.jpg", "VALENTINE1C3.jpg", "VALENTINE1C5.jpg"],
-    "Phone Cases": ["20250509_104051775_iOS.jpg", "20250918_102636949_iOS.jpg", "20251211_070538219_iOS.jpg", "20251211_070612675_iOS.jpg", "20251211_070618209_iOS.jpg", "IMG_1697.JPG.jpeg", "IMG_1698.JPG.jpeg", "IMG_1699.JPG.jpeg", "IMG_1700.JPG.jpeg", "IMG_1701.JPG.jpeg", "IMG_1702.JPG.jpeg", "IMG_1703.JPG.jpeg"],
+    "Acrylic Paintings": ["20241004_102402387_iOS.jpg", "20241007_141650000_iOS_1.jpg", "20251223_095539982_iOS.jpg", "20251223_095547834_iOS.jpg", "Afterglow - 2.5ft x 1.5 ft .png", "Veil of vibrance - 3 feet by 3 feet.png", "an evening at the floating city - 3.5ft x 5.8f.jpg", "an evening at the floating city - 3.5ft x 5.8ft .jpg", "beyond the waves - 3ft x 3 ft .png", "christman in london - 1.5ft x 2.5ft .png", "enchanted euphoria - 3ft x 3 ft.png", "golden hour - 1.5ft x 2.5ft.png", "greece - 1.5 ft x 2.5ft.png", "her grace, their roar - 1.5 ft x 2 ft.png", "nritya ganapati - 3ft x 3ft.png", "solitude by the shore - 1 1_2 x 3ft.png", "still bloom - 1ft x 1 ft .png"],
+    "Fabric Painting": ["Fabric Art Palace Bandhgala Jacket .webp", "Fabric Art Palace Bandhgala Jacket.webp", "Hand-painted Pure Silk Kanchi Saree.webp", "Hand-painted Silk Kanchipuram Saree.webp", "Handpainted Abstract Blazer .JPG", "Handpainted Abstract Blazer.JPG", "Handpainted Carnival Bloom Jacket for Groom .jpg", "Handpainted Carnival Bloom Jacket for Groom.jpg", "imag 1a.webp"],
+    "Mini Paintings": ["mini_painting_0.png","mini_painting_1.png","mini_painting_2.png","mini_painting_3.png","mini_painting_4.png","mini_painting_5.png","mini_painting_6.png","mini_painting_7.png","mini_painting_8.png","mini_painting_9.png","mini_painting_10.png","mini_painting_11.png","mini_painting_12.png","mini_painting_13.png","mini_painting_14.png","mini_painting_15.png","mini_painting_16.JPG","mini_painting_17.JPG"],
+    "Phone Cases": ["IMG_3395.png", "IMG_3396.png", "IMG_3406.png", "WhatsApp Image 2026-05-27 at 17.14.41 (1).jpeg", "WhatsApp Image 2026-05-27 at 17.14.41 (2).jpeg", "WhatsApp Image 2026-05-27 at 17.14.41 (3).jpeg", "WhatsApp Image 2026-05-27 at 17.14.41 (4).jpeg", "WhatsApp Image 2026-05-27 at 17.14.41.jpeg", "WhatsApp Image 2026-05-27 at 17.14.42.jpeg"],
     "Fridge Magnets": ["20251121_064926468_iOS.webp", "20251121_065230995_iOS.webp", "20251121_065233010_iOS.webp", "DOG 1.webp", "DOG 2.webp", "DOG 3.webp", "DOG 4.webp", "DOG 5.webp", "DOG 6.webp"],
-    "portraits": ["20240715_120516856_iOS.jpg", "20240823_091655909_iOS.jpg", "20240829_084956840_iOS.jpg", "20241116_085036672_iOS.jpg", "20250214_122818727_iOS.jpg", "20250302_070131967_iOS.jpg", "20250304_052056749_iOS.jpg", "20250328_055414012_iOS.jpg", "20250609_064810744_iOS.jpg", "20250721_110541655_iOS.jpg", "20251125_130357098_iOS.jpg", "20251225_124816510_iOS.jpg", "20251226_103011877_iOS.jpg", "20251226_103015984_iOS.jpg"],
-    "Ring Platter": ["20251206_083423215_iOS.jpg", "20251208_082922235_iOS.jpg", "20251208_082925851_iOS.jpg", "20251208_083042020_iOS.jpg", "20251208_083414668_iOS.jpg", "20251208_083510652_iOS.jpg", "20251208_084259408_iOS.jpg", "20251226_095928905_iOS.jpg", "20251226_095948515_iOS.jpg", "20251226_100632188_iOS-copy-0.jpg"],
-    "Reisin platters": ["20230607_102113024_iOS.jpg", "20230607_103235923_iOS.jpg", "20240819_060232631_iOS.jpg", "20240819_061615764_iOS.jpg", "20240819_061837466_iOS.jpg", "20250102_120724857_iOS.jpg", "20250104_134035183_iOS.jpg", "20250104_134715037_iOS.jpg", "20250104_135156034_iOS.jpg"],
-    "Resin Artworks": ["20230227_113449000_iOS.jpg", "20230410_114839469_iOS.jpg", "20230411_133353000_iOS.jpg", "20230511_055921284_iOS.jpg", "20230608_074947846_iOS.jpg", "20240529_103308581_iOS.jpg", "20240529_103505859_iOS.jpg", "20240529_103622629_iOS.jpg", "20251119_125521341_iOS.jpg"],
-    "Texture Art": ["20250308_134548902_iOS.jpg", "20250308_134557181_iOS.jpg", "20250308_134605680_iOS.jpg", "20250403_120628991_iOS.jpg", "20250403_120804733_iOS.jpg", "texture-2.jpg", "texture-3.jpg"],
+    "portraits": ["portrait_0.jpg","portrait_1.png","portrait_2.png","portrait_3.png","portrait_4.png","portrait_5.png","portrait_6.png","portrait_7.png","portrait_8.png","portrait_9.png","portrait_10.png","portrait_11.png"],
+    "Ring Platter": ["resin ring platter .png", "resin ring platter. .png", "resin ring platter.png"],
+    "Resin photo frame": ["Full moon.jpg", "Resin photo frame.jpg", "Winterfell resin decor.jpg", "beach theme resin decor .jpg", "beach theme resin decor. .jpg", "beach theme resin decor.jpg", "little lotus pond resin decor .png", "resin photo frame .jpg", "winterfell resin decor. .jpg"],
+    "Resin Decor": ["20230511_055921284_iOS.jpg", "20240529_103308581_iOS.jpg", "20240529_103622629_iOS.jpg", "20251119_125521341_iOS.jpg", "resin coaster .jpg", "resin navkar mantra .jpg", "resin navkar mantra.jpg", "resin wall clock .jpg", "resin wall decor .jpg"],
+    "Texture Art": ["EARTHEN ECHOES.jpeg", "FLORAL FRAME.jpeg", "Golden Foliage.jpeg", "Sun kissed blooms .jpeg"],
     "Wedding invitations": ["20240413_161840945_iOS.jpg", "20240413_162026956_iOS.jpg", "20240413_162049915_iOS.jpg", "20240414_094004353_iOS.jpg", "20240414_094028613_iOS.jpg", "20240414_094915915_iOS.jpg", "20240414_094922622_iOS.jpg", "20240414_094925004_iOS.jpg", "20240520_052251352_iOS.jpg", "20240520_052422732_iOS.jpg"],
-    "Wall Mural Art": ["DSC_0004.webp", "DSC_0005.webp", "DSC_0069.webp", "PXL_20250503_122245225.webp", "PXL_20250503_122828215.webp"]
+    "Wall Mural Art": ["DSC_0004.jpg", "DSC_0005.jpg", "DSC_0069.jpg", "PXL_20250503_122245225.webp", "PXL_20250503_122828215.webp"]
 };
 
 function shuffle(array) {
@@ -129,9 +129,9 @@ for (const key in categories) {
     let catImages = shuffle([...images[cat.folder]]);
     
     if (key === 'fabric') {
-        const p1 = "imag 1.webp";
+        const p1 = "Handpainted Abstract Blazer .JPG";
         const p2 = "imag 1a.webp";
-        const saree = "saree.webp";
+        const saree = "Hand-painted Silk Kanchipuram Saree.webp";
         // Remove them from the shuffled list first
         catImages = catImages.filter(img => img !== p1 && img !== p2 && img !== saree);
         // Insert them at position 0, 1 and 2
