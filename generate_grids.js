@@ -106,8 +106,8 @@ const images = {
     "Fridge Magnets": ["20251121_064926468_iOS.webp", "20251121_065230995_iOS.webp", "20251121_065233010_iOS.webp", "DOG 1.webp", "DOG 2.webp", "DOG 3.webp", "DOG 4.webp", "DOG 5.webp", "DOG 6.webp"],
     "portraits": ["portrait_0.jpg","portrait_1.png","portrait_2.png","portrait_3.png","portrait_4.png","portrait_5.png","portrait_6.png","portrait_7.png","portrait_8.png","portrait_9.png","portrait_10.png","portrait_11.png"],
     "Ring Platter": ["resin ring platter .png", "resin ring platter. .png", "resin ring platter.png"],
-    "Resin photo frame": ["beach theme resin decor .jpg", "beach theme resin decor. .jpg", "beach theme resin decor.jpg", "Full moon.jpg", "little lotus pond resin decor .png", "resin photo frame .jpg", "Resin photo frame.jpg", "winterfell resin decor. .jpg", "Winterfell resin decor.jpg"],
-    "Resin Decor": ["20230511_055921284_iOS.jpg", "20240529_103308581_iOS.jpg", "20240529_103622629_iOS.jpg", "20251119_125521341_iOS.jpg", "resin coaster .jpg", "resin navkar mantra .jpg", "resin navkar mantra.jpg", "resin wall clock .jpg", "resin wall decor .jpg"],
+    "Resin photo frame": ['resin photo frame .jpg', 'Resin photo frame.jpg'],
+    "Resin Decor": ['20251119_125521341_iOS.jpg', 'beach theme resin decor .jpg', 'beach theme resin decor. .jpg', 'beach theme resin decor.jpg', 'Full moon.jpg', 'little lotus pond resin decor .png', 'resin coaster .jpg', 'resin navkar mantra .jpg', 'resin navkar mantra.jpg', 'resin wall clock .jpg', 'resin wall decor .jpg', 'winterfell resin decor. .jpg', 'Winterfell resin decor.jpg'],
     "Texture Art": ["EARTHEN ECHOES.jpeg", "FLORAL FRAME.jpeg", "Golden Foliage.jpeg", "Sun kissed blooms .jpeg"],
     "Wedding invitations": ["20240413_161840945_iOS.jpg", "20240413_162026956_iOS.jpg", "20240413_162049915_iOS.jpg", "20240414_094004353_iOS.jpg", "20240414_094028613_iOS.jpg", "20240414_094915915_iOS.jpg", "20240414_094922622_iOS.jpg", "20240414_094925004_iOS.jpg", "20240520_052251352_iOS.jpg", "20240520_052422732_iOS.jpg"],
     "Wall Mural Art": ["DSC_0004.jpg", "DSC_0005.jpg", "DSC_0069.jpg", "PXL_20250503_122245225.webp", "PXL_20250503_122828215.webp"]
