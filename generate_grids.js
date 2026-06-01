@@ -149,9 +149,17 @@ for (const key in categories) {
     
     // Category items - Shuffle all but keep the feature image constant in the "all" section
     for (let i = 0; i < catImages.length; i++) {
+        const rawName = catImages[i];
+        const noExt = rawName.replace(/\.[^/.]+$/, "").trim();
+        const isGen = /^(?:\d{8}_\d{9}_iOS(?:_1)?|imag\s*1a|20\d{6}_\d{9}_iOS(?:_1)?|DSC_\d+|mini_painting_\d+|portrait_\d+|IMG_\d+|WhatsApp Image.*)$/i.test(noExt);
+        let subtitleText = cat.subtitle;
+        if (!isGen) {
+            subtitleText = noExt.replace(/_/g, " ").trim();
+        }
+
         collectionHtml += `          <div class="masonry-item work-card reveal ${cat.class}" data-category="${key}">
             <div class="img-wrapper"><img src="./images/${cat.folder}/${catImages[i]}" alt="${cat.title}" loading="lazy"></div>
-            <div class="work-info"><h4>${cat.title}</h4><p>${cat.subtitle}</p></div>
+            <div class="work-info"><h4>${cat.title}</h4><p style="font-size: 0.85rem; color: #888; text-transform: none; margin-top: 0.4rem; line-height: 1.4;">${subtitleText}</p></div>
           </div>\n`;
     }
 
@@ -169,13 +177,22 @@ for (const key in categories) {
 
     // Category items
     for (let i = 0; i < catImages.length; i++) {
+        const rawName = catImages[i];
+        const noExt = rawName.replace(/\.[^/.]+$/, "").trim();
+        const isGen = /^(?:\d{8}_\d{9}_iOS(?:_1)?|imag\s*1a|20\d{6}_\d{9}_iOS(?:_1)?|DSC_\d+|mini_painting_\d+|portrait_\d+|IMG_\d+|WhatsApp Image.*)$/i.test(noExt);
+        let subtitleHtml = "";
+        if (!isGen) {
+            const display = noExt.replace(/_/g, " ").trim();
+            subtitleHtml = `            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">${display}</p>\n`;
+        }
+
         indexHtml += `        <div class="work-card reveal" data-category="${key}">
           <div class="img-wrapper ${cat.class || 'portrait'}">
             <img src="./images/${cat.folder}/${catImages[i]}" alt="${cat.title}S" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>${cat.title}S</h4>
-          </div>
+${subtitleHtml}          </div>
         </div>\n`;
     }
 }
