@@ -106,8 +106,8 @@ const images = {
     "Fridge Magnets": ["20251121_064926468_iOS.webp", "20251121_065230995_iOS.webp", "20251121_065233010_iOS.webp", "DOG 1.webp", "DOG 2.webp", "DOG 3.webp", "DOG 4.webp", "DOG 5.webp", "DOG 6.webp"],
     "portraits": ["portrait_0.jpg","portrait_1.png","portrait_2.png","portrait_3.png","portrait_4.png","portrait_5.png","portrait_6.png","portrait_7.png","portrait_8.png","portrait_9.png","portrait_10.png","portrait_11.png"],
     "Ring Platter": ["resin ring platter .png", "resin ring platter. .png", "resin ring platter.png"],
-    "Resin photo frame": ["Full moon.jpg", "Resin photo frame.jpg", "Winterfell resin decor.jpg", "beach theme resin decor .jpg", "beach theme resin decor. .jpg", "beach theme resin decor.jpg", "little lotus pond resin decor .png", "resin photo frame .jpg", "winterfell resin decor. .jpg"],
-    "Resin Decor": ["20230511_055921284_iOS.jpg", "20240529_103308581_iOS.jpg", "20240529_103622629_iOS.jpg", "20251119_125521341_iOS.jpg", "resin coaster .jpg", "resin navkar mantra .jpg", "resin navkar mantra.jpg", "resin wall clock .jpg", "resin wall decor .jpg"],
+    "Resin photo frame": ['resin photo frame .jpg', 'Resin photo frame.jpg'],
+    "Resin Decor": ['20251119_125521341_iOS.jpg', 'beach theme resin decor .jpg', 'beach theme resin decor. .jpg', 'beach theme resin decor.jpg', 'Full moon.jpg', 'little lotus pond resin decor .png', 'resin coaster .jpg', 'resin navkar mantra .jpg', 'resin navkar mantra.jpg', 'resin wall clock .jpg', 'resin wall decor .jpg', 'winterfell resin decor. .jpg', 'Winterfell resin decor.jpg'],
     "Texture Art": ["EARTHEN ECHOES.jpeg", "FLORAL FRAME.jpeg", "Golden Foliage.jpeg", "Sun kissed blooms .jpeg"],
     "Wedding invitations": ["20240413_161840945_iOS.jpg", "20240413_162026956_iOS.jpg", "20240413_162049915_iOS.jpg", "20240414_094004353_iOS.jpg", "20240414_094028613_iOS.jpg", "20240414_094915915_iOS.jpg", "20240414_094922622_iOS.jpg", "20240414_094925004_iOS.jpg", "20240520_052251352_iOS.jpg", "20240520_052422732_iOS.jpg"],
     "Wall Mural Art": ["DSC_0004.jpg", "DSC_0005.jpg", "DSC_0069.jpg", "PXL_20250503_122245225.webp", "PXL_20250503_122828215.webp"]
@@ -149,9 +149,17 @@ for (const key in categories) {
     
     // Category items - Shuffle all but keep the feature image constant in the "all" section
     for (let i = 0; i < catImages.length; i++) {
+        const rawName = catImages[i];
+        const noExt = rawName.replace(/\.[^/.]+$/, "").trim();
+        const isGen = /^(?:\d{8}_\d{9}_iOS(?:_1)?|imag\s*1a|20\d{6}_\d{9}_iOS(?:_1)?|DSC_\d+|mini_painting_\d+|portrait_\d+|IMG_\d+|WhatsApp Image.*)$/i.test(noExt);
+        let subtitleText = cat.subtitle;
+        if (!isGen && key !== 'mural') {
+            subtitleText = noExt.replace(/_/g, " ").trim();
+        }
+
         collectionHtml += `          <div class="masonry-item work-card reveal ${cat.class}" data-category="${key}">
             <div class="img-wrapper"><img src="./images/${cat.folder}/${catImages[i]}" alt="${cat.title}" loading="lazy"></div>
-            <div class="work-info"><h4>${cat.title}</h4><p>${cat.subtitle}</p></div>
+            <div class="work-info"><h4>${cat.title}</h4><p style="font-size: 0.85rem; color: #888; text-transform: none; margin-top: 0.4rem; line-height: 1.4;">${subtitleText}</p></div>
           </div>\n`;
     }
 
@@ -169,13 +177,22 @@ for (const key in categories) {
 
     // Category items
     for (let i = 0; i < catImages.length; i++) {
+        const rawName = catImages[i];
+        const noExt = rawName.replace(/\.[^/.]+$/, "").trim();
+        const isGen = /^(?:\d{8}_\d{9}_iOS(?:_1)?|imag\s*1a|20\d{6}_\d{9}_iOS(?:_1)?|DSC_\d+|mini_painting_\d+|portrait_\d+|IMG_\d+|WhatsApp Image.*)$/i.test(noExt);
+        let subtitleHtml = "";
+        if (!isGen && key !== 'mural') {
+            const display = noExt.replace(/_/g, " ").trim();
+            subtitleHtml = `            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">${display}</p>\n`;
+        }
+
         indexHtml += `        <div class="work-card reveal" data-category="${key}">
           <div class="img-wrapper ${cat.class || 'portrait'}">
             <img src="./images/${cat.folder}/${catImages[i]}" alt="${cat.title}S" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>${cat.title}S</h4>
-          </div>
+${subtitleHtml}          </div>
         </div>\n`;
     }
 }
