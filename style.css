@@ -509,13 +509,16 @@ h5 {
   border: 1px solid var(--border-color);
   font-size: 0.8rem;
   font-weight: 500;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
   transition: all 0.2s;
 }
 
 .filter-btn.active {
-  background: var(--text-color);
-  color: white;
-  border-color: var(--text-color);
+  background: #111 !important;
+  color: #fff !important;
+  border-color: #111 !important;
 }
 
 .filter-btn:hover {
