@@ -491,7 +491,6 @@ const init = () => {
       } else if (category) {
         // Only show images of the same category, so scrolling stops at the end of the category
         const categoryCards = Array.from(document.querySelectorAll('.work-card')).filter(card => {
-          if (card.style.display === 'none' || card.classList.contains('hide')) return false;
           const cat = card.getAttribute('data-category');
           if (!cat) return false;
           return cat.split(' ').map(p => p.trim()).includes(category);
