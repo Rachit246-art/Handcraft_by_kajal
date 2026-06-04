@@ -491,14 +491,20 @@ const init = () => {
       } else if (category) {
         // Only show images of the same category, so scrolling stops at the end of the category
         const categoryCards = Array.from(document.querySelectorAll('.work-card')).filter(card => {
+          if (card.style.display === 'none' || card.classList.contains('hide')) return false;
           const cat = card.getAttribute('data-category');
           if (!cat) return false;
           return cat.split(' ').map(p => p.trim()).includes(category);
         });
         allInGallery = categoryCards.map(card => card.querySelector('img')).filter(Boolean);
       } else {
-        // Default global group
-        allInGallery = Array.from(document.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .work-card img'));
+        // Default group: only images within the same section to prevent bleeding into products or other areas
+        const parentSection = img.closest('section');
+        if (parentSection) {
+          allInGallery = Array.from(parentSection.querySelectorAll('.gallery-large img, .gallery-split img, .masonry-item img, .gallery-item img, .service-image img, .anim-target img, .exhibit-mini-img img, .work-card img'));
+        } else {
+          allInGallery = [img];
+        }
       }
 
       // Filter out duplicates based on src to prevent same image appearing twice
