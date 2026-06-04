@@ -289,6 +289,10 @@ const init = () => {
             <h3 class="lightbox-title" id="lightbox-title"></h3>
             <p class="lightbox-desc" id="lightbox-desc"></p>
           </div>
+          <div class="lightbox-swipe-hint" id="lightbox-swipe-hint" style="display: none; text-align: center; color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 10px; letter-spacing: 1px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><path d="M19 12H5M12 19l-7-7 7-7"/><path d="M19 12l-7-7M19 12l-7 7"/></svg>
+            Swipe left or right to explore
+          </div>
         </div>
         <button class="lightbox-next" aria-label="Next Image">&#10095;</button>
       </div>
@@ -510,9 +514,14 @@ const init = () => {
       if (activeGroup.length <= 1) {
         if (lightboxPrev) lightboxPrev.style.display = 'none';
         if (lightboxNext) lightboxNext.style.display = 'none';
+        const swipeHint = document.getElementById('lightbox-swipe-hint');
+        if (swipeHint) swipeHint.style.display = 'none';
       } else {
         if (lightboxPrev) lightboxPrev.style.display = 'flex';
         if (lightboxNext) lightboxNext.style.display = 'flex';
+        const swipeHint = document.getElementById('lightbox-swipe-hint');
+        // Only show swipe hint on mobile screens
+        if (swipeHint && window.innerWidth < 768) swipeHint.style.display = 'block';
       }
 
       lightboxImg.src = img.src;
@@ -552,6 +561,24 @@ const init = () => {
           if (e.key === 'ArrowRight') showGalleryImage(currentGalleryIndex + 1);
       }
     });
+
+    let lightboxTouchStartX = 0;
+    if (lightbox) {
+      lightbox.addEventListener('touchstart', (e) => {
+        lightboxTouchStartX = e.changedTouches[0].screenX;
+      }, {passive: true});
+
+      lightbox.addEventListener('touchend', (e) => {
+        if (!lightbox.classList.contains('active') || currentGalleryIndex === -1) return;
+        const touchEndX = e.changedTouches[0].screenX;
+        if (lightboxTouchStartX - touchEndX > 50) {
+           showGalleryImage(currentGalleryIndex + 1);
+        }
+        if (touchEndX - lightboxTouchStartX > 50) {
+           showGalleryImage(currentGalleryIndex - 1);
+        }
+      }, {passive: true});
+    }
   };
   
   // Use a slight timeout to ensure images are loaded and in DOM
