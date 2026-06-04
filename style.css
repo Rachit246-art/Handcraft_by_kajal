@@ -2056,7 +2056,7 @@ body>main {
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 9999;
+  z-index: 10006;
   left: 0;
   top: 0;
   width: 100%;
@@ -3223,6 +3223,7 @@ body>main {
 @media (max-width: 768px) {
   .lightbox-wrapper {
     max-width: 90%;
+    margin-top: 60px; /* Shift downward to clear mobile header */
   }
   .lightbox-img {
     max-height: 55vh !important;
