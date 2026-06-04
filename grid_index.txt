@@ -9,11 +9,19 @@
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/Afterglow - 2.5ft x 1.5 ft .png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+            <img src="./images/Acrylic Paintings/20241004_102402387_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Afterglow - 2.5ft x 1.5 ft</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/Veil of vibrance - 3 feet by 3 feet.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Veil of vibrance - 3 feet by 3 feet</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="acrylic">
@@ -27,43 +35,16 @@
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/golden hour - 1.5ft x 2.5ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+            <img src="./images/Acrylic Paintings/nritya ganapati - 3ft x 3ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">golden hour - 1.5ft x 2.5ft</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">nritya ganapati - 3ft x 3ft</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/solitude by the shore - 1 1_2 x 3ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">solitude by the shore - 1 1 2 x 3ft</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="acrylic">
-          <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/beyond the waves - 3ft x 3 ft .png" alt="ACRYLIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">beyond the waves - 3ft x 3 ft</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="acrylic">
-          <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/christman in london - 1.5ft x 2.5ft .png" alt="ACRYLIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">christman in london - 1.5ft x 2.5ft</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="acrylic">
-          <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/20241004_102402387_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+            <img src="./images/Acrylic Paintings/20251223_095539982_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
@@ -80,20 +61,46 @@
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/nritya ganapati - 3ft x 3ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">nritya ganapati - 3ft x 3ft</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="acrylic">
-          <div class="img-wrapper portrait">
             <img src="./images/Acrylic Paintings/an evening at the floating city - 3.5ft x 5.8ft .jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
             <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">an evening at the floating city - 3.5ft x 5.8ft</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/golden hour - 1.5ft x 2.5ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">golden hour - 1.5ft x 2.5ft</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/Afterglow - 2.5ft x 1.5 ft .png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Afterglow - 2.5ft x 1.5 ft</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/christman in london - 1.5ft x 2.5ft .png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">christman in london - 1.5ft x 2.5ft</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20241007_141650000_iOS_1.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
           </div>
         </div>
         <div class="work-card reveal" data-category="acrylic">
@@ -107,11 +114,19 @@
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/enchanted euphoria - 3ft x 3 ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+            <img src="./images/Acrylic Paintings/solitude by the shore - 1.5x 3ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">enchanted euphoria - 3ft x 3 ft</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">solitude by the shore - 1.5x 3ft</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="acrylic">
+          <div class="img-wrapper portrait">
+            <img src="./images/Acrylic Paintings/20251223_095547834_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>ACRYLIC PAINTINGS</h4>
           </div>
         </div>
         <div class="work-card reveal" data-category="acrylic">
@@ -125,35 +140,20 @@
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/Veil of vibrance - 3 feet by 3 feet.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
+            <img src="./images/Acrylic Paintings/beyond the waves - 3ft x 3 ft .png" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Veil of vibrance - 3 feet by 3 feet</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">beyond the waves - 3ft x 3 ft</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="acrylic">
           <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/20241007_141650000_iOS_1.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
+            <img src="./images/Acrylic Paintings/enchanted euphoria - 3ft x 3 ft.png" alt="ACRYLIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>ACRYLIC PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="acrylic">
-          <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/20251223_095547834_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>ACRYLIC PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="acrylic">
-          <div class="img-wrapper portrait">
-            <img src="./images/Acrylic Paintings/20251223_095539982_iOS.jpg" alt="ACRYLIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>ACRYLIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">enchanted euphoria - 3ft x 3 ft</p>
           </div>
         </div>
         <!-- FABRIC PAINTINGS -->        <div class="work-card reveal" data-category="all fabric">
@@ -193,11 +193,20 @@
         </div>
         <div class="work-card reveal" data-category="fabric">
           <div class="img-wrapper square">
-            <img src="./images/Fabric Painting/Handpainted Abstract Blazer.JPG" alt="FABRIC PAINTINGS" loading="lazy" />
+            <img src="./images/Fabric Painting/Hand-painted Pure Silk Kanchi Saree.webp" alt="FABRIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>FABRIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Handpainted Abstract Blazer</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Hand-painted Pure Silk Kanchi Saree</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="fabric">
+          <div class="img-wrapper square">
+            <img src="./images/Fabric Painting/Handpainted Carnival Bloom Jacket for Groom.jpg" alt="FABRIC PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FABRIC PAINTINGS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Handpainted Carnival Bloom Jacket for Groom</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="fabric">
@@ -211,11 +220,11 @@
         </div>
         <div class="work-card reveal" data-category="fabric">
           <div class="img-wrapper square">
-            <img src="./images/Fabric Painting/Handpainted Carnival Bloom Jacket for Groom.jpg" alt="FABRIC PAINTINGS" loading="lazy" />
+            <img src="./images/Fabric Painting/Handpainted Abstract Blazer.JPG" alt="FABRIC PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>FABRIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Handpainted Carnival Bloom Jacket for Groom</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Handpainted Abstract Blazer</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="fabric">
@@ -236,15 +245,6 @@
             <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Fabric Art Palace Bandhgala Jacket</p>
           </div>
         </div>
-        <div class="work-card reveal" data-category="fabric">
-          <div class="img-wrapper square">
-            <img src="./images/Fabric Painting/Hand-painted Pure Silk Kanchi Saree.webp" alt="FABRIC PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>FABRIC PAINTINGS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Hand-painted Pure Silk Kanchi Saree</p>
-          </div>
-        </div>
         <!-- MINI PAINTINGS -->        <div class="work-card reveal" data-category="all mini">
           <div class="img-wrapper portrait">
             <img src="./images/Home_page/home---product----minipaintings.png" alt="MINI PAINTINGS" loading="lazy" />
@@ -256,95 +256,7 @@
         </div>
         <div class="work-card reveal" data-category="mini">
           <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_8.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_3.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_0.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_14.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_13.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_4.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_5.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_15.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_9.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
             <img src="./images/Mini Paintings/mini_painting_2.png" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_16.JPG" alt="MINI PAINTINGS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>MINI PAINTINGS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mini">
-          <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_17.JPG" alt="MINI PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>MINI PAINTINGS</h4>
@@ -360,6 +272,30 @@
         </div>
         <div class="work-card reveal" data-category="mini">
           <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_3.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_12.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_4.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
             <img src="./images/Mini Paintings/mini_painting_7.png" alt="MINI PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
@@ -368,7 +304,7 @@
         </div>
         <div class="work-card reveal" data-category="mini">
           <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_6.png" alt="MINI PAINTINGS" loading="lazy" />
+            <img src="./images/Mini Paintings/mini_painting_5.png" alt="MINI PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>MINI PAINTINGS</h4>
@@ -384,6 +320,38 @@
         </div>
         <div class="work-card reveal" data-category="mini">
           <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_6.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_14.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_0.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_17.JPG" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
             <img src="./images/Mini Paintings/mini_painting_1.png" alt="MINI PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
@@ -392,7 +360,39 @@
         </div>
         <div class="work-card reveal" data-category="mini">
           <div class="img-wrapper portrait">
-            <img src="./images/Mini Paintings/mini_painting_12.png" alt="MINI PAINTINGS" loading="lazy" />
+            <img src="./images/Mini Paintings/mini_painting_8.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_15.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_13.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_9.png" alt="MINI PAINTINGS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>MINI PAINTINGS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mini">
+          <div class="img-wrapper portrait">
+            <img src="./images/Mini Paintings/mini_painting_16.JPG" alt="MINI PAINTINGS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>MINI PAINTINGS</h4>
@@ -409,14 +409,6 @@
         </div>
         <div class="work-card reveal" data-category="phonecases">
           <div class="img-wrapper portrait">
-            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.42.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>HANDCRAFTED PHONE CASES</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="phonecases">
-          <div class="img-wrapper portrait">
             <img src="./images/Phone Cases/IMG_3396.png" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
           </div>
           <div class="work-info">
@@ -425,7 +417,47 @@
         </div>
         <div class="work-card reveal" data-category="phonecases">
           <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/IMG_3406.png" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
             <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41 (1).jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.42.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41 (2).jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>HANDCRAFTED PHONE CASES</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="phonecases">
+          <div class="img-wrapper portrait">
+            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41 (4).jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>HANDCRAFTED PHONE CASES</h4>
@@ -447,38 +479,6 @@
             <h4>HANDCRAFTED PHONE CASES</h4>
           </div>
         </div>
-        <div class="work-card reveal" data-category="phonecases">
-          <div class="img-wrapper portrait">
-            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41 (2).jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>HANDCRAFTED PHONE CASES</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="phonecases">
-          <div class="img-wrapper portrait">
-            <img src="./images/Phone Cases/IMG_3406.png" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>HANDCRAFTED PHONE CASES</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="phonecases">
-          <div class="img-wrapper portrait">
-            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41 (4).jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>HANDCRAFTED PHONE CASES</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="phonecases">
-          <div class="img-wrapper portrait">
-            <img src="./images/Phone Cases/WhatsApp Image 2026-05-27 at 17.14.41.jpeg" alt="HANDCRAFTED PHONE CASES" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>HANDCRAFTED PHONE CASES</h4>
-          </div>
-        </div>
         <!-- FRIDGE MAGNETS -->        <div class="work-card reveal" data-category="all magnets">
           <div class="img-wrapper portrait">
             <img src="./images/Home_page/home---product---fridge-magent.png" alt="FRIDGE MAGNETS" loading="lazy" />
@@ -490,7 +490,16 @@
         </div>
         <div class="work-card reveal" data-category="magnets">
           <div class="img-wrapper portrait">
-            <img src="./images/Fridge Magnets/20251121_064926468_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+            <img src="./images/Fridge Magnets/DOG 2.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">DOG 2</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/20251121_065230995_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>FRIDGE MAGNETS</h4>
@@ -507,7 +516,16 @@
         </div>
         <div class="work-card reveal" data-category="magnets">
           <div class="img-wrapper portrait">
-            <img src="./images/Fridge Magnets/20251121_065230995_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+            <img src="./images/Fridge Magnets/DOG 4.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>FRIDGE MAGNETS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">DOG 4</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="magnets">
+          <div class="img-wrapper portrait">
+            <img src="./images/Fridge Magnets/20251121_064926468_iOS.webp" alt="FRIDGE MAGNETS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>FRIDGE MAGNETS</h4>
@@ -532,24 +550,6 @@
         </div>
         <div class="work-card reveal" data-category="magnets">
           <div class="img-wrapper portrait">
-            <img src="./images/Fridge Magnets/DOG 4.webp" alt="FRIDGE MAGNETS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>FRIDGE MAGNETS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">DOG 4</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="magnets">
-          <div class="img-wrapper portrait">
-            <img src="./images/Fridge Magnets/DOG 6.webp" alt="FRIDGE MAGNETS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>FRIDGE MAGNETS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">DOG 6</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="magnets">
-          <div class="img-wrapper portrait">
             <img src="./images/Fridge Magnets/DOG 5.webp" alt="FRIDGE MAGNETS" loading="lazy" />
           </div>
           <div class="work-info">
@@ -559,11 +559,11 @@
         </div>
         <div class="work-card reveal" data-category="magnets">
           <div class="img-wrapper portrait">
-            <img src="./images/Fridge Magnets/DOG 2.webp" alt="FRIDGE MAGNETS" loading="lazy" />
+            <img src="./images/Fridge Magnets/DOG 6.webp" alt="FRIDGE MAGNETS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>FRIDGE MAGNETS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">DOG 2</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">DOG 6</p>
           </div>
         </div>
         <!-- CUSTOM PORTRAITS -->        <div class="work-card reveal" data-category="all portraits">
@@ -577,31 +577,7 @@
         </div>
         <div class="work-card reveal" data-category="portraits">
           <div class="img-wrapper portrait">
-            <img src="./images/portraits/portrait_7.png" alt="CUSTOM PORTRAITS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>CUSTOM PORTRAITS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="portraits">
-          <div class="img-wrapper portrait">
             <img src="./images/portraits/portrait_6.png" alt="CUSTOM PORTRAITS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>CUSTOM PORTRAITS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="portraits">
-          <div class="img-wrapper portrait">
-            <img src="./images/portraits/portrait_10.png" alt="CUSTOM PORTRAITS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>CUSTOM PORTRAITS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="portraits">
-          <div class="img-wrapper portrait">
-            <img src="./images/portraits/portrait_5.png" alt="CUSTOM PORTRAITS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>CUSTOM PORTRAITS</h4>
@@ -617,23 +593,7 @@
         </div>
         <div class="work-card reveal" data-category="portraits">
           <div class="img-wrapper portrait">
-            <img src="./images/portraits/portrait_2.png" alt="CUSTOM PORTRAITS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>CUSTOM PORTRAITS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="portraits">
-          <div class="img-wrapper portrait">
             <img src="./images/portraits/portrait_9.png" alt="CUSTOM PORTRAITS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>CUSTOM PORTRAITS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="portraits">
-          <div class="img-wrapper portrait">
-            <img src="./images/portraits/portrait_11.png" alt="CUSTOM PORTRAITS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>CUSTOM PORTRAITS</h4>
@@ -649,7 +609,23 @@
         </div>
         <div class="work-card reveal" data-category="portraits">
           <div class="img-wrapper portrait">
+            <img src="./images/portraits/portrait_2.png" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
             <img src="./images/portraits/portrait_0.jpg" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/portrait_4.png" alt="CUSTOM PORTRAITS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>CUSTOM PORTRAITS</h4>
@@ -665,7 +641,31 @@
         </div>
         <div class="work-card reveal" data-category="portraits">
           <div class="img-wrapper portrait">
-            <img src="./images/portraits/portrait_4.png" alt="CUSTOM PORTRAITS" loading="lazy" />
+            <img src="./images/portraits/portrait_10.png" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/portrait_7.png" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/portrait_5.png" alt="CUSTOM PORTRAITS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>CUSTOM PORTRAITS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="portraits">
+          <div class="img-wrapper portrait">
+            <img src="./images/portraits/portrait_11.png" alt="CUSTOM PORTRAITS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>CUSTOM PORTRAITS</h4>
@@ -718,20 +718,20 @@
         </div>
         <div class="work-card reveal" data-category="resindecor">
           <div class="img-wrapper square">
-            <img src="./images/Resin photo frame/Resin photo frame.jpg" alt="RESIN PHOTO FRAMES" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>RESIN PHOTO FRAMES</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Resin photo frame</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="resindecor">
-          <div class="img-wrapper square">
             <img src="./images/Resin photo frame/resin photo frame .jpg" alt="RESIN PHOTO FRAMES" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>RESIN PHOTO FRAMES</h4>
             <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin photo frame</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resindecor">
+          <div class="img-wrapper square">
+            <img src="./images/Resin photo frame/Resin photo frame.jpg" alt="RESIN PHOTO FRAMES" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN PHOTO FRAMES</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Resin photo frame</p>
           </div>
         </div>
         <!-- RESIN DECORS -->        <div class="work-card reveal" data-category="all resinart">
@@ -745,38 +745,20 @@
         </div>
         <div class="work-card reveal" data-category="resinart">
           <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/resin navkar mantra .jpg" alt="RESIN DECORS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>RESIN DECORS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin navkar mantra</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="resinart">
-          <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/resin wall clock .jpg" alt="RESIN DECORS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>RESIN DECORS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin wall clock</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="resinart">
-          <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/beach theme resin decor. .jpg" alt="RESIN DECORS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>RESIN DECORS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">beach theme resin decor.</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="resinart">
-          <div class="img-wrapper portrait">
             <img src="./images/Resin Decor/winterfell resin decor. .jpg" alt="RESIN DECORS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>RESIN DECORS</h4>
             <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">winterfell resin decor.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Decor/little lotus pond resin decor .png" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">little lotus pond resin decor</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="resinart">
@@ -790,10 +772,29 @@
         </div>
         <div class="work-card reveal" data-category="resinart">
           <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/20251119_125521341_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
+            <img src="./images/Resin Decor/resin navkar mantra .jpg" alt="RESIN DECORS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin navkar mantra</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Decor/Full moon.jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Full moon</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Decor/resin wall decor .jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin wall decor</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="resinart">
@@ -825,24 +826,6 @@
         </div>
         <div class="work-card reveal" data-category="resinart">
           <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/little lotus pond resin decor .png" alt="RESIN DECORS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>RESIN DECORS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">little lotus pond resin decor</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="resinart">
-          <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/resin wall decor .jpg" alt="RESIN DECORS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>RESIN DECORS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin wall decor</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="resinart">
-          <div class="img-wrapper portrait">
             <img src="./images/Resin Decor/resin navkar mantra.jpg" alt="RESIN DECORS" loading="lazy" />
           </div>
           <div class="work-info">
@@ -852,11 +835,28 @@
         </div>
         <div class="work-card reveal" data-category="resinart">
           <div class="img-wrapper portrait">
-            <img src="./images/Resin Decor/Full moon.jpg" alt="RESIN DECORS" loading="lazy" />
+            <img src="./images/Resin Decor/20251119_125521341_iOS.jpg" alt="RESIN DECORS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>RESIN DECORS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Full moon</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Decor/resin wall clock .jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">resin wall clock</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="resinart">
+          <div class="img-wrapper portrait">
+            <img src="./images/Resin Decor/beach theme resin decor. .jpg" alt="RESIN DECORS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>RESIN DECORS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">beach theme resin decor.</p>
           </div>
         </div>
         <!-- TEXTURE ARTS -->        <div class="work-card reveal" data-category="all texture">
@@ -870,20 +870,11 @@
         </div>
         <div class="work-card reveal" data-category="texture">
           <div class="img-wrapper portrait">
-            <img src="./images/Texture Art/EARTHEN ECHOES.jpeg" alt="TEXTURE ARTS" loading="lazy" />
+            <img src="./images/Texture Art/Golden Foliage.jpeg" alt="TEXTURE ARTS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>TEXTURE ARTS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">EARTHEN ECHOES</p>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="texture">
-          <div class="img-wrapper portrait">
-            <img src="./images/Texture Art/Sun kissed blooms .jpeg" alt="TEXTURE ARTS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>TEXTURE ARTS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Sun kissed blooms</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Golden Foliage</p>
           </div>
         </div>
         <div class="work-card reveal" data-category="texture">
@@ -897,11 +888,20 @@
         </div>
         <div class="work-card reveal" data-category="texture">
           <div class="img-wrapper portrait">
-            <img src="./images/Texture Art/Golden Foliage.jpeg" alt="TEXTURE ARTS" loading="lazy" />
+            <img src="./images/Texture Art/Sun kissed blooms .jpeg" alt="TEXTURE ARTS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>TEXTURE ARTS</h4>
-            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Golden Foliage</p>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Sun kissed blooms</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="texture">
+          <div class="img-wrapper portrait">
+            <img src="./images/Texture Art/EARTHEN ECHOES.jpeg" alt="TEXTURE ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>TEXTURE ARTS</h4>
+            <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">EARTHEN ECHOES</p>
           </div>
         </div>
         <!-- WEDDING INVITATIONS -->        <div class="work-card reveal" data-category="all invitations">
@@ -911,6 +911,38 @@
           <div class="work-info">
             <h4>WEDDING INVITATIONS</h4>
             <p style="font-size: 0.9rem; color: #888; text-transform: none; margin-top: 0.5rem; line-height: 1.4;">Customized artistic invitations designed to make every celebration feel timeless and personal.</p>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240413_162026956_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094915915_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240520_052422732_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094922622_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
           </div>
         </div>
         <div class="work-card reveal" data-category="invitations">
@@ -931,47 +963,7 @@
         </div>
         <div class="work-card reveal" data-category="invitations">
           <div class="img-wrapper portrait">
-            <img src="./images/Wedding invitations/20240413_162026956_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WEDDING INVITATIONS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="invitations">
-          <div class="img-wrapper portrait">
             <img src="./images/Wedding invitations/20240520_052251352_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WEDDING INVITATIONS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="invitations">
-          <div class="img-wrapper portrait">
-            <img src="./images/Wedding invitations/20240520_052422732_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WEDDING INVITATIONS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="invitations">
-          <div class="img-wrapper portrait">
-            <img src="./images/Wedding invitations/20240414_094028613_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WEDDING INVITATIONS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="invitations">
-          <div class="img-wrapper portrait">
-            <img src="./images/Wedding invitations/20240414_094915915_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WEDDING INVITATIONS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="invitations">
-          <div class="img-wrapper portrait">
-            <img src="./images/Wedding invitations/20240414_094925004_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>WEDDING INVITATIONS</h4>
@@ -987,7 +979,15 @@
         </div>
         <div class="work-card reveal" data-category="invitations">
           <div class="img-wrapper portrait">
-            <img src="./images/Wedding invitations/20240414_094922622_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+            <img src="./images/Wedding invitations/20240414_094925004_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WEDDING INVITATIONS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="invitations">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wedding invitations/20240414_094028613_iOS.jpg" alt="WEDDING INVITATIONS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>WEDDING INVITATIONS</h4>
@@ -1004,7 +1004,23 @@
         </div>
         <div class="work-card reveal" data-category="mural">
           <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/PXL_20250503_122828215.webp" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
             <img src="./images/Wall Mural Art/DSC_0004.jpg" alt="WALL MURAL ARTS" loading="lazy" />
+          </div>
+          <div class="work-info">
+            <h4>WALL MURAL ARTS</h4>
+          </div>
+        </div>
+        <div class="work-card reveal" data-category="mural">
+          <div class="img-wrapper portrait">
+            <img src="./images/Wall Mural Art/DSC_0005.jpg" alt="WALL MURAL ARTS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>WALL MURAL ARTS</h4>
@@ -1021,22 +1037,6 @@
         <div class="work-card reveal" data-category="mural">
           <div class="img-wrapper portrait">
             <img src="./images/Wall Mural Art/DSC_0069.jpg" alt="WALL MURAL ARTS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WALL MURAL ARTS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mural">
-          <div class="img-wrapper portrait">
-            <img src="./images/Wall Mural Art/PXL_20250503_122828215.webp" alt="WALL MURAL ARTS" loading="lazy" />
-          </div>
-          <div class="work-info">
-            <h4>WALL MURAL ARTS</h4>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="mural">
-          <div class="img-wrapper portrait">
-            <img src="./images/Wall Mural Art/DSC_0005.jpg" alt="WALL MURAL ARTS" loading="lazy" />
           </div>
           <div class="work-info">
             <h4>WALL MURAL ARTS</h4>
