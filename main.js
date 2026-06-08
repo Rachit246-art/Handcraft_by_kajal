@@ -492,8 +492,13 @@ const init = () => {
       const btn = document.querySelector(`.filter-btn[data-filter="${hash}"]`);
       if (btn) {
         btn.click();
-        const collectionSec = document.getElementById('collection');
-        if (collectionSec) collectionSec.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          const collectionSec = document.getElementById('collection') || document.querySelector('.collection-gallery-section') || document.querySelector('.filter-tabs');
+          if (collectionSec) {
+            const y = collectionSec.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        }, 100);
       }
     }
   };
