@@ -173,6 +173,13 @@ const init = () => {
     { title: 'Devotional Art',     desc: 'Soulful devotional paintings for sacred spaces',        url: './about-services.html#devotional', icon: '🙏' },
     { title: 'Landscapes',         desc: 'Breathtaking landscape paintings capturing emotion',     url: './about-services.html#landscapes', icon: '🌄' },
     { title: 'WhatsApp / Order',   desc: 'Chat directly on WhatsApp to place a custom order',     url: 'https://wa.me/916363307200',  icon: '💬' },
+    // Studio Events & Insights
+    { title: 'Exhibitions & Events', desc: 'Explore art exhibitions, events, and gallery showcases', url: './blog.html#exhibitions', icon: '🏛️', keywords: 'exhibitions events showcase gallery chitra santhe venkatappa art festival show' },
+    { title: 'Achievements & Press', desc: 'Awards, newspaper features, and art achievements', url: './blog.html#achievements', icon: '🏆', keywords: 'achievements press news awards media feature articles' },
+    { title: 'Art Workshops',        desc: 'Learn fluid art, texture painting, resin and DIY workshops', url: './blog.html#workshops', icon: '🎨', keywords: 'workshops classes learn teach fluid resin texture painting diy tutorial' },
+    // About & Client Reviews
+    { title: 'About Kajal',          desc: 'Get to know the artist, background, and vision', url: './index.html#about', icon: '👩‍🎨', keywords: 'about artist kajal profile bio biography' },
+    { title: 'Client Testimonials',  desc: 'Read what clients say about Kajal\'s custom artwork', url: './index.html#testimonials', icon: '⭐', keywords: 'testimonials reviews clients feedback ratings' },
   ];
 
   // Inject search results dropdown styles once
@@ -301,9 +308,10 @@ const init = () => {
     const runSearch = () => {
       const q = input.value.trim().toLowerCase();
       if (!q) { hideDropdown(); return; }
-      const results = SEARCH_INDEX.filter(item =>
-        item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q)
-      );
+      const results = SEARCH_INDEX.filter(item => {
+        const searchText = (item.title + ' ' + item.desc + ' ' + (item.keywords || '')).toLowerCase();
+        return searchText.includes(q);
+      });
       showDropdown(results);
     };
 
