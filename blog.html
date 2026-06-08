@@ -1,479 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inside the Studio | Handcrafted by Kajal</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inside the Studio | Handcrafted by Kajal</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .blog-page-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem 1.5rem;
+    }
+
+    .blog-category-section {
+      margin-bottom: 6rem;
+      padding-top: 2rem;
+    }
+
+    .blog-category-title {
+      font-family: serif;
+      font-size: 2.5rem;
+      font-style: italic;
+      color: #fff;
+      margin-bottom: 3.5rem;
+      font-weight: 300;
+      letter-spacing: -0.01em;
+    }
+
+    .blog-tag {
+      border-radius: 50px;
+      border: 1px solid #444;
+      padding: 0.3rem 1rem;
+      font-size: 0.8rem;
+      color: #fff;
+      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      text-decoration: none;
+    }
+
+    .blog-tag:hover {
+      background-color: #222;
+    }
+
+    .blog-tag-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #ff3b30;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dark-card-title {
+      color: #ffffff !important;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      margin-top: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .dark-card-meta {
+      color: #aaaaaa !important;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-bar-simple {
+      padding: 2rem 5% 0;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 1024px) {
       .blog-page-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
       }
-      .blog-category-section {
-        margin-bottom: 6rem;
-        padding-top: 2rem;
-      }
-      .blog-category-title {
-        font-family: serif;
-        font-size: 2.5rem;
-        font-style: italic;
-        color: #fff;
-        margin-bottom: 3.5rem;
-        font-weight: 300;
-        letter-spacing: -0.01em;
-      }
-      .blog-tag {
-        border-radius: 50px;
-        border: 1px solid #444;
-        padding: 0.3rem 1rem;
-        font-size: 0.8rem;
-        color: #fff;
-        background: transparent;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        text-decoration: none;
-      }
-      .blog-tag:hover {
-        background-color: #222;
-      }
-      .blog-tag-dot {
-        width: 6px;
-        height: 6px;
-        background-color: #ff3b30;
-        border-radius: 50%;
-        display: inline-block;
-      }
-      .dark-card-title {
-        color: #ffffff !important;
-        font-size: 1.1rem;
-        line-height: 1.4;
-        margin-top: 1.2rem;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-      }
-      .dark-card-meta {
-        color: #aaaaaa !important;
-        font-size: 0.8rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-      }
-      .nav-bar-simple {
-        padding: 2rem 5% 0;
-        display: flex;
-        align-items: center;
-      }
-      @media (max-width: 1024px) {
-        .blog-page-grid { grid-template-columns: repeat(2, 1fr); }
-      }
-      @media (max-width: 600px) {
-        .blog-page-grid { grid-template-columns: 1fr; }
-      }
-    </style>
-  </head>
-  <body class="bg-dark text-light" style="min-height: 100vh; background-color: #121212;">
-    
-    <header class="header">
-      <a href="./index.html" class="logo">HANDCRAFTED<br>BY KAJAL</a>
-      <div class="nav-actions" style="display: flex; gap: 0.5rem; align-items: center;">
+    }
 
-        <!-- Expanding Search -->
-        <div class="search-wrapper">
-          <input type="text" class="search-inline-input" placeholder="Search..." />
-          <button class="icon-btn search-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
-        </div>
+    @media (max-width: 600px) {
+      .blog-page-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
 
-        <!-- Dropdown Menu -->
-        <div class="menu-wrapper" style="position: relative;">
-          <button class="icon-btn menu-btn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
+<body class="bg-dark text-light" style="min-height: 100vh; background-color: #121212;">
 
-          <div class="menu-dropdown">
-            <a href="./index.html">Home page</a>
-            <a href="./legacy.html">About me</a>
-            <a href="./about-services.html">Services</a>
-            <a href="./blog.html">Studio</a>
-            <a href="./collection.html">Products</a>
-            <a href="./index.html#gallery">Art/Gallery</a>
-            <a href="./index.html#contact">Contact Us</a>
-          </div>
-        </div>
+  <header class="header">
+    <a href="./index.html" class="logo">HANDCRAFTED<br>BY KAJAL</a>
+    <div class="nav-actions" style="display: flex; gap: 0.5rem; align-items: center;">
 
+      <!-- Expanding Search -->
+      <div class="search-wrapper">
+        <input type="text" class="search-inline-input" placeholder="Search..." />
+        <button class="icon-btn search-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
       </div>
-    </header>
 
-    <main>
-      <!-- Cinematic Blog Hero -->
-      <section class="blog-hero section-padding" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./images/Wall Murals.webp') center/cover no-repeat; min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center;">
-        <div class="blog-hero-content reveal" style="max-width: 1100px;">
-          <h1 class="hero-title" style="font-family: serif; font-weight: 300; font-style: italic; font-size: clamp(3.5rem, 10vw, 7rem); margin-bottom: 3rem; letter-spacing: -0.02em; color: #fff;">Inside the Studio</h1>
-          
-          <div style="font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 1.8; color: #eee; font-weight: 300; margin-bottom: 2rem;">
-            <p style="margin-bottom: 2.5rem;">Step into a world of creativity and imagination. Kajal's gallery showcases <strong>handcrafted artworks</strong> spanning murals, resin pieces, textured creations, devotional art, and more. Each piece is <strong>uniquely designed</strong>, telling its own story and reflecting a blend of tradition and contemporary artistry.</p>
-            <p>Explore the collection to see how vision, skill, and passion come together in every creation from <strong>personalized commissions</strong> to <strong>artistic masterpieces</strong> that transform spaces.</p>
-          </div>
-        </div>
-      </section>
+      <!-- Dropdown Menu -->
+      <div class="menu-wrapper" style="position: relative;">
+        <button class="icon-btn menu-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
 
-      <section class="section-padding" style="padding-top: 6rem; background: #121212;">
-        <div class="mb-8 flex" style="gap: 1.5rem; display: flex; margin-bottom: 6rem; flex-wrap: wrap;">
-          <a href="#achievements" class="blog-tag"><span class="blog-tag-dot"></span> Achievements</a>
-          <a href="#exhibitions" class="blog-tag"><span class="blog-tag-dot" style="background-color: #4cd964;"></span> Exhibitions</a>
-          <a href="#workshops" class="blog-tag"><span class="blog-tag-dot" style="background-color: #007aff;"></span> Workshops</a>
-        </div>
-
-        <div id="achievements" class="blog-category-section">
-          <h2 class="blog-category-title">Our Achievements</h2>
-          <p style="color: #888; margin-bottom: 4rem; font-size: 1.1rem; text-align: center;">Recognized for soulful artistry across leading platforms.</p>
-          <div class="achievements-grid">
-            <div onclick="openVideoModal('_8hSAHfdsFw')" class="achievement-card reveal" style="cursor: pointer;">
-              <div class="achievement-frame">
-                <img src="./images/news1.png" alt="Your story" loading="lazy" />
-              </div>
-              <div class="achievement-info">
-                <p>Featured Story</p>
-                <h3>Your story</h3>
-                <span class="achievement-link">Watch Story ↗</span>
-              </div>
-            </div>
-
-            <div onclick="openVideoModal('VH4uE-hmWig')" class="achievement-card reveal" style="cursor: pointer;">
-              <div class="achievement-frame">
-                <img src="./images/news2.png" alt="Enadu Teleugu" loading="lazy" />
-              </div>
-              <div class="achievement-info">
-                <p>Media Spotlight</p>
-                <h3>Enadu Teleugu</h3>
-                <span class="achievement-link">Watch Now ↗</span>
-              </div>
-            </div>
-
-            <a href="https://yourstory.com/2025/01/education-exposure-ecosystems-india-art-festival-creativity-photography" target="_blank" class="achievement-card reveal" style="text-decoration: none; display: block;">
-              <div class="achievement-frame">
-                <img src="./images/news3.png" alt="YourStory Feature" loading="lazy" />
-              </div>
-              <div class="achievement-info">
-                <p>Media Feature</p>
-                <h3>YourStory Spotlight</h3>
-                <span class="achievement-link">Read News ↗</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div id="exhibitions" class="blog-category-section" style="text-align: center; padding-top: 8rem;">
-          <h2 class="blog-category-title" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">Exhibitions</h2>
-          <div style="width: 60px; height: 1px; background: rgba(255,255,255,0.4); margin: 0 auto 2.5rem;"></div>
-          <p style="color: #fff; margin-bottom: 1rem; font-size: 1.2rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 300;">Showcasing handcrafted collections at prestigious art venues across the country.</p>
-          <p style="color: #888; margin-bottom: 5rem; font-size: 1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.2em;">A Journey of Textures & Emotions</p>
-          <div class="exhibition-clean-grid grid-5-centered">
-        <div class="exhibit-card reveal">
-          <div class="exhibit-mini-img">
-            <img src="./images/Home_page/home---exhibitions----chitrakala-parishadh.png" alt="Chitra Kala Parishad" data-gallery="chitra_kala_parishad" loading="lazy" />
-          </div>
-          <div class="exhibit-info-clean">
-            <p>CKP Gallery</p>
-            <h3>Chitra Kala Parishad</h3>
-            <p class="exhibition-desc">I showcased a collection of my artworks at CKP Gallery, where I had the opportunity to present my artistic style through expressive colors, textures, and storytelling.</p>
-            <img src="./images/events/Chitra Kala Parishad/20240518_051439514_iOS.jpg" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/20240518_052133908_iOS.jpg" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/20240518_060556870_iOS.jpg" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/20240518_062043940_iOS.jpg" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/20240518_062858800_iOS.jpg" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/_1110240.JPG" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/_1110244.JPG" data-gallery="chitra_kala_parishad" style="display:none;" />
-            <img src="./images/events/Chitra Kala Parishad/_1110383.JPG" data-gallery="chitra_kala_parishad" style="display:none;" />
-          </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-1">
-          <div class="exhibit-mini-img">
-            <img src="./images/Home_page/home---exhibitions----Chitra-Santhe.png" alt="Chitra Santhe 2024 & 2025" data-gallery="chitrasante" loading="lazy" />
-          </div>
-          <div class="exhibit-info-clean">
-            <p>Annual Festival</p>
-            <h3>Chitra Santhe 2024 & 2025</h3>
-            <p class="exhibition-desc">I participated in Chitra Santhe for two consecutive years, exhibiting my works alongside artists from across the country. Being part of one of India's largest open-air art festivals was a truly inspiring experience.</p>
-            <img src="./images/events/chitrasante/20240107_075522000_iOS 1.jpg" data-gallery="chitrasante" style="display:none;" />
-            <img src="./images/events/chitrasante/20240108_022037000_iOS 3.jpg" data-gallery="chitrasante" style="display:none;" />
-            <img src="./images/events/chitrasante/20250105_032355000_iOS 1.jpg" data-gallery="chitrasante" style="display:none;" />
-            <img src="./images/events/chitrasante/20250105_032355000_iOS.jpg" data-gallery="chitrasante" style="display:none;" />
-          </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-2">
-          <div class="exhibit-mini-img">
-            <img src="./images/Home_page/home---exhibitions---India-Art-Festival.png" alt="India Art Festival – Bengaluru 2024" data-gallery="india_art_festival" loading="lazy" />
-          </div>
-          <div class="exhibit-info-clean">
-            <p>Palace Grounds, Bengaluru</p>
-            <h3>India Art Festival – Bengaluru 2024</h3>
-            <p class="exhibition-desc">I showcased my artworks at the India Art Festival held at Palace Grounds, Bengaluru. The festival brought together artists, collectors, and art enthusiasts, giving me a platform to connect with a diverse creative audience.</p>
-            <img src="./images/events/India art festival/20241218_133900026_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241218_134015424_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241219_055311778_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241219_055314239_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241220_061925205_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241221_055310090_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241221_060001445_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241221_070735293_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-            <img src="./images/events/India art festival/20241222_124345422_iOS.jpg" data-gallery="india_art_festival" style="display:none;" />
-          </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-3">
-          <div class="exhibit-mini-img">
-            <img src="./images/Home_page/home---exhibitions---Indian-Institute-of-World-Culture.png" alt="Indian Institute of World Culture, Basavanagudi" data-gallery="indian_institute_of_world_culture" loading="lazy" />
-          </div>
-          <div class="exhibit-info-clean">
-            <p>Basavanagudi</p>
-            <h3>Indian Institute of World Culture, Basavanagudi</h3>
-            <p class="exhibition-desc">I presented my Nritya Ganapati here, a painting I poured my entire soul into. Seeing the reaction of people, I realized that art made with devotion creates devotion in return.</p>
-            <img src="./images/events/Indian Institute of World Culture/20250308_103811683_iOS.jpg" data-gallery="indian_institute_of_world_culture" style="display:none;" />
-            <img src="./images/events/Indian Institute of World Culture/20250902_065234614_iOS.jpg" data-gallery="indian_institute_of_world_culture" style="display:none;" />
-            <img src="./images/events/Indian Institute of World Culture/20250902_065711259_iOS.jpg" data-gallery="indian_institute_of_world_culture" style="display:none;" />
-            <img src="./images/events/Indian Institute of World Culture/20250902_065728728_iOS.jpg" data-gallery="indian_institute_of_world_culture" style="display:none;" />
-            <img src="./images/events/Indian Institute of World Culture/20250902_070015427_iOS.jpg" data-gallery="indian_institute_of_world_culture" style="display:none;" />
-            <img src="./images/events/Indian Institute of World Culture/20250902_080041128_iOS.jpg" data-gallery="indian_institute_of_world_culture" style="display:none;" />
-          </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-4">
-          <div class="exhibit-mini-img">
-            <img src="./images/Home_page/home---exhibitions---venkatappa-art-gallery.png" alt="Venkatappa Art Gallery" data-gallery="venkatappa_art_gallery" loading="lazy" />
-          </div>
-          <div class="exhibit-info-clean">
-            <p>Gallery Showcase</p>
-            <h3>Venkatappa Art Gallery</h3>
-            <p class="exhibition-desc">I exhibited here as part of the Vasanth Arts Group Exhibition in February and returned for Chittara 2026 in May. Both on walls that carry the history of Karnataka's finest art.</p>
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.35 PM.jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.36 PM.jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.37 PM (1).jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.38 PM.jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.39 PM (1).jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.40 PM.jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-            <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.42 PM.jpeg" data-gallery="venkatappa_art_gallery" style="display:none;" />
-          </div>
+        <div class="menu-dropdown">
+          <a href="./index.html">Home page</a>
+          <a href="./legacy.html">About me</a>
+          <a href="./about-services.html">Services</a>
+          <a href="./blog.html">Studio</a>
+          <a href="./collection.html">Products</a>
+          <a href="./index.html#gallery">Art/Gallery</a>
+          <a href="./index.html#contact">Contact Us</a>
         </div>
       </div>
-        </div>
 
-        
-        <div id="workshops" class="blog-category-section" style="text-align: center; padding-top: 8rem;">
-          <h2 class="blog-category-title" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">Art Workshops</h2>
-          <div style="width: 60px; height: 1px; background: rgba(255,255,255,0.4); margin: 0 auto 2.5rem;"></div>
-          <p style="color: #fff; margin-bottom: 1rem; font-size: 1.2rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 300;">Spreading the joy of handcrafting through guided masterclasses and sessions.</p>
-          <p style="color: #888; margin-bottom: 5rem; font-size: 1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.2em;">Mastering the Art of Handcrafting</p>
-          <div class="exhibition-clean-grid grid-5-centered">
-        <div class="exhibit-card reveal">
-          <div class="exhibit-mini-img">
-            <img src="./images/Workshops/Resin worksop/resin-workshop-1.png" alt="Resin Art Workshops" data-gallery="resin_worksop" loading="lazy" />
+    </div>
+  </header>
+
+  <main>
+    <!-- Cinematic Blog Hero -->
+    <section class="blog-hero section-padding"
+      style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./images/Wall Murals.webp') center/cover no-repeat; min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="blog-hero-content reveal" style="max-width: 1100px;">
+        <h1 class="hero-title"
+          style="font-family: serif; font-weight: 300; font-style: italic; font-size: clamp(3.5rem, 10vw, 7rem); margin-bottom: 3rem; letter-spacing: -0.02em; color: #fff;">
+          Inside the Studio</h1>
+
+        <div
+          style="font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 1.8; color: #eee; font-weight: 300; margin-bottom: 2rem;">
+          <p style="margin-bottom: 2.5rem;">Step into a world of creativity and imagination. Kajal's gallery showcases
+            <strong>handcrafted artworks</strong> spanning murals, resin pieces, textured creations, devotional art, and
+            more. Each piece is <strong>uniquely designed</strong>, telling its own story and reflecting a blend of
+            tradition and contemporary artistry.</p>
+          <p>Explore the collection to see how vision, skill, and passion come together in every creation from
+            <strong>personalized commissions</strong> to <strong>artistic masterpieces</strong> that transform spaces.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" style="padding-top: 6rem; background: #121212;">
+      <div class="mb-8 flex" style="gap: 1.5rem; display: flex; margin-bottom: 6rem; flex-wrap: wrap;">
+        <a href="#achievements" class="blog-tag"><span class="blog-tag-dot"></span> Achievements</a>
+        <a href="#exhibitions" class="blog-tag"><span class="blog-tag-dot" style="background-color: #4cd964;"></span>
+          Exhibitions</a>
+        <a href="#workshops" class="blog-tag"><span class="blog-tag-dot" style="background-color: #007aff;"></span>
+          Workshops</a>
+      </div>
+
+      <div id="achievements" class="blog-category-section">
+        <h2 class="blog-category-title">Our Achievements</h2>
+        <p style="color: #888; margin-bottom: 4rem; font-size: 1.1rem; text-align: center;">Recognized for soulful
+          artistry across leading platforms.</p>
+        <div class="achievements-grid">
+          <div onclick="openVideoModal('_8hSAHfdsFw')" class="achievement-card reveal" style="cursor: pointer;">
+            <div class="achievement-frame">
+              <img src="./images/news1.png" alt="Your story" loading="lazy" />
+            </div>
+            <div class="achievement-info">
+              <p>Media Feature</p>
+              <h3>News First</h3>
+              <span class="achievement-link">Watch Now ↗</span>
+            </div>
           </div>
-          <div class="exhibit-info-clean">
-            <p>Foundation & Advanced</p>
-            <h3>Resin Art Workshops</h3>
-            <p class="exhibition-desc">Curated for beginners and advanced learners, covering foundational techniques and customized product sessions.</p>
-            <img src="./images/Workshops/Resin worksop/resin-workshop-1.png" data-gallery="resin_worksop" style="display:none;" />
-            <img src="./images/Workshops/Resin worksop/resin-workshop-2.png" data-gallery="resin_worksop" style="display:none;" />
-            <img src="./images/Workshops/Resin worksop/resin-workshop-3.png" data-gallery="resin_worksop" style="display:none;" />
-            <img src="./images/Workshops/Resin worksop/resin-workshop-4.png" data-gallery="resin_worksop" style="display:none;" />
+
+          <div onclick="openVideoModal('VH4uE-hmWig')" class="achievement-card reveal" style="cursor: pointer;">
+            <div class="achievement-frame">
+              <img src="./images/news2.png" alt="Enadu Teleugu" loading="lazy" />
+            </div>
+            <div class="achievement-info">
+              <p>Media Feature</p>
+              <h3>News First</h3>
+              <span class="achievement-link">Watch Now ↗</span>
+            </div>
+          </div>
+
+          <a href="https://yourstory.com/2025/01/education-exposure-ecosystems-india-art-festival-creativity-photography"
+            target="_blank" class="achievement-card reveal" style="text-decoration: none; display: block;">
+            <div class="achievement-frame">
+              <img src="./images/news3.png" alt="YourStory Feature" loading="lazy" />
+            </div>
+            <div class="achievement-info">
+              <p>Featured STORY </p>
+              <h3>YourStory Spotlight</h3>
+              <span class="achievement-link">Read News ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="exhibitions" class="blog-category-section" style="text-align: center; padding-top: 8rem;">
+        <h2 class="blog-category-title" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">Exhibitions
+        </h2>
+        <div style="width: 60px; height: 1px; background: rgba(255,255,255,0.4); margin: 0 auto 2.5rem;"></div>
+        <p
+          style="color: #fff; margin-bottom: 1rem; font-size: 1.2rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 300;">
+          Showcasing handcrafted collections at prestigious art venues across the country.</p>
+        <p
+          style="color: #888; margin-bottom: 5rem; font-size: 1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.2em;">
+          A Journey of Textures & Emotions</p>
+        <div class="exhibition-clean-grid grid-5-centered">
+          <div class="exhibit-card reveal">
+            <div class="exhibit-mini-img">
+              <img src="./images/Home_page/home---exhibitions----chitrakala-parishadh.png" alt="Chitra Kala Parishad"
+                data-gallery="chitra_kala_parishad" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>CKP Gallery</p>
+              <h3>Chitra Kala Parishad</h3>
+              <p class="exhibition-desc">I showcased a collection of my artworks at CKP Gallery, where I had the
+                opportunity to present my artistic style through expressive colors, textures, and storytelling.</p>
+              <img src="./images/events/Chitra Kala Parishad/20240518_051439514_iOS.jpg"
+                data-gallery="chitra_kala_parishad" style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/20240518_052133908_iOS.jpg"
+                data-gallery="chitra_kala_parishad" style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/20240518_060556870_iOS.jpg"
+                data-gallery="chitra_kala_parishad" style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/20240518_062043940_iOS.jpg"
+                data-gallery="chitra_kala_parishad" style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/20240518_062858800_iOS.jpg"
+                data-gallery="chitra_kala_parishad" style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/_1110240.JPG" data-gallery="chitra_kala_parishad"
+                style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/_1110244.JPG" data-gallery="chitra_kala_parishad"
+                style="display:none;" />
+              <img src="./images/events/Chitra Kala Parishad/_1110383.JPG" data-gallery="chitra_kala_parishad"
+                style="display:none;" />
+            </div>
+          </div>
+          <div class="exhibit-card reveal anim-delay-1">
+            <div class="exhibit-mini-img">
+              <img src="./images/Home_page/home---exhibitions----Chitra-Santhe.png" alt="Chitra Santhe 2024 & 2025"
+                data-gallery="chitrasante" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Annual Festival</p>
+              <h3>Chitra Santhe 2024 & 2025</h3>
+              <p class="exhibition-desc">I participated in Chitra Santhe for two consecutive years, exhibiting my works
+                alongside artists from across the country. Being part of one of India's largest open-air art festivals
+                was a truly inspiring experience.</p>
+              <img src="./images/events/chitrasante/20240107_075522000_iOS 1.jpg" data-gallery="chitrasante"
+                style="display:none;" />
+              <img src="./images/events/chitrasante/20240108_022037000_iOS 3.jpg" data-gallery="chitrasante"
+                style="display:none;" />
+              <img src="./images/events/chitrasante/20250105_032355000_iOS 1.jpg" data-gallery="chitrasante"
+                style="display:none;" />
+              <img src="./images/events/chitrasante/20250105_032355000_iOS.jpg" data-gallery="chitrasante"
+                style="display:none;" />
+            </div>
+          </div>
+          <div class="exhibit-card reveal anim-delay-2">
+            <div class="exhibit-mini-img">
+              <img src="./images/Home_page/home---exhibitions---India-Art-Festival.png"
+                alt="India Art Festival – Bengaluru 2024" data-gallery="india_art_festival" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Palace Grounds, Bengaluru</p>
+              <h3>India Art Festival – Bengaluru 2024</h3>
+              <p class="exhibition-desc">I showcased my artworks at the India Art Festival held at Palace Grounds,
+                Bengaluru. The festival brought together artists, collectors, and art enthusiasts, giving me a platform
+                to connect with a diverse creative audience.</p>
+              <img src="./images/events/India art festival/20241218_133900026_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241218_134015424_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241219_055311778_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241219_055314239_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241220_061925205_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241221_055310090_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241221_060001445_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241221_070735293_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+              <img src="./images/events/India art festival/20241222_124345422_iOS.jpg" data-gallery="india_art_festival"
+                style="display:none;" />
+            </div>
+          </div>
+          <div class="exhibit-card reveal anim-delay-3">
+            <div class="exhibit-mini-img">
+              <img src="./images/Home_page/home---exhibitions---Indian-Institute-of-World-Culture.png"
+                alt="Indian Institute of World Culture, Basavanagudi" data-gallery="indian_institute_of_world_culture"
+                loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Basavanagudi</p>
+              <h3>Indian Institute of World Culture, Basavanagudi</h3>
+              <p class="exhibition-desc">I presented my Nritya Ganapati here, a painting I poured my entire soul into.
+                Seeing the reaction of people, I realized that art made with devotion creates devotion in return.</p>
+              <img src="./images/events/Indian Institute of World Culture/20250308_103811683_iOS.jpg"
+                data-gallery="indian_institute_of_world_culture" style="display:none;" />
+              <img src="./images/events/Indian Institute of World Culture/20250902_065234614_iOS.jpg"
+                data-gallery="indian_institute_of_world_culture" style="display:none;" />
+              <img src="./images/events/Indian Institute of World Culture/20250902_065711259_iOS.jpg"
+                data-gallery="indian_institute_of_world_culture" style="display:none;" />
+              <img src="./images/events/Indian Institute of World Culture/20250902_065728728_iOS.jpg"
+                data-gallery="indian_institute_of_world_culture" style="display:none;" />
+              <img src="./images/events/Indian Institute of World Culture/20250902_070015427_iOS.jpg"
+                data-gallery="indian_institute_of_world_culture" style="display:none;" />
+              <img src="./images/events/Indian Institute of World Culture/20250902_080041128_iOS.jpg"
+                data-gallery="indian_institute_of_world_culture" style="display:none;" />
+            </div>
+          </div>
+          <div class="exhibit-card reveal anim-delay-4">
+            <div class="exhibit-mini-img">
+              <img src="./images/Home_page/home---exhibitions---venkatappa-art-gallery.png" alt="Venkatappa Art Gallery"
+                data-gallery="venkatappa_art_gallery" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Gallery Showcase</p>
+              <h3>Venkatappa Art Gallery</h3>
+              <p class="exhibition-desc">I exhibited here as part of the Vasanth Arts Group Exhibition in February and
+                returned for Chittara 2026 in May. Both on walls that carry the history of Karnataka's finest art.</p>
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.35 PM.jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.36 PM.jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.37 PM (1).jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.38 PM.jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.39 PM (1).jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.40 PM.jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+              <img src="./images/events/Venkatappa art gallery/WhatsApp Image 2026-05-13 at 1.39.42 PM.jpeg"
+                data-gallery="venkatappa_art_gallery" style="display:none;" />
+            </div>
           </div>
         </div>
-        <div class="exhibit-card reveal anim-delay-1">
-          <div class="exhibit-mini-img">
-            <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-1.png" alt="Fluid Art Workshops" data-gallery="fluid_art_workshop" loading="lazy" />
+      </div>
+
+
+      <div id="workshops" class="blog-category-section" style="text-align: center; padding-top: 8rem;">
+        <h2 class="blog-category-title" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">Art
+          Workshops</h2>
+        <div style="width: 60px; height: 1px; background: rgba(255,255,255,0.4); margin: 0 auto 2.5rem;"></div>
+        <p
+          style="color: #fff; margin-bottom: 1rem; font-size: 1.2rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 300;">
+          Spreading the joy of handcrafting through guided masterclasses and sessions.</p>
+        <p
+          style="color: #888; margin-bottom: 5rem; font-size: 1rem; text-align: center; text-transform: uppercase; letter-spacing: 0.2em;">
+          Mastering the Art of Handcrafting</p>
+        <div class="exhibition-clean-grid grid-5-centered">
+          <div class="exhibit-card reveal">
+            <div class="exhibit-mini-img">
+              <img src="./images/Workshops/Resin worksop/resin-workshop-1.png" alt="Resin Art Workshops"
+                data-gallery="resin_worksop" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Foundation & Advanced</p>
+              <h3>Resin Art Workshops</h3>
+              <p class="exhibition-desc">Curated for beginners and advanced learners, covering foundational techniques
+                and customized product sessions.</p>
+              <img src="./images/Workshops/Resin worksop/resin-workshop-1.png" data-gallery="resin_worksop"
+                style="display:none;" />
+              <img src="./images/Workshops/Resin worksop/resin-workshop-2.png" data-gallery="resin_worksop"
+                style="display:none;" />
+              <img src="./images/Workshops/Resin worksop/resin-workshop-3.png" data-gallery="resin_worksop"
+                style="display:none;" />
+              <img src="./images/Workshops/Resin worksop/resin-workshop-4.png" data-gallery="resin_worksop"
+                style="display:none;" />
+            </div>
           </div>
-          <div class="exhibit-info-clean">
-            <p>Interactive Sessions</p>
-            <h3>Fluid Art Workshops</h3>
-            <p class="exhibition-desc">Engaging workshops for kids and adults through camps, schools, and group sessions encouraging self-expression.</p>
-            <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-1.png" data-gallery="fluid_art_workshop" style="display:none;" />
-            <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-2.png" data-gallery="fluid_art_workshop" style="display:none;" />
-            <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-3.png" data-gallery="fluid_art_workshop" style="display:none;" />
-            <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-4.png" data-gallery="fluid_art_workshop" style="display:none;" />
-            <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-5.png" data-gallery="fluid_art_workshop" style="display:none;" />
+          <div class="exhibit-card reveal anim-delay-1">
+            <div class="exhibit-mini-img">
+              <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-1.png" alt="Fluid Art Workshops"
+                data-gallery="fluid_art_workshop" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Interactive Sessions</p>
+              <h3>Fluid Art Workshops</h3>
+              <p class="exhibition-desc">Engaging workshops for kids and adults through camps, schools, and group
+                sessions encouraging self-expression.</p>
+              <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-1.png" data-gallery="fluid_art_workshop"
+                style="display:none;" />
+              <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-2.png" data-gallery="fluid_art_workshop"
+                style="display:none;" />
+              <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-3.png" data-gallery="fluid_art_workshop"
+                style="display:none;" />
+              <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-4.png" data-gallery="fluid_art_workshop"
+                style="display:none;" />
+              <img src="./images/Workshops/Fluid art workshop/Fluid-workshop-5.png" data-gallery="fluid_art_workshop"
+                style="display:none;" />
+            </div>
           </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-2">
-          <div class="exhibit-mini-img">
-            <img src="./images/Workshops/texture painting/texture-1.png" alt="Texture Art Workshops" data-gallery="texture_painting" loading="lazy" />
+          <div class="exhibit-card reveal anim-delay-2">
+            <div class="exhibit-mini-img">
+              <img src="./images/Workshops/texture painting/texture-1.png" alt="Texture Art Workshops"
+                data-gallery="texture_painting" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Modern & Aesthetic</p>
+              <h3>Texture Art Workshops</h3>
+              <p class="exhibition-desc">Guiding participants in creating dimensional artworks using texture techniques
+                and mixed media elements.</p>
+              <img src="./images/Workshops/texture painting/texture-1.png" data-gallery="texture_painting"
+                style="display:none;" />
+              <img src="./images/Workshops/texture painting/texture-2.png" data-gallery="texture_painting"
+                style="display:none;" />
+              <img src="./images/Workshops/texture painting/texture-3.png" data-gallery="texture_painting"
+                style="display:none;" />
+              <img src="./images/Workshops/texture painting/texture-4.png" data-gallery="texture_painting"
+                style="display:none;" />
+            </div>
           </div>
-          <div class="exhibit-info-clean">
-            <p>Modern & Aesthetic</p>
-            <h3>Texture Art Workshops</h3>
-            <p class="exhibition-desc">Guiding participants in creating dimensional artworks using texture techniques and mixed media elements.</p>
-            <img src="./images/Workshops/texture painting/texture-1.png" data-gallery="texture_painting" style="display:none;" />
-            <img src="./images/Workshops/texture painting/texture-2.png" data-gallery="texture_painting" style="display:none;" />
-            <img src="./images/Workshops/texture painting/texture-3.png" data-gallery="texture_painting" style="display:none;" />
-            <img src="./images/Workshops/texture painting/texture-4.png" data-gallery="texture_painting" style="display:none;" />
+          <div class="exhibit-card reveal anim-delay-3">
+            <div class="exhibit-mini-img">
+              <img src="./images/Workshops/DIY CHRIStmass/christmass-1.png" alt="Christmas Kids DIY Workshops"
+                data-gallery="diy_christmass" loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Festive Fun</p>
+              <h3>Christmas Kids DIY Workshops</h3>
+              <p class="exhibition-desc">Festive crafts, handmade décor, and interactive activities designed to inspire
+                imagination and joyful learning.</p>
+              <img src="./images/Workshops/DIY CHRIStmass/christmass-1.png" data-gallery="diy_christmass"
+                style="display:none;" />
+              <img src="./images/Workshops/DIY CHRIStmass/christmass-2.png" data-gallery="diy_christmass"
+                style="display:none;" />
+              <img src="./images/Workshops/DIY CHRIStmass/christmass-3.png" data-gallery="diy_christmass"
+                style="display:none;" />
+              <img src="./images/Workshops/DIY CHRIStmass/christmass-4.png" data-gallery="diy_christmass"
+                style="display:none;" />
+              <img src="./images/Workshops/DIY CHRIStmass/christmass-5.png" data-gallery="diy_christmass"
+                style="display:none;" />
+            </div>
           </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-3">
-          <div class="exhibit-mini-img">
-            <img src="./images/Workshops/DIY CHRIStmass/christmass-1.png" alt="Christmas Kids DIY Workshops" data-gallery="diy_christmass" loading="lazy" />
+          <div class="exhibit-card reveal anim-delay-4">
+            <div class="exhibit-mini-img">
+              <img
+                src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop-2.png"
+                alt="Hospital Coaster Workshop" data-gallery="manipal_hospital_newspaper_coaster_workshop"
+                loading="lazy" />
+            </div>
+            <div class="exhibit-info-clean">
+              <p>Sustainability Project</p>
+              <h3>Corporate Team-Building Workshop</h3>
+              <p class="exhibition-desc">A creative upcycling workshop with Manipal Hospitals, transforming newspapers
+                into handcrafted coasters.</p>
+              <img
+                src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop-2.png"
+                data-gallery="manipal_hospital_newspaper_coaster_workshop" style="display:none;" />
+              <img
+                src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop-3.png"
+                data-gallery="manipal_hospital_newspaper_coaster_workshop" style="display:none;" />
+              <img
+                src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop1.png"
+                data-gallery="manipal_hospital_newspaper_coaster_workshop" style="display:none;" />
+            </div>
           </div>
-          <div class="exhibit-info-clean">
-            <p>Festive Fun</p>
-            <h3>Christmas Kids DIY Workshops</h3>
-            <p class="exhibition-desc">Festive crafts, handmade décor, and interactive activities designed to inspire imagination and joyful learning.</p>
-            <img src="./images/Workshops/DIY CHRIStmass/christmass-1.png" data-gallery="diy_christmass" style="display:none;" />
-            <img src="./images/Workshops/DIY CHRIStmass/christmass-2.png" data-gallery="diy_christmass" style="display:none;" />
-            <img src="./images/Workshops/DIY CHRIStmass/christmass-3.png" data-gallery="diy_christmass" style="display:none;" />
-            <img src="./images/Workshops/DIY CHRIStmass/christmass-4.png" data-gallery="diy_christmass" style="display:none;" />
-            <img src="./images/Workshops/DIY CHRIStmass/christmass-5.png" data-gallery="diy_christmass" style="display:none;" />
-          </div>
-        </div>
-        <div class="exhibit-card reveal anim-delay-4">
-          <div class="exhibit-mini-img">
-            <img src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop-2.png" alt="Hospital Coaster Workshop" data-gallery="manipal_hospital_newspaper_coaster_workshop" loading="lazy" />
-          </div>
-          <div class="exhibit-info-clean">
-            <p>Sustainability Project</p>
-            <h3>Corporate Team-Building Workshop</h3>
-            <p class="exhibition-desc">A creative upcycling workshop with Manipal Hospitals, transforming newspapers into handcrafted coasters.</p>
-            <img src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop-2.png" data-gallery="manipal_hospital_newspaper_coaster_workshop" style="display:none;" />
-            <img src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop-3.png" data-gallery="manipal_hospital_newspaper_coaster_workshop" style="display:none;" />
-            <img src="./images/Workshops/Manipal Hospital Newspaper Coaster Workshop/Manipal-Hospital-Newspaper-Coaster-Workshop1.png" data-gallery="manipal_hospital_newspaper_coaster_workshop" style="display:none;" />
-          </div>
-        </div>
         </div>
       </div>
     </section>
 
 
-    </main>
+  </main>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="main-footer">
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="main-footer">
     <div class="footer-container">
-        <div class="footer-grid">
-            <div class="footer-col brand-col">
-                <div class="footer-logo">
-                    <a href="./index.html" class="logo" style="color: #fff; text-decoration: none;">HANDCRAFTED<br>BY KAJAL</a>
-                </div>
-                <p class="footer-desc">
-                    Based in Bangalore, Handcrafted by Kajal is a destination for uniquely designed artworks, including murals, resin pieces, textured creations, and devotional art.
-                </p>
-                <div class="footer-socials">
-                    <a href="https://www.instagram.com/handcraftedbykajal?igsh=MWUwc2pqbzhnMzB1bA%3D%3D&utm_source=qr" class="social-icon" target="_blank">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                    <a href="https://www.facebook.com/share/14gTvmiLxGw/?mibextid=wwXIfr" class="social-icon" target="_blank">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-8.784h-2.956v-3.427h2.956v-2.528c0-2.928 1.788-4.523 4.402-4.523 1.252 0 2.328.093 2.641.135v3.062h-1.812c-1.42 0-1.696.675-1.696 1.666v2.188h3.39l-.441 3.427h-2.949v8.784h6.128c.732 0 1.325-.593 1.325-1.324v-21.351c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./legacy.html">About Me</a></li>
-                    <li><a href="./about-services.html">Services</a></li>
-                    <li><a href="./blog.html">Studio</a></li>
-                    <li><a href="./collection.html">Products</a></li>
-                    <li><a href="./gallery.html">Art/Gallery</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Studio</h3>
-                <ul class="footer-links">
-                    <li><a href="./blog.html#exhibitions">Exhibition</a></li>
-                    <li><a href="./blog.html#achievements">Achievements</a></li>
-                    <li><a href="./blog.html#workshops">Workshop</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col contact-col">
-                <h3>Stay in Touch</h3>
-                <p>Subscribe for art updates, exhibitions, and new project launches.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    </button>
-                </form>
-                <div class="contact-info">
-                    <p>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        thehandcraftd@gmail.com
-                    </p>
-                    <p>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        +91 6363307200
-                    </p>
-                    <p>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        214, CENTENARY BUILDING, Second floor, AV Road, New Tharagupet, Bengaluru - 560002
-                    </p>
-                </div>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <a href="./index.html" class="logo" style="color: #fff; text-decoration: none;">HANDCRAFTED<br>BY KAJAL</a>
+          </div>
+          <p class="footer-desc">
+            Based in Bangalore, Handcrafted by Kajal is a destination for uniquely designed artworks, including murals,
+            resin pieces, textured creations, and devotional art.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/handcraftedbykajal?igsh=MWUwc2pqbzhnMzB1bA%3D%3D&utm_source=qr"
+              class="social-icon" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/share/14gTvmiLxGw/?mibextid=wwXIfr" class="social-icon" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-8.784h-2.956v-3.427h2.956v-2.528c0-2.928 1.788-4.523 4.402-4.523 1.252 0 2.328.093 2.641.135v3.062h-1.812c-1.42 0-1.696.675-1.696 1.666v2.188h3.39l-.441 3.427h-2.949v8.784h6.128c.732 0 1.325-.593 1.325-1.324v-21.351c0-.732-.593-1.325-1.325-1.325z" />
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <div class="copyright">
-                © 2026 Handcrafted by Kajal | Made with ❤️ by <a href="https://regortz.com" target="_blank">Regortz</a>
-            </div>
-            <div class="bottom-links">
-                <a href="./terms.html">Terms and Conditions</a>
-                <a href="./privacy.html">Privacy Policy</a>
-            </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./legacy.html">About Me</a></li>
+            <li><a href="./about-services.html">Services</a></li>
+            <li><a href="./blog.html">Studio</a></li>
+            <li><a href="./collection.html">Products</a></li>
+            <li><a href="./gallery.html">Art/Gallery</a></li>
+          </ul>
         </div>
+
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <ul class="footer-links">
+            <li><a href="./blog.html#exhibitions">Exhibition</a></li>
+            <li><a href="./blog.html#achievements">Achievements</a></li>
+            <li><a href="./blog.html#workshops">Workshop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h3>Stay in Touch</h3>
+          <p>Subscribe for art updates, exhibitions, and new project launches.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+          <div class="contact-info">
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:thehandcraftd@gmail.com"
+                style="color: inherit; text-decoration: none; transition: color 0.3s ease;"
+                onmouseover="this.style.color='#fff'"
+                onmouseout="this.style.color='inherit'">thehandcraftd@gmail.com</a>
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <a href="tel:+916363307200" style="color: inherit; text-decoration: none; transition: color 0.3s ease;"
+                onmouseover="this.style.color='#fff'" onmouseout="this.style.color='inherit'">+91 6363307200</a>
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              214, CENTENARY BUILDING, Second floor, AV Road, New Tharagupet, Bengaluru - 560002
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 Handcrafted by Kajal | Made with ❤️ by <a href="https://regortz.com" target="_blank">Regortz</a>
+        </div>
+        <div class="bottom-links">
+          <a href="./terms.html">Terms and Conditions</a>
+          <a href="./privacy.html">Privacy Policy</a>
+        </div>
+      </div>
     </div>
-    
+
     <a href="https://wa.me/916363307200" class="whatsapp-btn-footer" target="_blank" aria-label="WhatsApp">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill-rule="evenodd"/></svg>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          fill-rule="evenodd" />
+      </svg>
     </a>
-</footer>
-    <script src="./main.js"></script>
+  </footer>
+  <script src="./main.js"></script>
 
-    <!-- Video Modal -->
-    <div id="videoModal" class="video-modal">
-        <div class="video-modal-overlay" onclick="closeVideoModal()"></div>
-        <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
-        <div class="video-modal-content">
-            <div class="video-responsive-container">
-                <iframe id="videoPlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+    <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+    <div class="video-modal-content">
+      <div class="video-responsive-container">
+        <iframe id="videoPlayer" src="" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
+  </div>
 
-    <script>
-      function openVideoModal(videoId) {
-          const modal = document.getElementById('videoModal');
-          const player = document.getElementById('videoPlayer');
-          player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-          modal.classList.add('active');
-          document.body.style.overflow = 'hidden';
-      }
+  <script>
+    function openVideoModal(videoId) {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('videoPlayer');
+      player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
 
-      function closeVideoModal() {
-          const modal = document.getElementById('videoModal');
-          const player = document.getElementById('videoPlayer');
-          player.src = '';
-          modal.classList.remove('active');
-          document.body.style.overflow = '';
-      }
-    </script>
-  </body>
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('videoPlayer');
+      player.src = '';
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+
 </html>
-
