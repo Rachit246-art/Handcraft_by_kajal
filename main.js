@@ -276,6 +276,11 @@ const init = () => {
           const a = document.createElement('a');
           a.className = 'search-result-item';
           a.href = item.url;
+          a.onclick = (e) => {
+            e.preventDefault();
+            window.location.href = item.url;
+            closeSearch();
+          };
           a.innerHTML = `
             <span class="search-result-icon">${item.icon}</span>
             <span class="search-result-text">
@@ -479,6 +484,22 @@ const init = () => {
       };
     });
   }
+
+  // Handle hash for filtering
+  const applyHashFilter = () => {
+    if (window.location.hash) {
+      const hash = window.location.hash.substring(1);
+      const btn = document.querySelector(`.filter-btn[data-filter="${hash}"]`);
+      if (btn) {
+        btn.click();
+        const collectionSec = document.getElementById('collection');
+        if (collectionSec) collectionSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+  // Run on load and on hash change
+  applyHashFilter();
+  window.addEventListener('hashchange', applyHashFilter);
 
   // --- Dynamic Lightbox Navigation ---
   const createLightbox = () => {
