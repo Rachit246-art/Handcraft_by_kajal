@@ -145,18 +145,223 @@ const init = () => {
     });
   });
 
+  // ─── Site-wide Search Index ───────────────────────────────────────────────
+  const SEARCH_INDEX = [
+    // Pages
+    { title: 'Home',               desc: 'Handcrafted by Kajal – custom art studio in Bangalore', url: './index.html',            icon: '🏠' },
+    { title: 'About Me / Legacy',  desc: 'Story of Kajal, the artist behind every creation',      url: './legacy.html',           icon: '👩‍🎨' },
+    { title: 'Services',           desc: 'Wall murals, fabric art, resin, portraits and more',     url: './about-services.html',   icon: '🎨' },
+    { title: 'Studio / Blog',      desc: 'Inside the studio – paintings, stories and process',     url: './blog.html',             icon: '🖌️' },
+    { title: 'Products / Shop',    desc: 'Browse all handcrafted products and artworks',           url: './collection.html',       icon: '🛍️' },
+    { title: 'Art Gallery',        desc: 'Full gallery of curated fine art pieces',                url: './gallery.html',          icon: '🖼️' },
+    { title: 'Contact Us',         desc: 'Get in touch or request a custom commission',            url: './index.html#contact',    icon: '📩' },
+    { title: 'Privacy Policy',     desc: 'Privacy policy and data usage information',              url: './privacy.html',          icon: '📄' },
+    { title: 'Terms & Conditions', desc: 'Terms of service and purchase conditions',               url: './terms.html',            icon: '📄' },
+    // Art categories / products
+    { title: 'Acrylic Paintings',  desc: 'Vibrant handcrafted acrylic artworks on canvas',        url: './collection.html#acrylic',    icon: '🎨' },
+    { title: 'Fabric Paintings',   desc: 'Hand-painted silk sarees, jackets and blazers',         url: './collection.html#fabric',     icon: '👗' },
+    { title: 'Mini Paintings',     desc: 'Small yet expressive artworks in compact forms',         url: './collection.html#mini',       icon: '🖼️' },
+    { title: 'Phone Cases',        desc: 'Custom hand-painted artistic phone cases',               url: './collection.html#phonecases', icon: '📱' },
+    { title: 'Fridge Magnets',     desc: 'Handcrafted miniature art magnets',                     url: './collection.html#magnets',    icon: '🧲' },
+    { title: 'Custom Portraits',   desc: 'Personalized portraits capturing emotions and memories', url: './collection.html#portraits',  icon: '🖼️' },
+    { title: 'Ring Platter',       desc: 'Elegant handcrafted resin ring platters',               url: './collection.html#platter',    icon: '💍' },
+    { title: 'Resin Photo Frame',  desc: 'Handcrafted resin photo frames with artistic detail',   url: './collection.html#resindecor', icon: '🪞' },
+    { title: 'Resin Decor',        desc: 'Wall clocks, coasters and navkar mantra art in resin',  url: './collection.html#resinart',   icon: '🏺' },
+    { title: 'Texture Art',        desc: 'Dimensional sculptured relief artworks',                url: './collection.html#texture',    icon: '🏔️' },
+    { title: 'Wedding Invitations',desc: 'Custom artistic handcrafted wedding invitation cards',   url: './collection.html#invitations',icon: '💌' },
+    { title: 'Wall Mural Art',     desc: 'Statement art pieces transforming living spaces',        url: './collection.html#mural',      icon: '🏛️' },
+    { title: 'Devotional Art',     desc: 'Soulful devotional paintings for sacred spaces',        url: './about-services.html#devotional', icon: '🙏' },
+    { title: 'Landscapes',         desc: 'Breathtaking landscape paintings capturing emotion',     url: './about-services.html#landscapes', icon: '🌄' },
+    { title: 'WhatsApp / Order',   desc: 'Chat directly on WhatsApp to place a custom order',     url: 'https://wa.me/916363307200',  icon: '💬' },
+  ];
+
+  // Inject search results dropdown styles once
+  if (!document.getElementById('search-results-style')) {
+    const style = document.createElement('style');
+    style.id = 'search-results-style';
+    style.textContent = `
+      .search-results-dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        width: 320px;
+        max-height: 420px;
+        overflow-y: auto;
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        z-index: 9999;
+        padding: 0.5rem 0;
+        animation: searchDropIn 0.25s cubic-bezier(0.16,1,0.3,1) forwards;
+        scrollbar-width: thin;
+      }
+      @keyframes searchDropIn {
+        from { opacity:0; transform: translateY(-8px) scale(0.97); }
+        to   { opacity:1; transform: translateY(0)   scale(1);     }
+      }
+      .search-result-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 0.75rem 1.1rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.15s ease;
+        border-radius: 10px;
+        margin: 0 0.3rem;
+      }
+      .search-result-item:hover { background: #f5f5f5; }
+      .search-result-icon { font-size: 1.25rem; flex-shrink: 0; margin-top: 1px; }
+      .search-result-text { display: flex; flex-direction: column; gap: 2px; }
+      .search-result-title { font-size: 0.9rem; font-weight: 600; color: #111; }
+      .search-result-desc  { font-size: 0.78rem; color: #888; line-height: 1.35; }
+      .search-result-title mark { background: #fef3c7; color: #111; border-radius: 2px; }
+      .search-no-results { padding: 1.2rem 1.5rem; font-size: 0.88rem; color: #999; text-align: center; }
+      .search-wrapper { position: relative; }
+
+      @media (max-width: 768px) {
+        .search-results-dropdown {
+          position: fixed;
+          top: 75px;
+          left: 5%;
+          right: 5%;
+          width: 90%;
+          max-height: 60vh;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .search-wrapper.active .search-inline-input {
+          width: 100px;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Build per-wrapper search UI
   searchBtns.forEach((btn, idx) => {
     const wrapper = searchWrappers[idx] || document.querySelector('.search-wrapper');
-    const input = searchInputsInline[idx] || document.querySelector('.search-inline-input');
+    const input   = searchInputsInline[idx] || document.querySelector('.search-inline-input');
     if (!btn || !wrapper || !input) return;
 
+    let dropdown = null;
+
+    const openSearch = () => {
+      wrapper.classList.add('active');
+      input.focus();
+    };
+
+    const closeSearch = () => {
+      wrapper.classList.remove('active');
+      input.value = '';
+      hideDropdown();
+    };
+
+    const showDropdown = (results) => {
+      hideDropdown();
+      dropdown = document.createElement('div');
+      dropdown.className = 'search-results-dropdown';
+
+      if (results.length === 0) {
+        dropdown.innerHTML = `<div class="search-no-results">No results found for "<strong>${input.value}</strong>"</div>`;
+      } else {
+        results.forEach(item => {
+          const q = input.value.trim();
+          const highlight = (text) => {
+            if (!q) return text;
+            const re = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+            return text.replace(re, '<mark>$1</mark>');
+          };
+          const a = document.createElement('a');
+          a.className = 'search-result-item';
+          a.href = item.url;
+          a.innerHTML = `
+            <span class="search-result-icon">${item.icon}</span>
+            <span class="search-result-text">
+              <span class="search-result-title">${highlight(item.title)}</span>
+              <span class="search-result-desc">${highlight(item.desc)}</span>
+            </span>`;
+          dropdown.appendChild(a);
+        });
+      }
+      wrapper.appendChild(dropdown);
+    };
+
+    const hideDropdown = () => {
+      if (dropdown && dropdown.parentNode) dropdown.parentNode.removeChild(dropdown);
+      dropdown = null;
+    };
+
+    const runSearch = () => {
+      const q = input.value.trim().toLowerCase();
+      if (!q) { hideDropdown(); return; }
+      const results = SEARCH_INDEX.filter(item =>
+        item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q)
+      );
+      showDropdown(results);
+    };
+
+    // Button click: open if closed, search if open
     btn.onclick = (e) => {
       e.preventDefault();
-      wrapper.classList.toggle('active');
-      if (wrapper.classList.contains('active')) {
-        input.focus();
+      e.stopPropagation();
+      if (!wrapper.classList.contains('active')) {
+        openSearch();
+      } else {
+        const q = input.value.trim();
+        if (q) {
+          runSearch();
+        } else {
+          closeSearch();
+        }
       }
     };
+
+    // Live results while typing
+    input.addEventListener('input', runSearch);
+
+    // Enter key navigates to first result or triggers search
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const first = dropdown && dropdown.querySelector('.search-result-item');
+        if (first) { first.click(); return; }
+        runSearch();
+      }
+      if (e.key === 'Escape') closeSearch();
+
+      // Arrow key navigation
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (!dropdown) return;
+        const items = Array.from(dropdown.querySelectorAll('.search-result-item'));
+        const focused = document.activeElement;
+        const currentIdx = items.indexOf(focused);
+        if (e.key === 'ArrowDown') {
+          const next = items[currentIdx + 1] || items[0];
+          if (next) next.focus();
+        } else {
+          const prev = items[currentIdx - 1] || items[items.length - 1];
+          if (prev) prev.focus();
+        }
+      }
+    });
+  });
+
+  // Close search dropdown on outside click
+  document.addEventListener('click', (e) => {
+    searchWrappers.forEach(wrapper => {
+      const dropdown = wrapper.querySelector('.search-results-dropdown');
+      if (dropdown && !wrapper.contains(e.target)) {
+        // Just hide dropdown but keep wrapper open if input has value
+        const input = wrapper.querySelector('.search-inline-input');
+        if (input && !input.value.trim()) {
+          wrapper.classList.remove('active');
+        }
+        if (dropdown.parentNode) dropdown.parentNode.removeChild(dropdown);
+      }
+    });
   });
 
 // --- Liquid Distortion Hover Effect ---
